@@ -1,9 +1,12 @@
-﻿/*Basic Player Platformer Script: 
-Horizontal + Vertical Movement, 
-Collisions with Platforms + Enemy Objects, 
-Falling Off Platforms */
+﻿/*
+Basic Player Platformer Script: 
+  + Horizontal + Vertical Movement 
+  + Collisions with Platforms + Enemy Object(s)
+  + Falling Off Platform Relocation
+*/
 
 #pragma strict
+
 var isgrounded: boolean = true; //variable for when player is grounded
 
 function Start() {
