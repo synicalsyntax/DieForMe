@@ -34,12 +34,10 @@ function OnCollisionEnter(theCollision: Collision) {
         isgrounded = false;
     }
     if (theCollision.gameObject.name.StartsWith("Enemy")) { //if touching enemy object name Enemy
-        GameObject.Find("Player").transform.parent.position = Vector3(0, 2, 0); //reset position
+        transform.position = Vector3(0, 2, 0); //reset position
     }
 }
 
 function OnCollisionExit(theCollision: Collision) {
     isgrounded = false; //sets isgrounded to false once not colliding with an object
 }
-
-
