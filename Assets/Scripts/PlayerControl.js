@@ -16,11 +16,11 @@ function Start() {
 function FixedUpdate() {
     var moveHorizontal: float = Input.GetAxis("Horizontal");
     var horizontalForce: Vector3 = new Vector3(moveHorizontal, 0, 0);
-    GetComponent.<Rigidbody>().AddForce(horizontalForce * 20); //20 value can be changed according to player speed
+    GetComponent.<Rigidbody>().AddForce(horizontalForce * 70); //20 value can be changed according to player speed
 
     if (isgrounded == true) {
         if (Input.GetKeyDown("up") || Input.GetKeyDown("w")) {
-            GetComponent.<Rigidbody>().AddForce(Vector3(0, 600, 0)); //might depend on mass of object
+            GetComponent.<Rigidbody>().AddForce(Vector3(0, 1000, 0)); //might depend on mass of object
         }
     }
 
