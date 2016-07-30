@@ -8,7 +8,9 @@ Basic Player Platformer Script:
 #pragma strict
 
 var isgrounded: boolean = true; //variable for when player is grounded
-public var projectile : GameObject;
+//public var projectile : GameObject;
+public var SpellA : GameObject;
+public var SpellS : GameObject;
 
 function Start() {
     transform.position = Vector3(0, 2, 0); //original starting position, in x, y, z values
