@@ -275,6 +275,7 @@ GameObject:
   - 54: {fileID: 1049953479}
   - 135: {fileID: 1049953478}
   - 114: {fileID: 1049953480}
+  - 114: {fileID: 1049953481}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -379,6 +380,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isgrounded: 1
+  projectile: {fileID: 0}
+--- !u!114 &1049953481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1049953473}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6272d0f40634b4d97b5082e0221df852, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 0}
 --- !u!1 &1133972682
 GameObject:
   m_ObjectHideFlags: 0

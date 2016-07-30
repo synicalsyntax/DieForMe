@@ -8,6 +8,7 @@ Basic Player Platformer Script:
 #pragma strict
 
 var isgrounded: boolean = true; //variable for when player is grounded
+public var projectile : GameObject;
 
 function Start() {
     transform.position = Vector3(0, 2, 0); //original starting position, in x, y, z values
@@ -28,9 +29,14 @@ function FixedUpdate() {
         transform.position = Vector3(0, 2, 0); //return to original position
         transform.Rotate(0, 0, 0); //resets rotation, idk if player will be rotating
     }
+
+    if (Input.GetKeyDown(KeyCode.Space)) {
+        var newProjectile = Instantiate(projectile, transform.position, transform.rotation);
+        newProjectile.transform.position = Vector3.MoveTowards(transform.position, Vector3(transform.position.x + 10, transform.position.y, transform.position.z), 0);
+    }
 }
 
-function OnCollisionEnter(theCollision: Collision) {
+function OnCollisionEnter(theCollision : Collision) {
     if (theCollision.gameObject.name.StartsWith("Platform")) { //checks if colliding with object called Platform
         isgrounded = true; 
     } else {
@@ -41,6 +47,12 @@ function OnCollisionEnter(theCollision: Collision) {
     }
 }
 
-function OnCollisionExit(theCollision: Collision) {
+function OnCollisionStay(theCollision : Collision) {
+    if (theCollision.gameObject.name.StartsWith("Platform Moving")) { //while colliding with object name that starts with Platform Moving
+        transform.position = Vector3(GameObject.Find("Platform Moving").transform.position.x, transform.position.y, transform.position.z); //translate position to x position of Moving platform
+    }
+}
+
+function OnCollisionExit(theCollision : Collision) {
     isgrounded = false; //sets isgrounded to false once not colliding with an object
 }
