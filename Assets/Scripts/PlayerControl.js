@@ -19,17 +19,16 @@ function Start() {
 
 function FixedUpdate() {
     var moveHorizontal: float = Input.GetAxis("Horizontal");
-    var horizontalForce: Vector3 = new Vector3(moveHorizontal, 0, 0);
-    GetComponent.<Rigidbody>().AddForce(horizontalForce * 25); //20 value can be changed according to player speed
+    var horizontalForce: Vector2 = new Vector2(moveHorizontal, 0);
+    GetComponent.<Rigidbody2D>().AddForce(horizontalForce * 25); //20 value can be changed according to player speed
 
     if (isgrounded == true) {
         if (Input.GetKeyDown("up") || Input.GetKeyDown("w")) {
-            GetComponent.<Rigidbody>().AddForce(Vector3(0, 750, 0)); //might depend on mass of object
+            Jump();
         }
     }
     if (transform.position.y < -10) { //if player falls off a platform or something
-        transform.position = Vector3(0, 2, 0); //return to original position
-        transform.Rotate(0, 0, 0); //resets rotation, idk if player will be rotating
+        transform.position = Vector2(0, 2); //return to original position
     }
 }
 
@@ -40,8 +39,12 @@ function Update () {
     }
     else if (Input.GetKeyDown(KeyCode.X)){
         Instantiate(SpellX, transform.position, Quaternion.identity);
-
     }
+}
+
+function Jump() {
+    GetComponent.<Rigidbody2D>().AddForce(Vector2(0, Mathf.Clamp(600,550,650))); //might depend on mass of object
+    yield WaitForSeconds (0.1);
 }
 
 function ZSpell() {
@@ -49,24 +52,24 @@ function ZSpell() {
     yield WaitForSeconds (1);
 }
 
-function OnCollisionEnter(theCollision : Collision) {
+function OnCollisionEnter2D(theCollision : Collision2D) {
     if (theCollision.gameObject.name.StartsWith("Platform")) { //checks if colliding with object called Platform
         isgrounded = true; 
     } else {
         isgrounded = false;
     }
     if (theCollision.gameObject.name.StartsWith("Enemy")) { //if touching enemy object name Enemy
-        transform.position = Vector3(0, 2, 0); //reset position
+        transform.position = Vector2(0, 2); //reset position
     }
 }
 
-function OnCollisionStay(theCollision : Collision) {
+function OnCollisionStay2D(theCollision : Collision2D) {
     if (theCollision.gameObject.name.StartsWith("Platform Moving")) { //while colliding with object name that starts with Platform Moving
         transform.parent = GameObject.Find("Platform Moving").transform; //make Player child of Moving Platformer so its position will be offset accordingly
     }
 }
 
-function OnCollisionExit(theCollision : Collision) {
+function OnCollisionExit2D(theCollision : Collision2D) {
     isgrounded = false; //sets isgrounded to false once not colliding with an object
     transform.parent = null;
 }
