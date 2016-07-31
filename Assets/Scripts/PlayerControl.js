@@ -7,9 +7,11 @@ Basic Player Platformer Script:
 
 #pragma strict
 
-var isgrounded: boolean = true; //variable for when player is grounded
+var isgrounded : boolean = true; //variable for when player is grounded
 public var SpellZ : GameObject;
 public var SpellX : GameObject;
+var SpellZCooldown : float;
+var duration : float = 1;
 
 function Start() {
     transform.position = Vector3(0, 2, 0); //original starting position, in x, y, z values
@@ -25,20 +27,26 @@ function FixedUpdate() {
             GetComponent.<Rigidbody>().AddForce(Vector3(0, 750, 0)); //might depend on mass of object
         }
     }
-
     if (transform.position.y < -10) { //if player falls off a platform or something
         transform.position = Vector3(0, 2, 0); //return to original position
         transform.Rotate(0, 0, 0); //resets rotation, idk if player will be rotating
     }
+}
 
-
-    if (Input.GetKeyDown(KeyCode.Z)){
-        Instantiate(SpellZ, transform.position, Quaternion.identity);
+function Update () {
+    if (Input.GetKeyDown(KeyCode.Z) && Time.time > SpellZCooldown){
+        SpellZCooldown = Time.time + duration;
+        ZSpell();
     }
     else if (Input.GetKeyDown(KeyCode.X)){
         Instantiate(SpellX, transform.position, Quaternion.identity);
 
     }
+}
+
+function ZSpell() {
+    Instantiate(SpellZ, transform.position, Quaternion.identity);
+    yield WaitForSeconds (1);
 }
 
 function OnCollisionEnter(theCollision : Collision) {
