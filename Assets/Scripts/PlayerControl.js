@@ -8,8 +8,8 @@ Basic Player Platformer Script:
 #pragma strict
 
 var isgrounded: boolean = true; //variable for when player is grounded
-public var SpellA : GameObject;
-public var SpellS : GameObject;
+public var SpellZ : GameObject;
+public var SpellX : GameObject;
 
 function Start() {
     transform.position = Vector3(0, 2, 0); //original starting position, in x, y, z values
@@ -29,6 +29,15 @@ function FixedUpdate() {
     if (transform.position.y < -10) { //if player falls off a platform or something
         transform.position = Vector3(0, 2, 0); //return to original position
         transform.Rotate(0, 0, 0); //resets rotation, idk if player will be rotating
+    }
+
+
+    if (Input.GetKeyDown(KeyCode.Z)){
+        Instantiate(SpellZ, transform.position, Quaternion.identity);
+    }
+    else if (Input.GetKeyDown(KeyCode.X)){
+        Instantiate(SpellX, transform.position, Quaternion.identity);
+
     }
 }
 
