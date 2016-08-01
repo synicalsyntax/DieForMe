@@ -2531,6 +2531,11 @@ Prefab:
       propertyPath: m_FlipY
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 21255456, guid: 7bc95c899aad54343946c9dcfe6a6250, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e66cb66f8697b4d8b9399cb42d324ece,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bc95c899aad54343946c9dcfe6a6250, type: 2}
   m_IsPrefabParent: 0
@@ -8219,6 +8224,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 21255456, guid: 7bc95c899aad54343946c9dcfe6a6250, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e66cb66f8697b4d8b9399cb42d324ece,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7bc95c899aad54343946c9dcfe6a6250, type: 2}
   m_IsPrefabParent: 0
@@ -15737,7 +15747,7 @@ Prefab:
     - target: {fileID: 21277306, guid: b5362d7374e422a459ace93cff305f62, type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300004, guid: 5322396c562114efa9a1f903d7613142,
+      objectReference: {fileID: 21300004, guid: 0b4116349de824488853d13bbc7e7830,
         type: 3}
     - target: {fileID: 21277306, guid: b5362d7374e422a459ace93cff305f62, type: 2}
       propertyPath: m_Enabled
