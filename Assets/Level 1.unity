@@ -1509,8 +1509,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 196789245}
   - 212: {fileID: 196789244}
+  - 61: {fileID: 196789246}
   m_Layer: 0
-  m_Name: Lava (5)
+  m_Name: Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1553,12 +1554,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 196789243}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 58.86, y: -4.6, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 5.072, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 1151049179}
+  m_RootOrder: 5
+--- !u!61 &196789246
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 196789243}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.0625}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 0.375}
 --- !u!1 &210614179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2708,8 +2723,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 302228341}
   - 212: {fileID: 302228340}
+  - 61: {fileID: 302228342}
   m_Layer: 0
-  m_Name: Lava (2)
+  m_Name: Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2752,12 +2768,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 302228339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46.1, y: -4.6, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 2.5199997, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1151049179}
+  m_RootOrder: 2
+--- !u!61 &302228342
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 302228339}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.0625}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 0.375}
 --- !u!1 &303617762
 GameObject:
   m_ObjectHideFlags: 0
@@ -6290,8 +6320,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 838339516}
   - 212: {fileID: 838339515}
+  - 61: {fileID: 838339517}
   m_Layer: 0
-  m_Name: Lava (4)
+  m_Name: Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6334,12 +6365,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 838339514}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.47, y: -4.6, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 3.7940004, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 1151049179}
+  m_RootOrder: 4
+--- !u!61 &838339517
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 838339514}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.0625}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 0.375}
 --- !u!1 &841666823
 GameObject:
   m_ObjectHideFlags: 0
@@ -7266,8 +7311,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 924859475}
   - 212: {fileID: 924859474}
+  - 61: {fileID: 924859476}
   m_Layer: 0
-  m_Name: Lava (3)
+  m_Name: Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7310,12 +7356,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 924859473}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 65.1, y: -4.6, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 6.3199997, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1151049179}
+  m_RootOrder: 3
+--- !u!61 &924859476
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 924859473}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.0000009536743, y: -0.0625}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 0.375}
 --- !u!1 &930694312
 GameObject:
   m_ObjectHideFlags: 0
@@ -7553,8 +7613,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 984615177}
   - 212: {fileID: 984615176}
+  - 61: {fileID: 984615178}
   m_Layer: 0
-  m_Name: Lava (8)
+  m_Name: Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7597,12 +7658,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 984615175}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 80.83, y: -4.6, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 9.466001, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 1151049179}
+  m_RootOrder: 8
+--- !u!61 &984615178
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 984615175}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.0625}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 0.375}
 --- !u!1 &993428168
 GameObject:
   m_ObjectHideFlags: 0
@@ -7840,8 +7915,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1005037357}
   - 212: {fileID: 1005037356}
+  - 61: {fileID: 1005037358}
   m_Layer: 0
-  m_Name: Lava (7)
+  m_Name: Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7884,12 +7960,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1005037355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 71.4, y: -4.6, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 7.5800004, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1151049179}
+  m_RootOrder: 7
+--- !u!61 &1005037358
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1005037355}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.0625}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 0.375}
 --- !u!1 &1014915782
 GameObject:
   m_ObjectHideFlags: 0
@@ -9089,6 +9179,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84f69079bfe71e04184cacd0e20ddbba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1151049178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1151049179}
+  m_Layer: 0
+  m_Name: Lava
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1151049179
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1151049178}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 33.5, y: -4.6, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1538322959}
+  - {fileID: 1333469141}
+  - {fileID: 302228341}
+  - {fileID: 924859475}
+  - {fileID: 838339516}
+  - {fileID: 196789245}
+  - {fileID: 1740130251}
+  - {fileID: 1005037357}
+  - {fileID: 984615177}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
 --- !u!1 &1157246690
 GameObject:
   m_ObjectHideFlags: 0
@@ -10169,8 +10296,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1333469141}
   - 212: {fileID: 1333469140}
+  - 61: {fileID: 1333469142}
   m_Layer: 0
-  m_Name: Lava (1)
+  m_Name: Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10213,12 +10341,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1333469139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.74, y: -4.6, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 1.2480004, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1151049179}
+  m_RootOrder: 1
+--- !u!61 &1333469142
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1333469139}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.00000047683716, y: -0.0625}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 0.375}
 --- !u!1 &1351131092
 GameObject:
   m_ObjectHideFlags: 0
@@ -11659,6 +11801,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1538322959}
   - 212: {fileID: 1538322958}
+  - 61: {fileID: 1538322960}
   m_Layer: 0
   m_Name: Lava
   m_TagString: Untagged
@@ -11703,12 +11846,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1538322957}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.5, y: -4.6, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1151049179}
+  m_RootOrder: 0
+--- !u!61 &1538322960
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1538322957}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -0.0625}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 0.375}
 --- !u!1 &1564361361
 GameObject:
   m_ObjectHideFlags: 0
@@ -12437,8 +12594,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 1740130251}
   - 212: {fileID: 1740130250}
+  - 61: {fileID: 1740130252}
   m_Layer: 0
-  m_Name: Lava (6)
+  m_Name: Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12481,12 +12639,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1740130249}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 77.8, y: -4.6, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalPosition: {x: 8.860001, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1151049179}
+  m_RootOrder: 6
+--- !u!61 &1740130252
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1740130249}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -0.0000009536743, y: -0.0625}
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 0.375}
 --- !u!1 &1742122186
 GameObject:
   m_ObjectHideFlags: 0

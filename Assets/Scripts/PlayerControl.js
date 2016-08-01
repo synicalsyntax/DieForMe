@@ -19,7 +19,7 @@ public var spellSpeed = 5;
 var direction = -1;
 
 function Start() {
-    transform.position = Vector3(0, 2, 0); //original starting position, in x, y, z values
+    transform.position = Vector2(0, 2); //original starting position, in x, y, z values
 }
 
 function FixedUpdate() {
@@ -87,6 +87,9 @@ function OnCollisionEnter2D(theCollision : Collision2D) {
         isgrounded = false;
     }
     if (theCollision.gameObject.name.StartsWith("Enemy")) { //if touching enemy object name Enemy
+        transform.position = Vector2(0, 2); //reset position
+    }
+    if (theCollision.gameObject.name.StartsWith("Lava")) { //if touching enemy object name Enemy
         transform.position = Vector2(0, 2); //reset position
     }
 }
