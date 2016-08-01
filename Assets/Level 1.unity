@@ -701,7 +701,9 @@ MonoBehaviour:
   SpellZ: {fileID: 5037060, guid: b5362d7374e422a459ace93cff305f62, type: 2}
   SpellX: {fileID: 0}
   SpellZCooldown: 0
+  SpellXCooldown: 0
   duration: 1
+  spellSpeed: 10
   direction: -1
 --- !u!61 &1282213166
 BoxCollider2D:
@@ -1204,6 +1206,10 @@ Prefab:
     - target: {fileID: 425248, guid: b5362d7374e422a459ace93cff305f62, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 144274, guid: b5362d7374e422a459ace93cff305f62, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5362d7374e422a459ace93cff305f62, type: 2}
