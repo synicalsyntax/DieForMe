@@ -15,10 +15,12 @@ var duration : float = 1;
 public var spellSpeed : int;
 static var deathReset : boolean;
 var direction : int = 1;
-var spellDirection :int = -1;
+var spellDirection :int = 1;
 
 function Start() {
     transform.position = Vector2(-1, 2); //original starting position, in x, y, z values
+    direction = -1;
+    spellDirection = 1;
     FlipLeft();
 }
 
