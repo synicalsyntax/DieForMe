@@ -65,7 +65,7 @@ function OnCollisionEnter2D(theCollision : Collision2D) {
 
 function OnCollisionStay2D(theCollision : Collision2D) {
     if (theCollision.gameObject.name.StartsWith("Platform Moving")) { //while colliding with object name that starts with Platform Moving
-        transform.parent = GameObject.Find("Platform Moving").transform; //make Player child of Moving Platformer so its position will be offset accordingly
+        transform.parent = theCollision.gameObject.transform; //make Player child of Moving Platformer so its position will be offset accordingly
     }
 }
 

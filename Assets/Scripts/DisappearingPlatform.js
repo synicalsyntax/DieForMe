@@ -1,19 +1,8 @@
 ﻿#pragma strict
-private var playerObject : GameObject;
-
-function Start () {
-    playerObject = GameObject.FindWithTag("Player");
-
+function Start(){
+    gameObject.SetActive(true);
 }
-
-function Update () {
-
-}
-
-
-function OnCollisionExit2D(theCollision : Collision2D) {
-    if (theCollision.gameObject.name.StartsWith("Player")){
-        gameObject.SetActive(false);
-
-    }
+function OnCollisionStay2D(theCollision : Collision2D) {
+    yield WaitForSeconds(1);
+    gameObject.SetActive(false);
 }
