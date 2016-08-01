@@ -15565,7 +15565,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 144274, guid: b5362d7374e422a459ace93cff305f62, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5362d7374e422a459ace93cff305f62, type: 2}
