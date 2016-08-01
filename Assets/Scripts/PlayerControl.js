@@ -132,7 +132,6 @@ function FlipLeft() {
          SpellZ.transform.localScale=zScale;
          SpellX.transform.localScale=xScale;
      }
-    
  }
 
 function FlipRight() {
@@ -154,4 +153,5 @@ function FlipRight() {
         xScale.x*=-1;
         SpellZ.transform.localScale=zScale;
         SpellX.transform.localScale=xScale;
-    }}
+    }
+}
