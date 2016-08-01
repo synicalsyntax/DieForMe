@@ -20,7 +20,7 @@ var spellDirection :int = -1;
 
 function Start() {
     transform.position = Vector2(-1, 2); //original starting position, in x, y, z values
-    FlipRight();
+    FlipLeft();
 }
 
 function FixedUpdate() {
