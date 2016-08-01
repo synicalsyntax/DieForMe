@@ -11,7 +11,9 @@ var isgrounded : boolean = true; //variable for when player is grounded
 public var SpellZ : Rigidbody2D;
 public var SpellX : Rigidbody2D;
 var SpellZCooldown : float;
+var SpellXCooldown : float;
 var duration : float = 1;
+public var spellSpeed = 5;
 
 var direction = -1;
 
@@ -46,8 +48,10 @@ function Update () {
         SpellZCooldown = Time.time + duration;
         ZSpell();
     }
-    else if (Input.GetKeyDown(KeyCode.X)){
-        Instantiate(SpellX, transform.position, Quaternion.identity);
+    else if (Input.GetKeyDown(KeyCode.X)&& Time.time > SpellXCooldown){
+        SpellXCooldown = Time.time + duration;
+        XSpell();
+
     }
 }
 
@@ -58,7 +62,14 @@ function Jump() {
 
 function ZSpell() {
     var Spell =   Instantiate(SpellZ, transform.position, Quaternion.identity);
-    Spell.velocity.x = direction * 5;
+    Spell.velocity.x = direction * spellSpeed;
+
+
+    yield WaitForSeconds (1);
+}
+function XSpell() {
+    var Spell =   Instantiate(SpellX, transform.position, Quaternion.identity);
+    Spell.velocity.x = direction * spellSpeed;
 
 
     yield WaitForSeconds (1);

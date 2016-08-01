@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-public var speed : int = 5;
+//public var speed : int = 5;
 //public var startingPos : int;
 
 
