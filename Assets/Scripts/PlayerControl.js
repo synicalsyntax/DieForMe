@@ -16,7 +16,7 @@ var duration : float = 1;
 public var spellSpeed : int;
 static var deathReset : boolean;
 var direction : int = 1;
-var spellDirection :int = 1;
+var spellDirection :int = -1;
 
 function Start() {
     transform.position = Vector2(-1, 2); //original starting position, in x, y, z values
@@ -112,9 +112,14 @@ function FlipLeft() {
      xScale = SpellX.transform.localScale;
      if(direction != -1){
          direction=-1;
-         spellDirection=-1;
          theScale.x*=-1;
          transform.localScale = theScale;
+        
+     }
+     if(spellDirection!=-1){
+         spellDirection=-1; 
+         zScale.x*=-1;
+         xScale.x*=-1;
          SpellZ.transform.localScale=zScale;
          SpellX.transform.localScale=xScale;
      }
@@ -130,12 +135,14 @@ function FlipRight() {
     xScale = SpellX.transform.localScale;
     if(direction != 1){
         direction=1;
+        theScale.x*=-1;
+        transform.localScale = theScale;
+       
+    }
+    if(spellDirection!=1) {
         spellDirection=1;
         zScale.x*=-1;
         xScale.x*=-1;
-        theScale.x*=-1;
-        transform.localScale = theScale;
         SpellZ.transform.localScale=zScale;
         SpellX.transform.localScale=xScale;
-    }
-}
+    }}
