@@ -3939,8 +3939,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isgrounded: 1
-  SpellZ: {fileID: 0}
-  SpellX: {fileID: 0}
+  SpellZ: {fileID: 5037060, guid: b5362d7374e422a459ace93cff305f62, type: 2}
+  SpellX: {fileID: 5094896, guid: 3e84fba8c755cd54d9034c6c166dcd30, type: 2}
   SpellZCooldown: 0
   SpellXCooldown: 0
   duration: 1
@@ -14853,7 +14853,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 425248, guid: b5362d7374e422a459ace93cff305f62, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 144274, guid: b5362d7374e422a459ace93cff305f62, type: 2}
       propertyPath: m_IsActive

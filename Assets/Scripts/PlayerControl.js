@@ -27,10 +27,12 @@ function FixedUpdate() {
 
     if (moveHorizontal < 0){
         FlipLeft();
+       
     }
         
     else if (moveHorizontal >0){
         FlipRight();
+
     }
 
     var horizontalForce: Vector2 = new Vector2(moveHorizontal, 0);
@@ -73,7 +75,7 @@ function ZSpell() {
 function XSpell() {
     var Spell =   Instantiate(SpellX, transform.position, Quaternion.identity);
     Spell.velocity.x = direction * spellSpeed;
-
+    
 
     yield WaitForSeconds (1);
 }
@@ -102,18 +104,34 @@ function OnCollisionExit2D(theCollision : Collision2D) {
 function FlipLeft(){
      var theScale : Vector3;
      theScale = transform.localScale;
+     var zScale : Vector3;
+     zScale = SpellZ.transform.localScale;
+     var xScale : Vector3;
+     xScale = SpellX.transform.localScale;
      if(direction != -1){
          direction = -1;
-          theScale.x*=-1;
-          transform.localScale = theScale;
+         zScale.x*=-1;
+         xScale.x*=-1;
+         theScale.x*=-1;
+         transform.localScale = theScale;
+         SpellZ.transform.localScale=zScale;
+         SpellX.transform.localScale=xScale;
       }
  }
-    function FlipRight(){
-        var theScale : Vector3;
-        theScale = transform.localScale;
-        if(direction != 1){
-            direction = 1;
-            theScale.x*=-1;
-            transform.localScale = theScale;
-        }
+function FlipRight(){
+    var theScale : Vector3;
+    theScale = transform.localScale;
+    var zScale : Vector3;
+    zScale = SpellZ.transform.localScale;
+    var xScale : Vector3;
+    xScale = SpellX.transform.localScale;
+    if(direction != 1){
+        direction = 1;
+        zScale.x*=-1;
+        xScale.x*=-1;
+        theScale.x*=-1;
+        transform.localScale = theScale;
+        SpellZ.transform.localScale=zScale;
+        SpellX.transform.localScale=xScale;
     }
+}
