@@ -19,7 +19,7 @@ public var spellSpeed = 5;
 var direction = -1;
 
 function Start() {
-    transform.position = Vector2(0, 2); //original starting position, in x, y, z values
+    transform.position = Vector2(-1, 2); //original starting position, in x, y, z values
 }
 
 function FixedUpdate() {
@@ -44,7 +44,7 @@ function FixedUpdate() {
         }
     }
     if (transform.position.y < -10) { //if player falls off a platform or something
-        transform.position = Vector2(0, 2); //return to original position
+        transform.position = Vector2(-1, 2); //return to original position
     }
 }
 
@@ -68,15 +68,14 @@ function Jump() {
 function ZSpell() {
     var Spell =   Instantiate(SpellZ, transform.position, Quaternion.identity);
     Spell.velocity.x = direction * spellSpeed;
-
-
+    Spell.GetComponent.<Renderer>().enabled = true;
+    Spell.velocity.x = direction * spellSpeed;
     yield WaitForSeconds (1);
 }
 function XSpell() {
     var Spell =   Instantiate(SpellX, transform.position, Quaternion.identity);
+    Spell.GetComponent.<Renderer>().enabled = true;
     Spell.velocity.x = direction * spellSpeed;
-    
-
     yield WaitForSeconds (1);
 }
 
@@ -87,10 +86,10 @@ function OnCollisionEnter2D(theCollision : Collision2D) {
         isgrounded = false;
     }
     if (theCollision.gameObject.name.StartsWith("Enemy")) { //if touching enemy object name Enemy
-        transform.position = Vector2(0, 2); //reset position
+        transform.position = Vector2(-1, 2); //reset position
     }
     if (theCollision.gameObject.name.StartsWith("Lava")) { //if touching enemy object name Enemy
-        transform.position = Vector2(0, 2); //reset position
+        transform.position = Vector2(-1, 2); //reset position
     }
 }
 
