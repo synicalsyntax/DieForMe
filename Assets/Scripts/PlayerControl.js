@@ -15,6 +15,7 @@ var SpellXCooldown : float;
 var duration : float = 1;
 public var spellSpeed = 5;
 
+
 var direction = -1;
 
 function Start() {
@@ -24,10 +25,12 @@ function Start() {
 function FixedUpdate() {
     var moveHorizontal: float = Input.GetAxis("Horizontal");
 
-    if (moveHorizontal < 0)
-        direction = -1;
+    if (moveHorizontal < 0){
+        FlipLeft();
+    }
+        
     else if (moveHorizontal >0){
-        direction = 1;
+        FlipRight();
     }
 
     var horizontalForce: Vector2 = new Vector2(moveHorizontal, 0);
@@ -96,3 +99,21 @@ function OnCollisionExit2D(theCollision : Collision2D) {
     isgrounded = false; //sets isgrounded to false once not colliding with an object
     transform.parent = null;
 }
+function FlipLeft(){
+     var theScale : Vector3;
+     theScale = transform.localScale;
+     if(direction != -1){
+         direction = -1;
+          theScale.x*=-1;
+          transform.localScale = theScale;
+      }
+ }
+    function FlipRight(){
+        var theScale : Vector3;
+        theScale = transform.localScale;
+        if(direction != 1){
+            direction = 1;
+            theScale.x*=-1;
+            transform.localScale = theScale;
+        }
+    }
