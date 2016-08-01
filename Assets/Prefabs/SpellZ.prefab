@@ -8,9 +8,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 425248}
-  - 212: {fileID: 21260264}
   - 50: {fileID: 5037060}
   - 114: {fileID: 11477772}
+  - 212: {fileID: 21277306}
   m_Layer: 0
   m_Name: SpellZ
   m_TagString: Untagged
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b42b62e2d39b9546ac37e43ab7d5f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!212 &21260264
+--- !u!212 &21277306
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: 15bc60ba6b82f4f03a825a1427ccda5f, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!1001 &100100000
