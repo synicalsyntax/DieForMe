@@ -1,13 +1,16 @@
 ﻿#pragma strict
 
 public var speed : int = 5;
-public var startingPos : int;
+//public var startingPos : int;
+
+
+
 function Start () {
 
-    var r2d = GetComponent.<Rigidbody2D>();
-    r2d.velocity.x = speed;
+    //var r2d = GetComponent.<Rigidbody2D>();
+  //  r2d.velocity.x = speed;
 
-    startingPos = transform.position.x;
+    //startingPos = transform.position.x;
 
 }
 

@@ -8,10 +8,12 @@ Basic Player Platformer Script:
 #pragma strict
 
 var isgrounded : boolean = true; //variable for when player is grounded
-public var SpellZ : GameObject;
-public var SpellX : GameObject;
+public var SpellZ : Rigidbody2D;
+public var SpellX : Rigidbody2D;
 var SpellZCooldown : float;
 var duration : float = 1;
+
+var direction = -1;
 
 function Start() {
     transform.position = Vector3(0, 2, 0); //original starting position, in x, y, z values
@@ -19,6 +21,13 @@ function Start() {
 
 function FixedUpdate() {
     var moveHorizontal: float = Input.GetAxis("Horizontal");
+
+    if (moveHorizontal < 0)
+        direction = -1;
+    else if (moveHorizontal >0){
+        direction = 1;
+    }
+
     var horizontalForce: Vector2 = new Vector2(moveHorizontal, 0);
     GetComponent.<Rigidbody2D>().AddForce(horizontalForce * 25); //20 value can be changed according to player speed
 
@@ -48,7 +57,10 @@ function Jump() {
 }
 
 function ZSpell() {
-    Instantiate(SpellZ, transform.position, Quaternion.identity);
+    var Spell =   Instantiate(SpellZ, transform.position, Quaternion.identity);
+    Spell.velocity.x = direction * 5;
+
+
     yield WaitForSeconds (1);
 }
 
