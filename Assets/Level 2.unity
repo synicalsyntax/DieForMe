@@ -4071,6 +4071,7 @@ GameObject:
   - 4: {fileID: 676583300}
   - 212: {fileID: 676583302}
   - 61: {fileID: 676583301}
+  - 114: {fileID: 676583303}
   m_Layer: 0
   m_Name: Floating Platform (Crumbling?) (2)
   m_TagString: Platform
@@ -4100,7 +4101,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -4135,6 +4136,17 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &676583303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 676583299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84f69079bfe71e04184cacd0e20ddbba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &679028065
 GameObject:
   m_ObjectHideFlags: 0
@@ -6443,6 +6455,7 @@ GameObject:
   - 4: {fileID: 1061713719}
   - 212: {fileID: 1061713721}
   - 61: {fileID: 1061713720}
+  - 114: {fileID: 1061713722}
   m_Layer: 0
   m_Name: Floating Platform (Crumbling?) (1)
   m_TagString: Platform
@@ -6472,7 +6485,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -6507,6 +6520,17 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1061713722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1061713718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84f69079bfe71e04184cacd0e20ddbba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1071882579
 GameObject:
   m_ObjectHideFlags: 0
@@ -7787,6 +7811,7 @@ GameObject:
   - 4: {fileID: 1304362601}
   - 212: {fileID: 1304362603}
   - 61: {fileID: 1304362602}
+  - 114: {fileID: 1304362604}
   m_Layer: 0
   m_Name: Floating Platform (Crumbling?) (3)
   m_TagString: Platform
@@ -7816,7 +7841,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -7851,6 +7876,17 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1304362604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1304362600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84f69079bfe71e04184cacd0e20ddbba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1321935548
 GameObject:
   m_ObjectHideFlags: 0
@@ -9197,6 +9233,7 @@ GameObject:
   - 4: {fileID: 1503774960}
   - 212: {fileID: 1503774962}
   - 61: {fileID: 1503774961}
+  - 114: {fileID: 1503774963}
   m_Layer: 0
   m_Name: Floating Platform (Crumbling?) (4)
   m_TagString: Platform
@@ -9226,7 +9263,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
@@ -9261,6 +9298,17 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1503774963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1503774959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84f69079bfe71e04184cacd0e20ddbba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1507409152
 GameObject:
   m_ObjectHideFlags: 0
