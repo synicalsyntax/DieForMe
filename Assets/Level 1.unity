@@ -4223,6 +4223,7 @@ MonoBehaviour:
   duration: 1
   spellSpeed: 10
   direction: -1
+  spellDirection: 1
 --- !u!114 &494472676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4234,7 +4235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f067d85fa03e754b9497ef22e4f57a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
 --- !u!1 &498342550
 GameObject:
   m_ObjectHideFlags: 0
@@ -9475,7 +9475,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!1 &1140376383 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 185272, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
@@ -9528,7 +9528,7 @@ Transform:
   - {fileID: 984615177}
   - {fileID: 81067944}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
 --- !u!1 &1157246690
 GameObject:
   m_ObjectHideFlags: 0
