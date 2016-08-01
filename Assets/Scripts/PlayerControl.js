@@ -10,8 +10,7 @@ Basic Player Platformer Script:
 var isgrounded : boolean = true; //variable for when player is grounded
 public var SpellZ : Rigidbody2D;
 public var SpellX : Rigidbody2D;
-var SpellZCooldown : float;
-var SpellXCooldown : float;
+var SpellCooldown : float;
 var duration : float = 1;
 public var spellSpeed : int;
 static var deathReset : boolean;
@@ -47,12 +46,12 @@ function FixedUpdate() {
 }
 
 function Update () {
-    if (Input.GetKeyDown(KeyCode.Z) && Time.time > SpellZCooldown){
-        SpellZCooldown = Time.time + duration;
+    if (Input.GetKeyDown(KeyCode.Z) && Time.time > SpellCooldown){
+        SpellCooldown = Time.time + duration;
         ZSpell();
     }
-    else if (Input.GetKeyDown(KeyCode.X)&& Time.time > SpellXCooldown){
-        SpellXCooldown = Time.time + duration;
+    else if (Input.GetKeyDown(KeyCode.X)&& Time.time > SpellCooldown){
+        SpellCooldown = Time.time + duration;
         XSpell();
 
     }
@@ -64,7 +63,7 @@ function Jump() {
 }
 
 function ZSpell() {
-    var Spell =   Instantiate(SpellZ, transform.position, Quaternion.identity);
+    var Spell = Instantiate(SpellZ, transform.position, Quaternion.identity);
     Spell.velocity.x = direction * spellSpeed;
     Spell.GetComponent.<Renderer>().enabled = true;
     Spell.velocity.x = direction * spellSpeed;
@@ -72,7 +71,7 @@ function ZSpell() {
 }
 
 function XSpell() {
-    var Spell =   Instantiate(SpellX, transform.position, Quaternion.identity);
+    var Spell = Instantiate(SpellX, transform.position, Quaternion.identity);
     Spell.GetComponent.<Renderer>().enabled = true;
     Spell.velocity.x = direction * spellSpeed;
     yield WaitForSeconds (1);
