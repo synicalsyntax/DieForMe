@@ -41,10 +41,6 @@ function FixedUpdate() {
             Jump();
         }
     }
-
-    if (transform.position.y < -10) { //if player falls off a platform or something
-        transform.position = Vector2(-1, 2); //return to original position
-    }
 }
 
 function Update () {
@@ -85,20 +81,18 @@ function OnCollisionEnter2D(theCollision : Collision2D) {
     } else {
         isgrounded = false;
     }
-    //if (theCollision.gameObject.name.StartsWith("Enemy")) { //if touching enemy object name Enemy
-      //  transform.position = Vector2(-1, 2); //reset position
-    //    yield WaitForSeconds(1);
-  //  }
     if (theCollision.gameObject.name.StartsWith("Lava")) { //if touching enemy object name Enemy
-    yield WaitForSeconds(.15);
- transform.position = Vector2(-1, 2); //reset position
-
+         yield WaitForSeconds(0.05);
+         transform.position = Vector2(-1, 2); //reset position
     }
-    if (theCollision.gameObject.name.StartsWith("Dementor")){
-    yield WaitForSeconds(.15);
-      transform.position = Vector2(-1, 2); //reset position
-         
-       }
+    if (theCollision.gameObject.name.StartsWith("Dementor")) {
+         yield WaitForSeconds(0.05);
+         transform.position = Vector2(-1, 2); //reset position   
+    }
+    if (theCollision.gameObject.name.StartsWith("Plant")) {
+         yield WaitForSeconds(0.05);
+         transform.position = Vector2(-1, 2); //reset position   
+    }
 }
 
 function OnCollisionStay2D(theCollision : Collision2D) {
