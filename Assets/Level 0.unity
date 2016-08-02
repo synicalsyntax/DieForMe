@@ -195,7 +195,7 @@ MonoBehaviour:
   startLine: 0
   endLine: 0
   theTextBox: {fileID: 0}
-  destroyWhenActivated: 0
+  destroyWhenActivated: 1
 --- !u!4 &84962418
 Transform:
   m_ObjectHideFlags: 0
@@ -208,13 +208,73 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!61 &84962419
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 84962416}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!1 &143762234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 143762236}
+  - 114: {fileID: 143762235}
+  - 61: {fileID: 143762237}
+  m_Layer: 0
+  m_Name: IntroTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &143762235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143762234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d4f3812dbf94241941a35da199a85d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theText: {fileID: 4900000, guid: 53c3451b3a1336146a838ff2b4d6e633, type: 3}
+  startLine: 0
+  endLine: 1
+  theTextBox: {fileID: 0}
+  destroyWhenActivated: 1
+--- !u!4 &143762236
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143762234}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+--- !u!61 &143762237
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 143762234}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -290,7 +350,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: fdsjalfjdsaklf;jdsaklf;jkslaf;
+  m_Text: 
 --- !u!222 &830333599
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -516,7 +576,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!61 &1626337554
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -863,7 +923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textBox: {fileID: 2018090009}
   theText: {fileID: 830333598}
-  textFile: {fileID: 4900000, guid: 53c3451b3a1336146a838ff2b4d6e633, type: 3}
+  textFile: {fileID: 0}
   textLines: []
   currentLine: 0
   endAtLine: 0

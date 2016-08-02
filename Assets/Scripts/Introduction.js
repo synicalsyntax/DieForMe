@@ -17,6 +17,10 @@ public var stopPlayerMovement : boolean = false;
 
 function Start () {
     player = FindObjectOfType(PlayerControl);
+    if(textFile ==null){
+        DisableTextBox();
+    }
+
     if(isActive){
         EnableTextBox();
     }
@@ -33,6 +37,7 @@ function Update () {
     if(!isActive){
         return;
     }
+
     if(currentLine>endAtLine){
         DisableTextBox();
     }
