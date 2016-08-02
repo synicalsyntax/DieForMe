@@ -45,9 +45,9 @@ function FixedUpdate() {
 }
 
 function Update () {
-    if(!canMove){
-        return;
-    }
+    //if(!canMove){
+        //return;
+    //}
     if (Input.GetKeyDown(KeyCode.Z) && Time.time > SpellCooldown){
         SpellCooldown = Time.time + duration;
         ZSpell();
@@ -127,16 +127,10 @@ function OnCollisionStay2D(theCollision : Collision2D) {
         isgrounded = true; 
     } 
 }
-
-    function OnCollisionExit2D(theCollision : Collision2D) {
-        if (theCollision.gameObject.name.StartsWith("Platform")) { //checks if colliding with object called Platform
-            isgrounded = false; 
-        } 
-    //isgrounded = false; //sets isgrounded to false once not colliding with an object
-   
-    
-    
-    transform.parent = null;
+function OnCollisionExit2D(theCollision : Collision2D) {
+	if (theCollision.gameObject.name.StartsWith("Platform")) { //checks if colliding with object called Platform
+        isgrounded = false; 
+    } 
 }
 
 function FlipLeft() {

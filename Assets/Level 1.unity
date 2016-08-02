@@ -4184,6 +4184,7 @@ MonoBehaviour:
   spellSpeed: 10
   direction: -1
   spellDirection: 1
+  canMove: 0
 --- !u!114 &494472676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13551,7 +13552,7 @@ GameObject:
   - 54: {fileID: 1706769958}
   - 114: {fileID: 1706769957}
   m_Layer: 0
-  m_Name: yerTest
+  m_Name: PlayerTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13590,6 +13591,7 @@ MonoBehaviour:
   spellSpeed: 0
   direction: 1
   spellDirection: 1
+  canMove: 0
 --- !u!54 &1706769958
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15734,7 +15736,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 147514, guid: a3705e9aa06104bbfaafd83b5d642d0e, type: 2}
       propertyPath: m_Name
-      value: yerTest
+      value: PlayerTest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3705e9aa06104bbfaafd83b5d642d0e, type: 2}
