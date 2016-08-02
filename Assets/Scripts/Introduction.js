@@ -13,14 +13,21 @@ public var player : PlayerController;
 
 
 function Start () {
+    //player = FindObjectOfType(PlayerControl);
     var temp : String = textFile.text;
     textLines = temp.Split("\n"[0]);
-    //var yay : String = "Hello, hey";
-    
-    //print(yay.Split(","[0]));
-
+    if(endAtLine == 0){
+        endAtLine = textLines.Length - 1;
+    }
 }
 
 function Update () {
-
+    if(currentLine>endAtLine){
+        textBox.SetActive(false);
+    }
+    theText.text = textLines[currentLine];
+    if(Input.GetKeyDown(KeyCode.Return)){
+        currentLine +=1;
+    }
+   
 }
