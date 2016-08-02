@@ -13,6 +13,7 @@ GameObject:
   - 61: {fileID: 6124486}
   - 50: {fileID: 5085056}
   - 114: {fileID: 11422504}
+  - 61: {fileID: 6182882}
   m_Layer: 0
   m_Name: AurorSpell
   m_TagString: Untagged
@@ -64,6 +65,20 @@ BoxCollider2D:
   m_Offset: {x: 0.011547143, y: -0.00769729}
   serializedVersion: 2
   m_Size: {x: 0.50690705, y: 0.4406677}
+--- !u!61 &6182882
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193412}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.53, y: 0.61}
 --- !u!95 &9538032
 Animator:
   serializedVersion: 3

@@ -14,8 +14,7 @@ var SpellCooldown : float;
 var duration : float = 1;
 public var spellSpeed : int;
 var direction : int = 1;
-var spellDirection :int = 1;
-static var dead;
+var spellDirection : int = 1;
 
 function Start() {
     transform.position = Vector2(-1, 2); //original starting position, in x, y, z values
@@ -175,6 +174,5 @@ function deathReset() {
     for (var reappear : GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
           reappear.GetComponent.<SpriteRenderer>().enabled = true;
           reappear.GetComponent.<Collider2D>().enabled = true;
-          dead = true;
     }
 }
