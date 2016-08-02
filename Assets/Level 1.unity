@@ -4114,8 +4114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isgrounded: 1
-  SpellZ: {fileID: 5093312, guid: 0ca78eaa39b14401cb9574495e45202a, type: 2}
-  SpellX: {fileID: 5094896, guid: 3e84fba8c755cd54d9034c6c166dcd30, type: 2}
+  SpellZ: {fileID: 5043958, guid: 0ca78eaa39b14401cb9574495e45202a, type: 2}
+  SpellX: {fileID: 5055306, guid: 4573cb49ca3d8874f806d4fee4f15ff2, type: 2}
   SpellCooldown: 0
   duration: 1
   spellSpeed: 10
