@@ -18,10 +18,11 @@ function PingPong(t: float, minLength: float, maxLength: float) {
     return pos;
 }
 
-function OnTriggerEnter2D(collider2D : Collider2D){
-    if (collider2D.name.StartsWith("SpellZ")){
-        GetComponent.<SpriteRenderer>().enabled = false;
-        GetComponent.<Collider2D>().enabled = false;
-        Destroy(collider2D.gameObject);
+    function OnTriggerEnter2D(collider2D : Collider2D){
+        if (collider2D.name.StartsWith("SpellX")){
+            GetComponent.<SpriteRenderer>().enabled = false;
+            GetComponent.<Collider2D>().enabled = false;
+            Destroy(collider2D.gameObject);
+        }
     }
-}
+
