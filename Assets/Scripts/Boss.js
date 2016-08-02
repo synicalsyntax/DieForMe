@@ -51,7 +51,7 @@ function Spell(){
 
         var v = new Vector2((player.transform.position.x - transform.position.x),(player.transform.position.y-transform.position.y)).normalized;
         // v.Normalize();
-        Debug.Log(v);
+       // Debug.Log(v);
         Spell.velocity.x= v.x* spellSpeed;
         Spell.velocity.y= v.y* spellSpeed;
 

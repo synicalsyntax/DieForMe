@@ -106,11 +106,7 @@ function OnCollisionEnter2D(theCollision : Collision2D) {
          transform.position = Vector2(-1, 2); //reset position  
          deathReset();
     }
-    if (theCollision.gameObject.name.StartsWith("AurorSpell")) {
-        yield WaitForSeconds(0.05);
-        transform.position = Vector2(-1, 2); //reset position  
-        deathReset();
-    }
+   
     if (theCollision.gameObject.name.StartsWith("Auror")) {
         yield WaitForSeconds(0.05);
         transform.position = Vector2(-1, 2); //reset position  
@@ -134,6 +130,16 @@ function OnCollisionExit2D(theCollision : Collision2D) {
         transform.parent = null;
     } 
 }
+
+    function OnTriggerEnter2D(collider2D : Collider2D){
+        if (collider2D.name.StartsWith("AurorSpell")){
+            yield WaitForSeconds(0.05);
+            transform.position = Vector2(-1, 2); //reset position  
+            deathReset();
+        }
+    }
+
+
 
 function FlipLeft() {
      var theScale : Vector3;
