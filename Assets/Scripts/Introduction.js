@@ -10,24 +10,41 @@ public var textLines : String[];
 public var currentLine : float;
 public var endAtLine : float;
 public var player : PlayerController;
+public var isActive : boolean = false;
+public var stopPlayerMovement : boolean = false;
+
 
 
 function Start () {
     //player = FindObjectOfType(PlayerControl);
+    if(isActive){
+        EnableTextBox();
+    }
+    else if(!isActive){
+        DisableTextBox();
+    }
     var temp : String = textFile.text;
     textLines = temp.Split("\n"[0]);
-    if(endAtLine == 0){
-        endAtLine = textLines.Length - 1;
-    }
+    endAtLine = 1;
+    
 }
 
 function Update () {
+    if(!isActive){
+        return;
+    }
     if(currentLine>endAtLine){
-        textBox.SetActive(false);
+        DisableTextBox();
     }
     theText.text = textLines[currentLine];
     if(Input.GetKeyDown(KeyCode.Return)){
         currentLine +=1;
     }
    
+}
+function EnableTextBox(){
+    textBox.SetActive(true);
+}
+function DisableTextBox(){
+    textBox.SetActive(false);
 }
