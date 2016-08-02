@@ -14,7 +14,7 @@ var SpellCooldown : float;
 var duration : float = 1;
 public var spellSpeed : int;
 var direction : int = 1;
-var spellDirection :int = 1;
+var spellDirection : int = 1;
 
 function Start() {
     transform.position = Vector2(-1, 2); //original starting position, in x, y, z values
@@ -99,6 +99,17 @@ function OnCollisionEnter2D(theCollision : Collision2D) {
          transform.position = Vector2(-1, 2); //reset position  
          deathReset();
     }
+    if (theCollision.gameObject.name.StartsWith("AurorSpell")) {
+        yield WaitForSeconds(0.05);
+        transform.position = Vector2(-1, 2); //reset position  
+        deathReset();
+    }
+    if (theCollision.gameObject.name.StartsWith("Auror")) {
+        yield WaitForSeconds(0.05);
+        transform.position = Vector2(-1, 2); //reset position  
+        deathReset();
+    }
+    
 }
 
 function OnCollisionStay2D(theCollision : Collision2D) {

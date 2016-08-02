@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 124296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.9959774, y: 9.731517, z: 0}
-  m_LocalScale: {x: -5, y: 5, z: 5}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -74,6 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b42b62e2d39b9546ac37e43ab7d5f85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collide: {fileID: 21300006, guid: 0b4116349de824488853d13bbc7e7830, type: 3}
 --- !u!212 &21240954
 SpriteRenderer:
   m_ObjectHideFlags: 1
