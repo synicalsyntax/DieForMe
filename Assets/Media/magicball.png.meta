@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f77289a42d1004b3da5f58c91126eba6
-timeCreated: 1470112993
+timeCreated: 1470170804
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -55,46 +55,47 @@ TextureImporter:
     - name: magicball_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 39
-        width: 53
-        height: 61
+        x: 8
+        y: 49
+        width: 48
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 26.5, y: -6.5}
-        - {x: 26.5, y: 12.5}
-        - {x: -0.5, y: 22.5}
-        - {x: -19.5, y: 22.5}
-        - {x: -24.5, y: 9.5}
-        - {x: -24.5, y: -5.5}
-        - {x: -23.5, y: -6.5}
-        - {x: -20.5, y: -5.5}
-        - {x: -19.5, y: -18.5}
-        - {x: -16.5, y: -21.5}
-        - {x: -7.5, y: -17.5}
-        - {x: -7.5, y: -13.5}
-        - {x: -7.5, y: -21.5}
-        - {x: 14.5, y: -21.5}
+      - - {x: -5, y: -21}
+        - {x: 13, y: -21}
+        - {x: 24, y: -12}
+        - {x: 24, y: 16}
+        - {x: 4, y: 21}
+        - {x: -22, y: 21}
+        - {x: -24, y: 19}
+        - {x: -24, y: -13}
+        - {x: -20, y: -19}
+        - {x: -18, y: -21}
+        - {x: -15, y: -21}
+        - {x: -8, y: -18}
+        - {x: -8, y: -14}
+        - {x: -8, y: -16}
+        - {x: -6, y: -20}
     - name: magicball_1
       rect:
         serializedVersion: 2
-        x: 57
-        y: 41
-        width: 64
-        height: 60
+        x: 60
+        y: 48
+        width: 49
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -32, y: 21}
-        - {x: -32, y: -17}
-        - {x: -29, y: -24}
-        - {x: 14, y: -24}
-        - {x: 26, y: -14}
-        - {x: 26, y: 12}
-        - {x: 16, y: 21}
+      - - {x: -24.5, y: 21}
+        - {x: -24.5, y: -14}
+        - {x: -15.5, y: -21}
+        - {x: 21.5, y: -21}
+        - {x: 24.5, y: -18}
+        - {x: 24.5, y: 18}
+        - {x: 15.5, y: 21}
     outline: []
   spritePackingTag: 
   userData: 

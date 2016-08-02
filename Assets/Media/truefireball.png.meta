@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d44e6505ba25146e1b5e31bed38da720
-timeCreated: 1470086479
+timeCreated: 1470170830
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -58,35 +58,34 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 24
-        y: 179
-        width: 47
-        height: 64
+        y: 181
+        width: 40
+        height: 58
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 2.5, y: -32}
-        - {x: 1.5, y: -29}
-        - {x: -2.5, y: -29}
-        - {x: -3.5, y: -32}
-      - - {x: 0.5, y: -23}
-        - {x: 13.5, y: -23}
-        - {x: 14.5, y: -21}
-        - {x: 14.5, y: 10}
-        - {x: 2.5, y: 27}
-        - {x: -13.5, y: 27}
-        - {x: -13.5, y: -29}
-        - {x: -5.5, y: -29}
-        - {x: -1.5, y: -25}
-        - {x: -1.5, y: -19}
-        - {x: -1.5, y: -21}
+      - - {x: 4, y: -22}
+        - {x: 18, y: -27}
+        - {x: 18, y: 21}
+        - {x: -1, y: 28}
+        - {x: -10, y: 28}
+        - {x: -10, y: 20}
+        - {x: -8, y: 16}
+        - {x: -10, y: -22}
+        - {x: -10, y: -26}
+        - {x: -9, y: -28}
+        - {x: -1, y: -28}
+        - {x: 2, y: -24}
+        - {x: 2, y: -18}
+        - {x: 2, y: -20}
     - name: truefireball_1
       rect:
         serializedVersion: 2
-        x: 99
-        y: 186
-        width: 103
-        height: 38
+        x: 106
+        y: 191
+        width: 92
+        height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -105,26 +104,26 @@ TextureImporter:
         serializedVersion: 2
         x: 23
         y: 128
-        width: 49
+        width: 43
         height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -13.5, y: 25}
-        - {x: -13.5, y: -24}
-        - {x: -12.5, y: -25}
-        - {x: 10.5, y: -25}
-        - {x: 16.5, y: -17}
-        - {x: 16.5, y: 15}
-        - {x: 6.5, y: 25}
+      - - {x: -10.5, y: 25}
+        - {x: -10.5, y: -24}
+        - {x: -9.5, y: -25}
+        - {x: 13.5, y: -25}
+        - {x: 19.5, y: -17}
+        - {x: 19.5, y: 15}
+        - {x: 9.5, y: 25}
     - name: truefireball_3
       rect:
         serializedVersion: 2
-        x: 103
-        y: 147
-        width: 96
-        height: 44
+        x: 111
+        y: 158
+        width: 87
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

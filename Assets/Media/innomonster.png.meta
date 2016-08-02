@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ad7323806778e49a69d0ee17a86eb80e
-timeCreated: 1470087462
+timeCreated: 1470170744
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -55,44 +55,38 @@ TextureImporter:
     - name: innomonster_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
+        x: 41
+        y: 15
+        width: 68
+        height: 104
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -15, y: 56}
-        - {x: -23, y: 37}
-        - {x: -25, y: -8}
-        - {x: -25, y: -38}
-        - {x: -15, y: -46}
-        - {x: 0, y: -56}
-        - {x: 42, y: -56}
-        - {x: 44, y: -48}
-        - {x: 44, y: -8}
-        - {x: 10, y: 56}
+      - - {x: -26, y: 52}
+        - {x: -34, y: 34}
+        - {x: -34, y: -45}
+        - {x: -30, y: -52}
+        - {x: 33, y: -52}
+        - {x: 33, y: -24}
+        - {x: 6, y: 52}
     - name: innomonster_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 128
-        height: 128
+        x: 171
+        y: 18
+        width: 62
+        height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -20, y: 58}
-        - {x: -24, y: 33}
-        - {x: -24, y: -48}
-        - {x: -19, y: -52}
-        - {x: -12, y: -54}
-        - {x: 42, y: -54}
-        - {x: 44, y: -52}
-        - {x: 44, y: -18}
-        - {x: 15, y: 58}
+      - - {x: -26, y: 51.5}
+        - {x: -31, y: 44.5}
+        - {x: -31, y: -51.5}
+        - {x: 31, y: -51.5}
+        - {x: 31, y: -20.5}
+        - {x: 0, y: 51.5}
     outline: []
   spritePackingTag: 
   userData: 
