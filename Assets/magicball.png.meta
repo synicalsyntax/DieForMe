@@ -1,0 +1,102 @@
+fileFormatVersion: 2
+guid: f77289a42d1004b3da5f58c91126eba6
+timeCreated: 1470112993
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: magicball_0
+    21300002: magicball_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: magicball_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 39
+        width: 53
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 26.5, y: -6.5}
+        - {x: 26.5, y: 12.5}
+        - {x: -0.5, y: 22.5}
+        - {x: -19.5, y: 22.5}
+        - {x: -24.5, y: 9.5}
+        - {x: -24.5, y: -5.5}
+        - {x: -23.5, y: -6.5}
+        - {x: -20.5, y: -5.5}
+        - {x: -19.5, y: -18.5}
+        - {x: -16.5, y: -21.5}
+        - {x: -7.5, y: -17.5}
+        - {x: -7.5, y: -13.5}
+        - {x: -7.5, y: -21.5}
+        - {x: 14.5, y: -21.5}
+    - name: magicball_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 41
+        width: 64
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 21}
+        - {x: -32, y: -17}
+        - {x: -29, y: -24}
+        - {x: 14, y: -24}
+        - {x: 26, y: -14}
+        - {x: 26, y: 12}
+        - {x: 16, y: 21}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

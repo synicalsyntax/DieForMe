@@ -1260,7 +1260,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  wait: 1
   startingX: 28
   endingX: 32
 --- !u!1 &161378138
@@ -7413,7 +7412,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  wait: 1
   startingX: 34
   endingX: 38
 --- !u!1 &879223110
@@ -14864,7 +14862,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  wait: 1
   startingX: 41
   endingX: 43
 --- !u!1 &1908193495
