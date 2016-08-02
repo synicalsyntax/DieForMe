@@ -1501,7 +1501,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!114 &183702373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1849,7 +1849,7 @@ Transform:
   - {fileID: 1193675426}
   - {fileID: 1395800615}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 11
 --- !u!1 &241435526
 GameObject:
   m_ObjectHideFlags: 0
@@ -3086,7 +3086,7 @@ Transform:
   - {fileID: 1133972683}
   - {fileID: 1706769956}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1 &320509550
 GameObject:
   m_ObjectHideFlags: 0
@@ -3976,7 +3976,7 @@ Transform:
   - {fileID: 757888085}
   - {fileID: 898268973}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!1 &464502276
 GameObject:
   m_ObjectHideFlags: 0
@@ -4133,7 +4133,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!50 &494472673
 Rigidbody2D:
   serializedVersion: 2
@@ -5189,7 +5189,7 @@ Transform:
   - {fileID: 139476144}
   - {fileID: 1083918315}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!1 &615006052
 GameObject:
   m_ObjectHideFlags: 0
@@ -6692,11 +6692,11 @@ Transform:
   m_GameObject: {fileID: 781295286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -30, y: 0, z: 0}
-  m_LocalScale: {x: 8, y: 8, z: 1}
+  m_LocalScale: {x: 6, y: 6, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 2
 --- !u!114 &781295289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12604,7 +12604,7 @@ Transform:
   m_Children:
   - {fileID: 1029783465}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 17
 --- !u!114 &1527913241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12989,7 +12989,7 @@ Transform:
   m_Children:
   - {fileID: 2003754407}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
 --- !u!114 &1601681338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13338,7 +13338,7 @@ Transform:
   - {fileID: 878755078}
   - {fileID: 1905507192}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!1 &1685134702
 GameObject:
   m_ObjectHideFlags: 0
@@ -13534,7 +13534,7 @@ Transform:
   m_Children:
   - {fileID: 1570300809}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
 --- !u!1 &1706769955
 GameObject:
   m_ObjectHideFlags: 0
