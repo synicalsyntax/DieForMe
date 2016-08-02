@@ -79,6 +79,10 @@ function OnCollisionEnter2D(theCollision : Collision2D) {
     } else {
         isgrounded = false;
     }
+    if (theCollision.gameObject.name.StartsWith("Platform Disappearing")) { //checks if colliding with object called Platform
+        yield WaitForSeconds(2);
+        isgrounded = false; 
+    }
     if (theCollision.gameObject.name.StartsWith("Lava")) { //if touching enemy object name Enemy
          yield WaitForSeconds(0.05);
          transform.position = Vector2(-1, 2); //reset position
