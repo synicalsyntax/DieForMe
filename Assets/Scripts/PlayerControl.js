@@ -27,6 +27,10 @@ function Start() {
 function FixedUpdate() {
     
     var moveHorizontal: float = Input.GetAxis("Horizontal");
+    
+    if(canMove== false){
+        moveHorizontal = 0;
+    }
     var horizontalForce: Vector2 = new Vector2(moveHorizontal, 0);
     GetComponent.<Rigidbody2D>().AddForce(horizontalForce * 20); //20 value can be changed according to player speed
 

@@ -50,9 +50,9 @@ function Update () {
 function EnableTextBox(){
     textBox.SetActive(true);
     isActive = true;
-    if(stopPlayerMovement){
+    
         player.canMove = false;
-    }
+    
 }
 function DisableTextBox(){
     textBox.SetActive(false);
