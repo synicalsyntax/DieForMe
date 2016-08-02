@@ -38,9 +38,16 @@ function OnTriggerEnter2D(collider2D : Collider2D){
         }
     }
 
+<<<<<<< HEAD
 function Spell(){
       if (dead == false){
       var Spell = Instantiate(AurorSpell, transform.position, Quaternion.identity);
+=======
+
+
+        function Spell(){
+           var Spell = Instantiate(AurorSpell, transform.position, Quaternion.identity);
+>>>>>>> origin/master
             Spell.velocity.x = direction * spellSpeed;
             Destroy(Spell.gameObject, 1);
       }
