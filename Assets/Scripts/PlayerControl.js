@@ -13,7 +13,6 @@ public var SpellX : Rigidbody2D;
 var SpellCooldown : float;
 var duration : float = 1;
 public var spellSpeed : int;
-//static var deathReset : boolean = false;
 var direction : int = 1;
 var spellDirection :int = 1;
 
