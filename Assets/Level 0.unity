@@ -97,8 +97,8 @@ GameObject:
   - 23: {fileID: 31367141}
   - 61: {fileID: 31367142}
   m_Layer: 0
-  m_Name: Floor
-  m_TagString: Untagged
+  m_Name: Platform
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -315,8 +315,8 @@ GameObject:
   - 23: {fileID: 1512874315}
   - 61: {fileID: 1512874316}
   m_Layer: 0
-  m_Name: Wall
-  m_TagString: Untagged
+  m_Name: Platform
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -411,27 +411,6 @@ Transform:
   - {fileID: 31367140}
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!1 &1529532752 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 130530, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
-  m_PrefabInternal: {fileID: 1937893357}
---- !u!114 &1529532759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1529532752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f00ab8f2bef82549b26e29d22ae813f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textBox: {fileID: 2018090009}
-  theText: {fileID: 830333598}
-  textFile: {fileID: 4900000, guid: 53c3451b3a1336146a838ff2b4d6e633, type: 3}
-  textLines: []
-  currentLine: 0
-  endAtLine: 0
 --- !u!1 &1641039974
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,6 +638,10 @@ Prefab:
       propertyPath: SpellX
       value: 
       objectReference: {fileID: 5055306, guid: 4573cb49ca3d8874f806d4fee4f15ff2, type: 2}
+    - target: {fileID: 130530, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
   m_IsPrefabParent: 0
@@ -731,3 +714,52 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2018090009}
+--- !u!1 &2069260320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2069260322}
+  - 114: {fileID: 2069260321}
+  m_Layer: 0
+  m_Name: TextBoxManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2069260321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2069260320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f00ab8f2bef82549b26e29d22ae813f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textBox: {fileID: 2018090009}
+  theText: {fileID: 830333598}
+  textFile: {fileID: 4900000, guid: 53c3451b3a1336146a838ff2b4d6e633, type: 3}
+  textLines: []
+  currentLine: 0
+  endAtLine: 0
+  player: {fileID: 0}
+  isActive: 1
+  stopPlayerMovement: 0
+--- !u!4 &2069260322
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2069260320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.324377, y: 3.420839, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4

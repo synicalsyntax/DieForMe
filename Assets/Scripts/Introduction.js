@@ -9,14 +9,14 @@ public var textFile : TextAsset;
 public var textLines : String[];
 public var currentLine : float;
 public var endAtLine : float;
-public var player : PlayerController;
+public var player : PlayerControl;
 public var isActive : boolean = false;
 public var stopPlayerMovement : boolean = false;
 
 
 
 function Start () {
-    //player = FindObjectOfType(PlayerControl);
+    player = FindObjectOfType(PlayerControl);
     if(isActive){
         EnableTextBox();
     }
@@ -44,7 +44,11 @@ function Update () {
 }
 function EnableTextBox(){
     textBox.SetActive(true);
+    if(stopPlayerMovement){
+        player.canMove = false;
+    }
 }
 function DisableTextBox(){
     textBox.SetActive(false);
+    player.canMove = true;
 }

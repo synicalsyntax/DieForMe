@@ -15,6 +15,7 @@ var duration : float = 1;
 public var spellSpeed : int;
 var direction : int = 1;
 var spellDirection : int = 1;
+public var canMove :boolean;
 
 function Start() {
     transform.position = Vector2(-1, 2); //original starting position, in x, y, z values
@@ -24,6 +25,7 @@ function Start() {
 }
 
 function FixedUpdate() {
+    
     var moveHorizontal: float = Input.GetAxis("Horizontal");
     var horizontalForce: Vector2 = new Vector2(moveHorizontal, 0);
     GetComponent.<Rigidbody2D>().AddForce(horizontalForce * 20); //20 value can be changed according to player speed
@@ -43,6 +45,9 @@ function FixedUpdate() {
 }
 
 function Update () {
+    if(!canMove){
+        return;
+    }
     if (Input.GetKeyDown(KeyCode.Z) && Time.time > SpellCooldown){
         SpellCooldown = Time.time + duration;
         ZSpell();
