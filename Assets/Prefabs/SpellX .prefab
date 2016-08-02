@@ -59,7 +59,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_Offset: {x: -0.008206609, y: -0.0013679082}
   serializedVersion: 2
   m_Size: {x: 0.353341, y: 0.09667059}
@@ -74,6 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0165ba238000ea46801641f41c6ddbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collide: {fileID: 21300002, guid: 0b4116349de824488853d13bbc7e7830, type: 3}
 --- !u!212 &21299312
 SpriteRenderer:
   m_ObjectHideFlags: 1
