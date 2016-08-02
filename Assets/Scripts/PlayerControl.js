@@ -153,7 +153,8 @@ function FlipRight() {
 }
 
 function deathReset() {
-    GameObject.Find("Platform Disappearing").GetComponent.<Renderer>().enabled = true;
-    GameObject.Find("Platform Disappearing").GetComponent.<Collider2D>().enabled = true;
-    print(GameObject.Find("Platform Disappearing").GetComponent.<Collider2D>().enabled);
+    for(var displat : GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
+          displat.GetComponent.<Renderer>().enabled = true;
+          displat.GetComponent.<Collider2D>().enabled = true;
+    }
 }
