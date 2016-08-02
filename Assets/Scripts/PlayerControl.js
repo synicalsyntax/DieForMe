@@ -94,6 +94,11 @@ function OnCollisionEnter2D(theCollision : Collision2D) {
          transform.position = Vector2(-1, 2); //reset position  
          deathReset();
     }
+    if (theCollision.gameObject.name.StartsWith("Big Bad Mafia Boss")) {
+         yield WaitForSeconds(0.05);
+         transform.position = Vector2(-1, 2); //reset position  
+         deathReset();
+    }
 }
 
 function OnCollisionStay2D(theCollision : Collision2D) {
