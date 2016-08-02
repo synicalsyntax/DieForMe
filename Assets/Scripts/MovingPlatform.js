@@ -1,7 +1,7 @@
 ﻿#pragma strict
 
-public var speed: float;
-public var wait: float;
+public var speed: float = 3;
+//public var wait: float;
 public var startingX: float;
 public var endingX: float;
 
@@ -13,3 +13,12 @@ function PingPong(t: float, minLength: float, maxLength: float) {
     var pos: float = (Mathf.PingPong(t, maxLength - minLength) + minLength);
     return pos;
 }
+
+
+  
+   function SetStartingX(x :float){
+        startingX = x;
+    }
+    function SetEndingX(x : float){
+        endingX = x;
+    }
