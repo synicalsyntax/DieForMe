@@ -181,6 +181,7 @@ function FlipRight() {
 }
 
 function deathReset() {
+    transform.parent = null;
     for (var reappear : GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
           reappear.GetComponent.<SpriteRenderer>().enabled = true;
           reappear.GetComponent.<Collider2D>().enabled = true;
