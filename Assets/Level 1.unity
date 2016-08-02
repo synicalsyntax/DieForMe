@@ -2951,7 +2951,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 491990, guid: b9b5b0fce0569b946b9b8ebaebde9b98, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11440692, guid: b9b5b0fce0569b946b9b8ebaebde9b98, type: 2}
       propertyPath: startingX
@@ -6438,7 +6438,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-<<<<<<< HEAD
 --- !u!1001 &739914236
 Prefab:
   m_ObjectHideFlags: 0
@@ -6501,8 +6500,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
   m_IsPrefabParent: 0
-=======
->>>>>>> origin/master
 --- !u!1 &749941866
 GameObject:
   m_ObjectHideFlags: 0
@@ -10164,7 +10161,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490148, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 490148, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
       propertyPath: m_LocalScale.x
@@ -10298,7 +10295,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490148, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 490148, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
       propertyPath: m_LocalScale.x
@@ -12536,7 +12533,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490148, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 490148, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
       propertyPath: m_LocalScale.x
@@ -13455,11 +13452,7 @@ Transform:
   m_Children:
   - {fileID: 1570300809}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
   m_RootOrder: 11
-=======
-  m_RootOrder: 7
->>>>>>> origin/master
 --- !u!1 &1717340925
 GameObject:
   m_ObjectHideFlags: 0
@@ -14239,7 +14232,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490148, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 490148, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
       propertyPath: m_LocalScale.x
@@ -14525,7 +14518,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 491990, guid: b9b5b0fce0569b946b9b8ebaebde9b98, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 149720, guid: b9b5b0fce0569b946b9b8ebaebde9b98, type: 2}
       propertyPath: m_Name
@@ -15219,7 +15212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490148, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 490148, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
       propertyPath: m_LocalScale.x
@@ -16357,7 +16350,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490148, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 490148, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
       propertyPath: m_LocalScale.x
