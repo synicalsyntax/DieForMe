@@ -13,3 +13,12 @@ function PingPong(t: float, minLength: float, maxLength: float) {
     var pos: float = (Mathf.PingPong(t, maxLength - minLength) + minLength);
     return pos;
 }
+
+
+function OnCollisionEnter2D(theCollision : Collision2D) {
+    if (theCollision.gameObject.name.StartsWith("SpellZ(Clone)")) {
+    Debug.Log("hit");
+    Destroy(theCollision.gameObject);
+    gameObject.SetActive(false);
+      }
+    }
