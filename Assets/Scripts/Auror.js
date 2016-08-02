@@ -22,12 +22,12 @@ function Update() {
         SpellCoolDown = Time.time + duration; 
         Spell();
     }
+
     if(GetComponent.<SpriteRenderer>().enabled == true) {
         dead = false;
     } else {
         dead = true;
-
-        }
+    }
 }
 
 function PingPong(t: float, minLength: float, maxLength: float) {
@@ -35,19 +35,17 @@ function PingPong(t: float, minLength: float, maxLength: float) {
     return pos;
 }
 
-    function OnTriggerEnter2D(collider2D : Collider2D){
-        if (collider2D.name.StartsWith("SpellX")){
-            GetComponent.<SpriteRenderer>().enabled = false;
-            GetComponent.<Collider2D>().enabled = false;
-        }
-    }
+function OnTriggerEnter2D(collider2D : Collider2D){
+	if (collider2D.name.StartsWith("SpellX")){
+		GetComponent.<SpriteRenderer>().enabled = false;
+		GetComponent.<Collider2D>().enabled = false;
+	}
+}
 
 function Spell(){
-if (dead == false) {
-           var Spell = Instantiate(AurorSpell, transform.position, Quaternion.identity);
-            Spell.velocity.x = direction * spellSpeed;
-            Destroy(Spell.gameObject, 1);
-            }
+	if (dead == false) {
+		var Spell = Instantiate(AurorSpell, transform.position, Quaternion.identity);
+        Spell.velocity.x = direction * spellSpeed;
+        Destroy(Spell.gameObject, 1);
+    }
 }
-//hygrtfe
-

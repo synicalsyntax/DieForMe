@@ -1,7 +1,6 @@
 ﻿#pragma strict
 
 public var speed: float = 3;
-//public var wait: float;
 public var startingX: float;
 public var endingX: float;
 
@@ -14,11 +13,10 @@ function PingPong(t: float, minLength: float, maxLength: float) {
     return pos;
 }
 
+function SetStartingX(x :float){
+	startingX = x;
+}
 
-  
-   function SetStartingX(x :float){
-        startingX = x;
-    }
-    function SetEndingX(x : float){
-        endingX = x;
-    }
+function SetEndingX(x : float){
+	endingX = x;
+}

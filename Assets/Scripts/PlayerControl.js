@@ -127,9 +127,11 @@ function OnCollisionStay2D(theCollision : Collision2D) {
         isgrounded = true; 
     } 
 }
+
 function OnCollisionExit2D(theCollision : Collision2D) {
 	if (theCollision.gameObject.name.StartsWith("Platform")) { //checks if colliding with object called Platform
         isgrounded = false; 
+        transform.parent = null;
     } 
 }
 
