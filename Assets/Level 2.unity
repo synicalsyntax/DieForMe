@@ -5118,6 +5118,10 @@ Prefab:
       propertyPath: SpellX
       value: 
       objectReference: {fileID: 5055306, guid: 4573cb49ca3d8874f806d4fee4f15ff2, type: 2}
+    - target: {fileID: 11475150, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
+      propertyPath: spellSpeed
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
   m_IsPrefabParent: 0
@@ -12647,7 +12651,7 @@ Transform:
   - {fileID: 2136943630}
   - {fileID: 1689284762}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!1001 &696103517
 Prefab:
   m_ObjectHideFlags: 0
