@@ -25,7 +25,7 @@ function Start () {
     }
     var temp : String = textFile.text;
     textLines = temp.Split("\n"[0]);
-    endAtLine = 1;
+    endAtLine = textLines.length;
     
 }
 
@@ -44,11 +44,17 @@ function Update () {
 }
 function EnableTextBox(){
     textBox.SetActive(true);
+    isActive = true;
     if(stopPlayerMovement){
         player.canMove = false;
     }
 }
 function DisableTextBox(){
     textBox.SetActive(false);
+    isActive = false;
     player.canMove = true;
+}
+function ReloadScript(theText : TextAsset){
+    textLines = new String[1];
+    textLines = theText.text.Split("\n"[0]);
 }

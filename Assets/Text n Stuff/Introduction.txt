@@ -1,14 +1,2 @@
 You're a wizard, Tim! (Go to the next dialogue using return.)
 Move using the arrow keys. Jump using the up arrow or the space bar.
-You have two spells. 
-To kill dementors, use z. Try the spell on this dementor here.
-To kill aurors, use x. Try the spell on this auror here.
-Tim: "Hi Sluggy, you look great this afternoon. I was wondering about something I saw in a book. It's called a horcrux."
-Sluggy: "What a surprise, Mr. Roddle! A horcrux is a powerful object that can help you attain immortality. Creating just one allows you to attach part of your soul to the earth even if your body is destroyed.
-Sluggy: "The more that you create, the closer you are to true immortality."
-Tim: "How exactly does one create a horcrux?"
-Sluggy: "Only through a truely evil act--like committing murder."
-Sluggy: "I know how much you fear death. Perhaps making a horcrux will help you with your fears."
-Sluggy: "I brought your father here today. He is a scum to society. No one will care if he is gone."
-Kill your father. He is at the end of this hall. 
-Father: "Tim?"
