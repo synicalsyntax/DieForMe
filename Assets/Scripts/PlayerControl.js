@@ -81,9 +81,7 @@ function XSpell() {
 function OnCollisionEnter2D(theCollision : Collision2D) {
     if (theCollision.gameObject.name.StartsWith("Platform")) { //checks if colliding with object called Platform
         isgrounded = true; 
-    } else {
-        isgrounded = false;
-    }
+    } 
     if (theCollision.gameObject.name.StartsWith("Platform Disappearing")) { //checks if colliding with object called Platform
         yield WaitForSeconds(2);
         isgrounded = false; 
@@ -125,10 +123,19 @@ function OnCollisionStay2D(theCollision : Collision2D) {
     if (theCollision.gameObject.name.StartsWith("Platform Moving")) { //while colliding with object name that starts with Platform Moving
         transform.parent = theCollision.gameObject.transform; //make Player child of Moving Platformer so its position will be offset accordingly
     }
+    if (theCollision.gameObject.name.StartsWith("Platform")) { //checks if colliding with object called Platform
+        isgrounded = true; 
+    } 
 }
 
-function OnCollisionExit2D(theCollision : Collision2D) {
-    isgrounded = false; //sets isgrounded to false once not colliding with an object
+    function OnCollisionExit2D(theCollision : Collision2D) {
+        if (theCollision.gameObject.name.StartsWith("Platform")) { //checks if colliding with object called Platform
+            isgrounded = false; 
+        } 
+    //isgrounded = false; //sets isgrounded to false once not colliding with an object
+   
+    
+    
     transform.parent = null;
 }
 
