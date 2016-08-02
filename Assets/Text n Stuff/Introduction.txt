@@ -3,9 +3,9 @@ You're a wizard, Tim!
 Move using the arrow keys. Jump using the up arrow or the space bar.
 You have two spells. 
 
-To kill ghosts, use z. Try the spell on this ghost here.
+To kill dementors, use z. Try the spell on this dementor here.
 
-To kill plants, use x. Try the spell on this plant here.
+To kill aurors, use x. Try the spell on this auror here.
 
 
 Tim: "Hi Sluggy, you look great this afternoon. I was wondering about something I saw in a book. It's called a horcrux."
