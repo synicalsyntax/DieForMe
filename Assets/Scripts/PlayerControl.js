@@ -13,7 +13,7 @@ public var SpellX : Rigidbody2D;
 var SpellCooldown : float;
 var duration : float = 1;
 public var spellSpeed : int;
-static var deathReset : boolean;
+//static var deathReset : boolean = false;
 var direction : int = 1;
 var spellDirection :int = 1;
 
@@ -51,7 +51,6 @@ function Update () {
     else if (Input.GetKeyDown(KeyCode.X)&& Time.time > SpellCooldown){
         SpellCooldown = Time.time + duration;
         XSpell();
-
     }
 }
 
@@ -84,14 +83,17 @@ function OnCollisionEnter2D(theCollision : Collision2D) {
     if (theCollision.gameObject.name.StartsWith("Lava")) { //if touching enemy object name Enemy
          yield WaitForSeconds(0.05);
          transform.position = Vector2(-1, 2); //reset position
+         deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Dementor")) {
          yield WaitForSeconds(0.05);
-         transform.position = Vector2(-1, 2); //reset position   
+         transform.position = Vector2(-1, 2); //reset position  
+         deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Plant")) {
          yield WaitForSeconds(0.05);
-         transform.position = Vector2(-1, 2); //reset position   
+         transform.position = Vector2(-1, 2); //reset position  
+         deathReset();
     }
 }
 
@@ -148,4 +150,10 @@ function FlipRight() {
         SpellZ.transform.localScale=zScale;
         SpellX.transform.localScale=xScale;
     }
+}
+
+function deathReset() {
+    GameObject.Find("Platform Disappearing").GetComponent.<Renderer>().enabled = true;
+    GameObject.Find("Platform Disappearing").GetComponent.<Collider2D>().enabled = true;
+    print(GameObject.Find("Platform Disappearing").GetComponent.<Collider2D>().enabled);
 }

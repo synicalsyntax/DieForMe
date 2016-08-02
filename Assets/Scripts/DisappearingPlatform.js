@@ -1,10 +1,12 @@
 ﻿#pragma strict
 
 function Start(){
-    gameObject.SetActive(true);
+    GetComponent.<Renderer>().enabled = true;
+    GetComponent.<Collider2D>().enabled = true;
 }
 
 function OnCollisionStay2D(theCollision : Collision2D) {
     yield WaitForSeconds(2);
-    gameObject.SetActive(false);
+    GetComponent.<Renderer>().enabled = false;
+    GetComponent.<Collider2D>().enabled = false;
 }
