@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: e66cb66f8697b4d8b9399cb42d324ece
-timeCreated: 1470170268
+timeCreated: 1470175399
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -59,18 +59,18 @@ TextureImporter:
         x: 4
         y: 7
         width: 121
-        height: 115
+        height: 114
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 7}
       outline:
-      - - {x: -43.5, y: 57.5}
-        - {x: -60.5, y: 29.5}
-        - {x: -60.5, y: -48.5}
-        - {x: -52.5, y: -57.5}
-        - {x: 60.5, y: -57.5}
-        - {x: 60.5, y: 33.5}
-        - {x: 40.5, y: 57.5}
+      - - {x: -43.5, y: 57}
+        - {x: -60.5, y: 30}
+        - {x: -60.5, y: -48}
+        - {x: -52.5, y: -57}
+        - {x: 60.5, y: -57}
+        - {x: 60.5, y: 34}
+        - {x: 41.5, y: 57}
     - name: iLovePlants_1
       rect:
         serializedVersion: 2
@@ -80,7 +80,7 @@ TextureImporter:
         height: 114
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 8}
       outline:
       - - {x: -5.5, y: 57}
         - {x: -38.5, y: 42}
