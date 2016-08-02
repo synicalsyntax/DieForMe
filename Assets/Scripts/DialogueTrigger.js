@@ -8,6 +8,7 @@ public var destroyWhenActivated : boolean;
 
 function Start () {
     theTextBox = FindObjectOfType(Introduction);
+    
 }
 
 function Update () {
