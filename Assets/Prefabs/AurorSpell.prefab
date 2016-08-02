@@ -12,7 +12,6 @@ GameObject:
   - 95: {fileID: 9538032}
   - 61: {fileID: 6124486}
   - 50: {fileID: 5085056}
-  - 114: {fileID: 11422504}
   - 61: {fileID: 6182882}
   m_Layer: 0
   m_Name: AurorSpell
@@ -96,17 +95,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11422504
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5cf2717104522e459f82a8c0b1f4225, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &21241426
 SpriteRenderer:
   m_ObjectHideFlags: 1
