@@ -48,5 +48,6 @@ if (dead == false) {
             Spell.velocity.x = direction * spellSpeed;
             Destroy(Spell.gameObject, 1);
             }
-        }
+}
+//hygrtfe
 
