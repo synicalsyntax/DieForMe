@@ -4,7 +4,7 @@
 public var speed: float =3;
 public var startingX: float;
 public var endingX: float;
-var duration : float = 2;
+var duration : float = 7;
 public var AurorSpell : Rigidbody2D;
 var direction : float;
 public var spellSpeed : int;
