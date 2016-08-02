@@ -7,7 +7,7 @@ public var endingX: float;
 var duration : float = 2;
 public var BossSpell : Rigidbody2D;
 var direction : float;
-public var spellSpeed : int;
+public var spellSpeed : float;
 static var dead = false;
 
 function Start(){
@@ -42,10 +42,19 @@ function PingPong(t: float, minLength: float, maxLength: float) {
         }
     }
 
+
 function Spell(){
-     if (dead == false) {
-           var Spell = Instantiate(BossSpell, transform.position, Quaternion.identity);
-           Spell.velocity.x = direction * spellSpeed;
-           Destroy(Spell.gameObject, 1);
-     }
+    if (dead == false) {
+        var Spell = Instantiate(BossSpell, transform.position, Quaternion.identity);
+
+        var player :GameObject = GameObject.Find("Player");
+
+        var v = new Vector2((player.transform.position.x - transform.position.x),(player.transform.position.y-transform.position.y)).normalized;
+        // v.Normalize();
+        Debug.Log(v);
+        Spell.velocity.x= v.x* spellSpeed;
+        Spell.velocity.y= v.y* spellSpeed;
+
+        Destroy(Spell.gameObject, 1);
+    }
 }
