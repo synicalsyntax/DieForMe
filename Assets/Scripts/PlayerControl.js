@@ -115,12 +115,14 @@ function FlipLeft() {
      zScale = SpellZ.transform.localScale;
      var xScale : Vector3;
      xScale = SpellX.transform.localScale;
+
      if(direction != -1){
          direction=-1;
          theScale.x*=-1;
          transform.localScale = theScale;
         
      }
+
      if(spellDirection!=-1){
          spellDirection=-1; 
          zScale.x*=-1;
@@ -137,12 +139,13 @@ function FlipRight() {
     zScale = SpellZ.transform.localScale;
     var xScale : Vector3;
     xScale = SpellX.transform.localScale;
+
     if(direction != 1){
         direction=1;
         theScale.x*=-1;
-        transform.localScale = theScale;
-       
+        transform.localScale = theScale;  
     }
+
     if(spellDirection!=1) {
         spellDirection=1;
         zScale.x*=-1;
@@ -153,8 +156,8 @@ function FlipRight() {
 }
 
 function deathReset() {
-    for(var displat : GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
-          displat.GetComponent.<Renderer>().enabled = true;
-          displat.GetComponent.<Collider2D>().enabled = true;
+    for (var reappear : GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
+          reappear.GetComponent.<SpriteRenderer>().enabled = true;
+          reappear.GetComponent.<Collider2D>().enabled = true;
     }
 }

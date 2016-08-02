@@ -7,6 +7,6 @@ function Start(){
 
 function OnCollisionStay2D(theCollision : Collision2D) {
     yield WaitForSeconds(2);
-    GetComponent.<Renderer>().enabled = false;
+    GetComponent.<SpriteRenderer>().enabled = false;
     GetComponent.<Collider2D>().enabled = false;
 }
