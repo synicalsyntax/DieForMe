@@ -1,13 +1,15 @@
 ﻿#pragma strict
 
- var SpellCoolDown : float;
-public var speed: float =3;
-public var startingX: float;
-public var endingX: float;
+var SpellCoolDown : float;
+
 var duration : float = 2;
 public var AurorSpell : Rigidbody2D;
-var direction : float;
 public var spellSpeed : int;
+public var direction : float;
+
+var rotation : Quaternion; //used to denote rotations
+public var radius : Vector3; //set radius of 1 in EnemyRotation
+var currentRotation = 0.0; //set default rotation to 0
 
 function Start(){
     GetComponent.<Renderer>().enabled = true;
@@ -16,16 +18,13 @@ function Start(){
 }
 
 function Update() {
-    transform.position = new Vector3(PingPong(Time.time * speed, startingX, endingX), transform.position.y, transform.position.z);
     if (Time.time > SpellCoolDown){
         SpellCoolDown = Time.time + duration; 
         Spell();
     }
-}
-
-function PingPong(t: float, minLength: float, maxLength: float) {
-    var pos: float = (Mathf.PingPong(t, maxLength - minLength) + minLength);
-    return pos;
+    currentRotation += Time.deltaTime * 100; //sets currentRotation to amount of time passed
+    rotation.eulerAngles = Vector3(0, 0, currentRotation); //sets rotation around z axis to currentRotation (represented as Euler angles in degrees)
+    transform.position = rotation * radius; //translates Enemy position according to set radius
 }
 
     function OnTriggerEnter2D(collider2D : Collider2D){
@@ -36,10 +35,8 @@ function PingPong(t: float, minLength: float, maxLength: float) {
         }
     }
 
-
-
         function Spell(){
-           var Spell = Instantiate(AurorSpell, transform.position, Quaternion.identity);
+            var Spell = Instantiate(AurorSpell, transform.position, Quaternion.identity);
             Spell.velocity.x = direction * spellSpeed;
 
         }
