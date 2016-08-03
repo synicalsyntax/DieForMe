@@ -8,7 +8,6 @@ function Start(){
     GetComponent.<Renderer>().enabled = true;
     GetComponent.<Collider2D>().enabled = true;
 }
-
 function Update() {
     transform.position = new Vector3(PingPong(Time.time * speed, startingX, endingX), transform.position.y, transform.position.z);
 }

@@ -6,6 +6,8 @@ public var startingX: float;
 public var endingX: float;
 var duration : float = 2;
 public var BossSpell : Rigidbody2D;
+public var Horcrux : Rigidbody2D;
+
 var direction : float;
 public var spellSpeed : float;
 static var dead = false;
@@ -43,12 +45,13 @@ function OnCollisionStay2D(theCollision : Collision2D) {
 }
 
 function OnTriggerEnter2D(collider2D : Collider2D){
-	if (collider2D.name.StartsWith("SpellX")){
+    if (collider2D.name.StartsWith("SpellX") ||collider2D.name.StartsWith("Spellz")  ){
 	    hits++;
 	    if (hits > 2) {
 			GetComponent.<SpriteRenderer>().enabled = false;
 			GetComponent.<Collider2D>().enabled = false;
 			dead = true;
+			Instantiate(Horcrux,transform.position, Quaternion.identity);
 		}
 	}
 }
