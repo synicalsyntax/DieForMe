@@ -324,7 +324,7 @@ GameObject:
   - 212: {fileID: 60673510}
   - 61: {fileID: 60673509}
   m_Layer: 0
-  m_Name: Platform (1)
+  m_Name: Platform
   m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1501,7 +1501,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &183702373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4184,7 +4184,7 @@ MonoBehaviour:
   spellSpeed: 10
   direction: -1
   spellDirection: 1
-  canMove: 0
+  canMove: 1
 --- !u!114 &494472676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4654,7 +4654,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 547719591}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.28, y: -0.53999996, z: 0}
+  m_LocalPosition: {x: -1.28, y: -0.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -6691,7 +6691,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 781295286}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 5}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -12807,7 +12807,7 @@ MonoBehaviour:
   duration: 2
   BossSpell: {fileID: 5085056, guid: 56164926a56463142be6337b28172bb3, type: 2}
   direction: 0
-  spellSpeed: 0
+  spellSpeed: 10
 --- !u!1 &1582302664
 GameObject:
   m_ObjectHideFlags: 0
