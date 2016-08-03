@@ -634,6 +634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2c4e9fb329a204280e5bddd4665a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Horcrux: {fileID: 5085996, guid: 9064d036cb8670844b9c972ae5ee1def, type: 2}
 --- !u!212 &376955579
 SpriteRenderer:
   m_ObjectHideFlags: 0
