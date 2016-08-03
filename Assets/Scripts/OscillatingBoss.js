@@ -56,7 +56,6 @@ function PingPong(t: float, minLength: float, maxLength: float) {
             if (dead == false) {
                 var Spell = Instantiate(AurorSpell, transform.position, Quaternion.identity);
                 Spell.velocity.x = direction * spellSpeed;
-                        Destroy(Spell.gameObject, 1);
 
             }
         }
