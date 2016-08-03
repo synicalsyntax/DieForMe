@@ -1501,7 +1501,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &183702373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4184,7 +4184,7 @@ MonoBehaviour:
   spellSpeed: 10
   direction: -1
   spellDirection: 1
-  canMove: 0
+  canMove: 1
 --- !u!114 &494472676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6708,8 +6708,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0941b473a2273456fb86a89a39237b2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  distance: 0
+  target: {fileID: 494472672}
+  distance: 5
 --- !u!1 &797266050
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ var duration : float = 1;
 public var spellSpeed : int;
 var direction : int = 1;
 var spellDirection : int = 1;
-public var canMove :boolean;
+public var canMove :boolean=true;
 
 function Start() {
     transform.position = Vector2(-1, 2); //original starting position, in x, y, z values
