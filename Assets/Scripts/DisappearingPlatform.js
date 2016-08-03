@@ -1,12 +1,19 @@
 ﻿#pragma strict
 
 function Start(){
-    GetComponent.<Renderer>().enabled = true;
+    GetComponent.<SpriteRenderer>().enabled = true;
     GetComponent.<Collider2D>().enabled = true;
 }
 
 function OnCollisionStay2D(theCollision : Collision2D) {
-    yield WaitForSeconds(3);
-    GetComponent.<SpriteRenderer>().enabled = false;
-    GetComponent.<Collider2D>().enabled = false;
+         var contactPoint : Vector3 = theCollision.contacts[0].point;
+         var center : Vector3 = GetComponent.<Collider2D>().bounds.center;
+         var right : boolean = contactPoint.x > center.x;
+         var top : boolean = contactPoint.y > center.y;
+
+         if(theCollision.gameObject.name.StartsWith("Player") && right && top) { 
+             yield WaitForSeconds(3);
+             GetComponent.<SpriteRenderer>().enabled = false;
+             GetComponent.<Collider2D>().enabled = false;
+         }
 }
