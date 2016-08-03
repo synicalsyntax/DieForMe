@@ -8,7 +8,7 @@ var duration : float = 3;
 public var BossSpell : Rigidbody2D;
 public var Horcrux : Rigidbody2D;
 
-var direction : float;
+//var direction : float;
 public var spellSpeed : float;
 static var dead = false;
 public var hits : int = 0;
@@ -16,7 +16,7 @@ public var hits : int = 0;
 function Start(){
     GetComponent.<Renderer>().enabled = true;
     GetComponent.<Collider2D>().enabled = true;
-    direction = -1;
+   // direction = -1;
 }
 
 function Update() {
