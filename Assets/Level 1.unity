@@ -178,8 +178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpellCoolDown: 0
   speed: 3
-  startingY: -5
-  endingY: -2
+  startingY: -4.5
+  endingY: -1.5
   duration: 2
   Horcrux: {fileID: 5085996, guid: 52ab2a521b21345c2b1d6662be81f38c, type: 2}
   AurorSpell: {fileID: 5085056, guid: 56164926a56463142be6337b28172bb3, type: 2}
@@ -5563,6 +5563,7 @@ MonoBehaviour:
   direction: -1
   spellDirection: 1
   canMove: 1
+  SceneMoveTo: 
 --- !u!114 &494472676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10912,6 +10913,26 @@ Prefab:
     - target: {fileID: 162874, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
       propertyPath: m_TagString
       value: Respawn
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199510, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199510, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199510, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199510, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
+      propertyPath: m_Size.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6199510, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
+      propertyPath: m_Size.y
+      value: 8.5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11434522, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
@@ -18489,6 +18510,7 @@ MonoBehaviour:
   direction: 1
   spellDirection: 1
   canMove: 0
+  SceneMoveTo: 
 --- !u!54 &1706769958
 Rigidbody:
   m_ObjectHideFlags: 0

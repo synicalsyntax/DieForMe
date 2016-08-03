@@ -22,7 +22,7 @@ function Update() {
     transform.position = new Vector3(transform.position.x, PingPong(Time.time * speed, startingY, endingY), transform.position.z);
     if (Time.time > SpellCoolDown){
         SpellCoolDown = Time.time + duration; 
-        Spell();
+        //Spell();
     }
 
     if(GetComponent.<SpriteRenderer>().enabled == true) {
@@ -40,7 +40,8 @@ function PingPong(t: float, minLength: float, maxLength: float) {
 
     function OnTriggerEnter2D(collider2D : Collider2D){
         if (collider2D.gameObject.name.StartsWith('SpellX') || collider2D.name.StartsWith('SpellZ')){
-            hits++;
+            hits = hits + 1;
+            yield WaitForSeconds(0.5);
             if (hits > 2) {
                 GetComponent.<SpriteRenderer>().enabled = false;
                 GetComponent.<Collider2D>().enabled = false;
