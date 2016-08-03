@@ -5561,7 +5561,6 @@ MonoBehaviour:
   direction: -1
   spellDirection: 1
   canMove: 1
-  collide: {fileID: 21300000, guid: ffd99360ac56e4fd88357f14c5e25303, type: 3}
 --- !u!114 &494472676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11768,7 +11767,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84f69079bfe71e04184cacd0e20ddbba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collide: {fileID: 0}
 --- !u!61 &1041679435
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16426,20 +16424,16 @@ GameObject:
 --- !u!114 &1477760524
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400404, guid: 0edb0adf622bf4bef982ee7eeb96b621,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1477760523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa85bce7d64e6c4085104aa412f94f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a64239566eb5a84f8725f6f15d4c35b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   SpellCoolDown: 0
-  speed: 3
-  startingX: 72
-  endingX: 83
-  duration: 1
+  duration: 2
   AurorSpell: {fileID: 5085056, guid: 56164926a56463142be6337b28172bb3, type: 2}
   direction: 0
   spellSpeed: 10
@@ -17583,7 +17577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84f69079bfe71e04184cacd0e20ddbba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collide: {fileID: 0}
 --- !u!61 &1632825551
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17670,7 +17663,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84f69079bfe71e04184cacd0e20ddbba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collide: {fileID: 0}
 --- !u!61 &1644370837
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18465,7 +18457,6 @@ MonoBehaviour:
   direction: 1
   spellDirection: 1
   canMove: 0
-  collide: {fileID: 0}
 --- !u!54 &1706769958
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -19423,7 +19414,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84f69079bfe71e04184cacd0e20ddbba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collide: {fileID: 0}
 --- !u!61 &1768838180
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19738,7 +19728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84f69079bfe71e04184cacd0e20ddbba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collide: {fileID: 0}
 --- !u!61 &1809734340
 BoxCollider2D:
   m_ObjectHideFlags: 0

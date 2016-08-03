@@ -634,8 +634,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2c4e9fb329a204280e5bddd4665a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingX: 0
-  endingX: 0
 --- !u!212 &376955579
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1127,7 +1125,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 478400, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 35.02
+      value: 26.77
       objectReference: {fileID: 0}
     - target: {fileID: 478400, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1160,6 +1158,18 @@ Prefab:
     - target: {fileID: 162874, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
       propertyPath: m_Name
       value: Auror (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434522, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
+      propertyPath: endingX
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434522, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
+      propertyPath: startingX
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 162874, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
@@ -1730,6 +1740,18 @@ Prefab:
     - target: {fileID: 491990, guid: b9b5b0fce0569b946b9b8ebaebde9b98, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440692, guid: b9b5b0fce0569b946b9b8ebaebde9b98, type: 2}
+      propertyPath: startingX
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 11440692, guid: b9b5b0fce0569b946b9b8ebaebde9b98, type: 2}
+      propertyPath: endingX
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 149720, guid: b9b5b0fce0569b946b9b8ebaebde9b98, type: 2}
+      propertyPath: m_TagString
+      value: Respawn
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9b5b0fce0569b946b9b8ebaebde9b98, type: 2}

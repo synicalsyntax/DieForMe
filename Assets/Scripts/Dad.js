@@ -1,8 +1,8 @@
 ﻿#pragma strict
 
 //public var speed: float =3;
-public var startingX: float;
-public var endingX: float;
+//public var startingX: float;
+//public var endingX: float;
 
 function Start(){
     GetComponent.<Renderer>().enabled = true;
@@ -16,6 +16,7 @@ function Update() {
 
     function OnTriggerEnter2D(collider2D : Collider2D){
         if (collider2D.name.StartsWith("SpellZ")){
+        	
             GetComponent.<SpriteRenderer>().enabled = false;
             GetComponent.<Collider2D>().enabled = false;
         }
