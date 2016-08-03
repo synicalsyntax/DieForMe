@@ -4,7 +4,7 @@
 public var speed: float =3;
 public var startingX: float;
 public var endingX: float;
-var duration : float = 7;
+var duration : float = 1;
 public var AurorSpell : Rigidbody2D;
 var direction : float;
 public var spellSpeed : int;
@@ -17,7 +17,7 @@ function Start(){
 }
 
 function Update() {
-    //transform.position = new Vector3(PingPong(Time.time * speed, startingX, endingX), transform.position.y, transform.position.z);
+    transform.position = new Vector3(PingPong(Time.time * speed, startingX, endingX), transform.position.y, transform.position.z);
     if (Time.time > SpellCoolDown){
         SpellCoolDown = Time.time + duration; 
         Spell();
