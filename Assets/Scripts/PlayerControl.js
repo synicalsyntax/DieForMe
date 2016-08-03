@@ -141,6 +141,14 @@ function OnCollisionExit2D(theCollision : Collision2D) {
             transform.position = Vector2(-1, 2); //reset position  
             deathReset();
         }
+
+        if (collider2D.name.StartsWith("Horcrux")){
+            gameObject.SetActive(false);
+            yield WaitForSeconds(1);
+            Application.LoadLevel("Level 1");
+
+
+        }
     }
 
 
