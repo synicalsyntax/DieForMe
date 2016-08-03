@@ -9,6 +9,7 @@ public var BossSpell : Rigidbody2D;
 var direction : float;
 public var spellSpeed : float;
 static var dead = false;
+public var hits : int = 0;
 
 function Start(){
     GetComponent.<Renderer>().enabled = true;
@@ -35,13 +36,16 @@ function PingPong(t: float, minLength: float, maxLength: float) {
     return pos;
 }
 
-    function OnTriggerEnter2D(collider2D : Collider2D){
-        if (collider2D.name.StartsWith("SpellX")){
-            GetComponent.<SpriteRenderer>().enabled = false;
-            GetComponent.<Collider2D>().enabled = false;
-        }
-    }
-
+function OnTriggerEnter2D(collider2D : Collider2D){
+	if (collider2D.name.StartsWith("SpellX")){
+	    hits++;
+	    if (hits > 2) {
+			GetComponent.<SpriteRenderer>().enabled = false;
+			GetComponent.<Collider2D>().enabled = false;
+			dead = true;
+		}
+	}
+}
 
 function Spell(){
     if (dead == false) {
@@ -50,8 +54,6 @@ function Spell(){
         var player :GameObject = GameObject.Find("Player");
 
         var v = new Vector2((player.transform.position.x - transform.position.x),(player.transform.position.y-transform.position.y)).normalized;
-        // v.Normalize();
-       // Debug.Log(v);
         Spell.velocity.x= v.x* spellSpeed;
         Spell.velocity.y= v.y* spellSpeed;
 

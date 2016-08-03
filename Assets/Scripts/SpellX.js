@@ -7,7 +7,7 @@ function OnBecameInvisible() {
 } 
 
 function OnTriggerEnter2D(collider2D : Collider2D){
-    if (collider2D.name.StartsWith("Platform") || collider2D.name.StartsWith("Dementor") || collider2D.name.StartsWith("Lava")){
+    if (collider2D.name.StartsWith("Platform") || collider2D.name.StartsWith("Dementor") || collider2D.name.StartsWith("Lava") || collider2D.name.StartsWith("Big Bad Mafia Boss")){
     	GetComponent.<SpriteRenderer>().sprite = collide;
     	yield WaitForSeconds(0.05);
    		Destroy(gameObject); 
