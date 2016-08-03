@@ -16,6 +16,7 @@ public var spellSpeed : int;
 var direction : int = 1;
 var spellDirection : int = 1;
 public var canMove : boolean;
+public var SceneMoveTo : String;
 
 function Start() {
     transform.position = Vector2(-1, 2); //original starting position, in x, y, z values
@@ -50,7 +51,7 @@ function FixedUpdate() {
 
 function Update () {
     //if(!canMove){
-        //return;
+    //return;
     //}
     if (Input.GetKeyDown(KeyCode.Z) && Time.time > SpellCooldown){
         SpellCooldown = Time.time + duration;
@@ -90,24 +91,24 @@ function OnCollisionEnter2D(theCollision : Collision2D) {
         isgrounded = false; 
     }
     if (theCollision.gameObject.name.StartsWith("Lava")) { //if touching enemy object name Enemy
-         yield WaitForSeconds(0.05);
-         transform.position = Vector2(-1, 2); //reset position
-         deathReset();
+        yield WaitForSeconds(0.05);
+        transform.position = Vector2(-1, 2); //reset position
+        deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Dementor")) {
-         yield WaitForSeconds(0.05);
-         transform.position = Vector2(-1, 2); //reset position  
-         deathReset();
+        yield WaitForSeconds(0.05);
+        transform.position = Vector2(-1, 2); //reset position  
+        deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Plant")) {
-         yield WaitForSeconds(0.05);
-         transform.position = Vector2(-1, 2); //reset position  
-         deathReset();
+        yield WaitForSeconds(0.05);
+        transform.position = Vector2(-1, 2); //reset position  
+        deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Big Bad Mafia Boss")) {
-         yield WaitForSeconds(0.05);
-         transform.position = Vector2(-1, 2); //reset position  
-         deathReset();
+        yield WaitForSeconds(0.05);
+        transform.position = Vector2(-1, 2); //reset position  
+        deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Auror")) {
         yield WaitForSeconds(0.05);
@@ -121,7 +122,12 @@ function OnCollisionEnter2D(theCollision : Collision2D) {
           poof.GetComponent.<SpriteRenderer>().enabled = false;
           poof.GetComponent.<Collider2D>().enabled = false;
         }
-    }  
+}  
+    if (theCollision.gameObject.name.StartsWith("Horcrux")){
+        theCollision.gameObject.gameObject.SetActive(false);
+        yield WaitForSeconds(1);
+        Application.LoadLevel(SceneMoveTo);
+    }
 }
 
 function OnCollisionStay2D(theCollision : Collision2D) {
@@ -133,92 +139,88 @@ function OnCollisionStay2D(theCollision : Collision2D) {
     } 
 }
 
-function OnCollisionExit2D(theCollision : Collision2D) {
-	if (theCollision.gameObject.name.StartsWith("Platform")) { //checks if colliding with object called Platform
-        isgrounded = false; 
-        transform.parent = null;
-    } 
-}
-
-function OnTriggerEnter2D(collider2D : Collider2D){
-	if (collider2D.name.StartsWith("AurorSpell")){
-		yield WaitForSeconds(0.05);
-		transform.position = Vector2(-1, 2); //reset position  
-		deathReset();
-	}
-
-	if (collider2D.name.StartsWith("Horcrux")){
-	    collider2D.gameObject.SetActive(false);
-	    yield WaitForSeconds(1);
-		UnityEngine.SceneManagement.SceneManager.LoadScene("Scene 1");
-    }
-}
-
-function FlipLeft() {
-     var theScale : Vector3;
-     theScale = transform.localScale;
-     var zScale : Vector3;
-     zScale = SpellZ.transform.localScale;
-     var xScale : Vector3;
-     xScale = SpellX.transform.localScale;
-
-     if(direction != -1){
-         direction=-1;
-         theScale.x*=-1;
-         transform.localScale = theScale;
-        
-     }
-
-     if(spellDirection!=-1){
-         spellDirection=-1; 
-         zScale.x*=-1;
-         xScale.x*=-1;
-         SpellZ.transform.localScale=zScale;
-         SpellX.transform.localScale=xScale;
-     }
- }
-
-function FlipRight() {
-    var theScale : Vector3;
-    theScale = transform.localScale;
-    var zScale : Vector3;
-    zScale = SpellZ.transform.localScale;
-    var xScale : Vector3;
-    xScale = SpellX.transform.localScale;
-
-    if(direction != 1){
-        direction=1;
-        theScale.x*=-1;
-        transform.localScale = theScale;  
+    function OnCollisionExit2D(theCollision : Collision2D) {
+        if (theCollision.gameObject.name.StartsWith("Platform")) { //checks if colliding with object called Platform
+            isgrounded = false; 
+            transform.parent = null;
+        } 
     }
 
-    if(spellDirection!=1) {
-        spellDirection=1;
-        zScale.x*=-1;
-        xScale.x*=-1;
-        SpellZ.transform.localScale=zScale;
-        SpellX.transform.localScale=xScale;
-    }
-}
+        function OnTriggerEnter2D(collider2D : Collider2D){
+            if (collider2D.name.StartsWith("AurorSpell")){
+                yield WaitForSeconds(0.05);
+                transform.position = Vector2(-1, 2); //reset position  
+                deathReset();
+            }
 
-function deathReset() {
-    transform.parent = null;
-    Destroy(GameObject.Find('Horcrux'));
-    Destroy(GameObject.Find('Horcrux 1'));
-    yield WaitForSeconds(0.1);
-    for (var reappear : GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
-          reappear.GetComponent.<SpriteRenderer>().enabled = true;
-          reappear.GetComponent.<Collider2D>().enabled = true;
-    }
-    for (var poof : GameObject in GameObject.FindGameObjectsWithTag('Poof')) {
-          poof.GetComponent.<SpriteRenderer>().enabled = true;
-          poof.GetComponent.<Collider2D>().enabled = true;
+	
         }
-    yield WaitForSeconds(3);
-    for (var reappear : GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
-          if (reappear.gameObject.name == "Platform Disappearing") {
-              reappear.GetComponent.<SpriteRenderer>().enabled = true;
-              reappear.GetComponent.<Collider2D>().enabled = true;
-          }
-    }
+
+            function FlipLeft() {
+                var theScale : Vector3;
+                theScale = transform.localScale;
+                var zScale : Vector3;
+                zScale = SpellZ.transform.localScale;
+                var xScale : Vector3;
+                xScale = SpellX.transform.localScale;
+
+                if(direction != -1){
+                    direction=-1;
+                    theScale.x*=-1;
+                    transform.localScale = theScale;
+        
+                }
+
+                if(spellDirection!=-1){
+                    spellDirection=-1; 
+                    zScale.x*=-1;
+                    xScale.x*=-1;
+                    SpellZ.transform.localScale=zScale;
+                    SpellX.transform.localScale=xScale;
+                }
+            }
+
+            function FlipRight() {
+                var theScale : Vector3;
+                theScale = transform.localScale;
+                var zScale : Vector3;
+                zScale = SpellZ.transform.localScale;
+                var xScale : Vector3;
+                xScale = SpellX.transform.localScale;
+
+                if(direction != 1){
+                    direction=1;
+                    theScale.x*=-1;
+                    transform.localScale = theScale;  
+                }
+
+                if(spellDirection!=1) {
+                    spellDirection=1;
+                    zScale.x*=-1;
+                    xScale.x*=-1;
+                    SpellZ.transform.localScale=zScale;
+                    SpellX.transform.localScale=xScale;
+                }
+            }
+
+            function deathReset() {
+                transform.parent = null;
+                Destroy(GameObject.Find('Horcrux'));
+                Destroy(GameObject.Find('Horcrux 1'));
+                yield WaitForSeconds(0.1);
+                for (var reappear : GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
+                      reappear.GetComponent.<SpriteRenderer>().enabled = true;
+                      reappear.GetComponent.<Collider2D>().enabled = true;
+                }
+            for (var poof : GameObject in GameObject.FindGameObjectsWithTag('Poof')) {
+                  poof.GetComponent.<SpriteRenderer>().enabled = true;
+                  poof.GetComponent.<Collider2D>().enabled = true;
+            }
+        yield WaitForSeconds(3);
+        for (var reappear : GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
+              if (reappear.gameObject.name == "Platform Disappearing") {
+                  reappear.GetComponent.<SpriteRenderer>().enabled = true;
+                  reappear.GetComponent.<Collider2D>().enabled = true;
+        }
+}
 }
