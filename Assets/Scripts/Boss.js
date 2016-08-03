@@ -23,7 +23,7 @@ function Update() {
     //transform.position = new Vector3(PingPong(Time.time * speed, startingX, endingX), transform.position.y, transform.position.z);
     if (Time.time > SpellCoolDown){
         SpellCoolDown = Time.time + duration; 
-        Spell();
+        //Spell();
     }
     if(GetComponent.<SpriteRenderer>().enabled == true) {
         dead = false;
