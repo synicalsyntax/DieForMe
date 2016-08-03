@@ -143,8 +143,8 @@ function OnTriggerEnter2D(collider2D : Collider2D){
 	}
 
 	if (collider2D.name.StartsWith("Horcrux")){
-		gameObject.SetActive(false);
-		yield WaitForSeconds(1);
+	    collider2D.gameObject.SetActive(false);
+	    yield WaitForSeconds(1);
 		UnityEngine.SceneManagement.SceneManager.LoadScene("Scene 1");
     }
 }
