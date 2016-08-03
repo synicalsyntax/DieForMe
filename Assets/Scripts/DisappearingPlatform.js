@@ -1,7 +1,5 @@
 ﻿#pragma strict
 
-public var collide : Sprite;
-
 function Start(){
     GetComponent.<SpriteRenderer>().enabled = true;
     GetComponent.<Collider2D>().enabled = true;
@@ -13,7 +11,6 @@ function OnCollisionStay2D(theCollision : Collision2D) {
 	var top : boolean = contactPoint.y > center.y;
 
 	if(theCollision.gameObject.name.StartsWith("Player") && top) {
-		GetComponent.<SpriteRenderer>().sprite = collide;
 		yield WaitForSeconds(3);
 		GetComponent.<SpriteRenderer>().enabled = false;
 	    GetComponent.<Collider2D>().enabled = false;
