@@ -20,8 +20,9 @@ function OnTriggerEnter2D (other : Collider2D) {
         theTextBox.currentLine = startLine;
         theTextBox.endAtLine = endLine;
         theTextBox.EnableTextBox();
-    }
-    if(destroyWhenActivated){
+        if(destroyWhenActivated){
         Destroy(gameObject);
     }
+    }
+    
 }
