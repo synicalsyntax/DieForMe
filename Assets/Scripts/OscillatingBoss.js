@@ -22,7 +22,7 @@ function Update() {
     transform.position = new Vector3(transform.position.x, PingPong(Time.time * speed, startingY, endingY), transform.position.z);
     if (Time.time > SpellCoolDown){
         SpellCoolDown = Time.time + duration; 
-        //Spell();
+        Spell();
     }
 
     if(GetComponent.<SpriteRenderer>().enabled == true) {
@@ -57,6 +57,8 @@ function PingPong(t: float, minLength: float, maxLength: float) {
                 var Spell = Instantiate(AurorSpell, transform.position, Quaternion.identity);
                 Spell.velocity.x = direction * spellSpeed;
 
+
+                Destroy(Spell.gameObject, 2);
             }
         }
 
