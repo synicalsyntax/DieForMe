@@ -47,7 +47,6 @@ function OnCollisionStay2D(theCollision : Collision2D) {
 function OnTriggerEnter2D(collider2D : Collider2D){
     if (collider2D.name.StartsWith("SpellX") ||collider2D.name.StartsWith("SpellZ")  ){
 	    hits = hits + 1;
-	    yield WaitForSeconds(0.5);
 	    if (hits > 2) {
 			GetComponent.<SpriteRenderer>().enabled = false;
 			GetComponent.<Collider2D>().enabled = false;
