@@ -178,8 +178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpellCoolDown: 0
   speed: 3
-  startingY: -2
-  endingY: 7
+  startingY: -5
+  endingY: -2
   duration: 2
   Horcrux: {fileID: 5085996, guid: 52ab2a521b21345c2b1d6662be81f38c, type: 2}
   AurorSpell: {fileID: 5085056, guid: 56164926a56463142be6337b28172bb3, type: 2}
@@ -10909,6 +10909,10 @@ Prefab:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 162874, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
+      propertyPath: m_TagString
+      value: Respawn
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11434522, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
@@ -17003,7 +17007,7 @@ GameObject:
   - 114: {fileID: 1570300811}
   m_Layer: 0
   m_Name: Big Bad Mafia Boss
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
