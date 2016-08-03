@@ -63,13 +63,12 @@ function Update () {
 }
 
 function Jump() {
-    GetComponent.<Rigidbody2D>().AddForce(Vector2(0, Mathf.Clamp(600,550,650))); //might depend on mass of object
+    GetComponent.<Rigidbody2D>().AddForce(Vector2(0, 650)); //might depend on mass of object
     yield WaitForSeconds (0.1);
 }
 
 function ZSpell() {
     var Spell = Instantiate(SpellZ, transform.position, Quaternion.identity);
-    Spell.velocity.x = direction * spellSpeed;
     Spell.GetComponent.<Renderer>().enabled = true;
     Spell.velocity.x = direction * spellSpeed;
     yield WaitForSeconds (1);
@@ -110,13 +109,19 @@ function OnCollisionEnter2D(theCollision : Collision2D) {
          transform.position = Vector2(-1, 2); //reset position  
          deathReset();
     }
-   
     if (theCollision.gameObject.name.StartsWith("Auror")) {
         yield WaitForSeconds(0.05);
         transform.position = Vector2(-1, 2); //reset position  
         deathReset();
-    }
-    
+    }  
+    if (theCollision.gameObject.name.StartsWith("Horcrux 1")) {
+        Destroy(theCollision.gameObject);
+        yield WaitForSeconds(0.05);
+        for (var poof : GameObject in GameObject.FindGameObjectsWithTag('Poof')) {
+          poof.GetComponent.<SpriteRenderer>().enabled = false;
+          poof.GetComponent.<Collider2D>().enabled = false;
+        }
+    }  
 }
 
 function OnCollisionStay2D(theCollision : Collision2D) {
@@ -203,6 +208,10 @@ function deathReset() {
           reappear.GetComponent.<SpriteRenderer>().enabled = true;
           reappear.GetComponent.<Collider2D>().enabled = true;
     }
+    for (var poof : GameObject in GameObject.FindGameObjectsWithTag('Poof')) {
+          poof.GetComponent.<SpriteRenderer>().enabled = true;
+          poof.GetComponent.<Collider2D>().enabled = true;
+        }
     yield WaitForSeconds(3);
     for (var reappear : GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
           reappear.GetComponent.<SpriteRenderer>().enabled = true;

@@ -5,7 +5,7 @@ public var speed: float =3;
 public var startingY: float;
 public var endingY: float;
 var duration : float = 2;
-
+public var Horcrux : Rigidbody2D;
 public var AurorSpell : Rigidbody2D;
 var direction : float;
 public var spellSpeed : int;
@@ -30,6 +30,7 @@ function Update() {
     } else {
         dead = true;
     }
+    transform.position.x = 109;
 }
 
 function PingPong(t: float, minLength: float, maxLength: float) {
@@ -41,6 +42,7 @@ function PingPong(t: float, minLength: float, maxLength: float) {
         if (collider2D.name.StartsWith("SpellX")){
             GetComponent.<SpriteRenderer>().enabled = false;
             GetComponent.<Collider2D>().enabled = false;
+            Instantiate(Horcrux, transform.position, Quaternion.identity);
         }
     }
 
@@ -48,6 +50,5 @@ function PingPong(t: float, minLength: float, maxLength: float) {
             if (dead == false) {
                 var Spell = Instantiate(AurorSpell, transform.position, Quaternion.identity);
                 Spell.velocity.x = direction * spellSpeed;
-                Destroy(Spell.gameObject, 1);
             }
         }
