@@ -39,7 +39,7 @@ function PingPong(t: float, minLength: float, maxLength: float) {
 }
 
     function OnTriggerEnter2D(collider2D : Collider2D){
-        if (collider2D.name.StartsWith("SpellX") || collider2D.name.StartsWith("SpellZ")){
+        if (collider2D.gameObject.name.StartsWith('SpellX') || collider2D.name.StartsWith('SpellZ')){
             hits++;
             if (hits > 2) {
                 GetComponent.<SpriteRenderer>().enabled = false;
