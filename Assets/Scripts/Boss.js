@@ -36,6 +36,12 @@ function PingPong(t: float, minLength: float, maxLength: float) {
     return pos;
 }
 
+function OnCollisionStay2D(theCollision : Collision2D) {
+    if (theCollision.gameObject.name.StartsWith("Player")) { 
+        hits = 0;
+    }
+}
+
 function OnTriggerEnter2D(collider2D : Collider2D){
 	if (collider2D.name.StartsWith("SpellX")){
 	    hits++;
@@ -51,7 +57,7 @@ function Spell(){
     if (dead == false) {
         var Spell = Instantiate(BossSpell, transform.position, Quaternion.identity);
 
-        var player :GameObject = GameObject.Find("Player");
+        var player : GameObject = GameObject.Find("Player");
 
         var v = new Vector2((player.transform.position.x - transform.position.x),(player.transform.position.y-transform.position.y)).normalized;
         Spell.velocity.x= v.x* spellSpeed;

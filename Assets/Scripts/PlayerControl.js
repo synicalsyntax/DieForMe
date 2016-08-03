@@ -135,23 +135,19 @@ function OnCollisionExit2D(theCollision : Collision2D) {
     } 
 }
 
-    function OnTriggerEnter2D(collider2D : Collider2D){
-        if (collider2D.name.StartsWith("AurorSpell")){
-            yield WaitForSeconds(0.05);
-            transform.position = Vector2(-1, 2); //reset position  
-            deathReset();
-        }
+function OnTriggerEnter2D(collider2D : Collider2D){
+	if (collider2D.name.StartsWith("AurorSpell")){
+		yield WaitForSeconds(0.05);
+		transform.position = Vector2(-1, 2); //reset position  
+		deathReset();
+	}
 
-        if (collider2D.name.StartsWith("Horcrux")){
-            gameObject.SetActive(false);
-            yield WaitForSeconds(1);
-            Application.LoadLevel("Level 1");
-
-
-        }
+	if (collider2D.name.StartsWith("Horcrux")){
+		gameObject.SetActive(false);
+		yield WaitForSeconds(1);
+		Application.LoadLevel("Level 1");
     }
-
-
+}
 
 function FlipLeft() {
      var theScale : Vector3;
