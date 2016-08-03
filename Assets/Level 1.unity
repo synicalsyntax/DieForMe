@@ -5638,7 +5638,7 @@ MonoBehaviour:
   direction: -1
   spellDirection: 1
   canMove: 1
-  SceneMoveTo: 
+  SceneMoveTo: Level 2
   checkpoint: {x: -1, y: 2}
 --- !u!114 &494472676
 MonoBehaviour:

@@ -1,10 +1,12 @@
-﻿/*
+﻿import UnityEngine.SceneManagement;
+/*
 Basic Player Platformer Script: 
   + Horizontal + Vertical Movement 
   + Collisions with Platforms + Enemy Object(s)
   + Falling Off Platform Relocation
 */
 #pragma strict
+
 var isgrounded: boolean = true; //variable for when player is grounded
 public var SpellZ: Rigidbody2D; 
 public var SpellX: Rigidbody2D;
@@ -80,7 +82,7 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         isgrounded = true;
     }
     if (theCollision.gameObject.name.StartsWith("Platform Disappearing")) { //checks if colliding with object called Platform
-        yield WaitForSeconds(2);
+        yield WaitForSeconds(3);
         isgrounded = false;
     }
     if (theCollision.gameObject.name.StartsWith("Lava")) { //if touching enemy object name Enemy
@@ -98,7 +100,7 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         transform.position = checkpoint; //reset position  
         deathReset();
     }
-    if (theCollision.gameObject.name.StartsWith("Big Bad Mafia Boss")) {
+    if (theCollision.gameObject.name.StartsWith("Big Bad")) {
         yield WaitForSeconds(0.05);
         transform.position = checkpoint; //reset position  
         deathReset();
@@ -119,7 +121,7 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
     if (theCollision.gameObject.name.StartsWith("Horcrux")) {
         theCollision.gameObject.gameObject.SetActive(false);
         yield WaitForSeconds(1);
-        Application.LoadLevel(SceneMoveTo);
+        SceneManager.LoadScene(SceneMoveTo);
     }
 }
 
@@ -196,6 +198,10 @@ function deathReset() {
     transform.parent = null;
     Destroy(GameObject.Find('Horcrux'));
     Destroy(GameObject.Find('Horcrux 1'));
+
+    GameObject.Find("Big Bad Boss").GetComponent(OscillatingBoss).hits = 0;
+    GameObject.Find("Big Bad Mafia Boss").GetComponent(Boss).hits = 0;
+
     yield WaitForSeconds(0.1);
     for (var reappear: GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
         reappear.GetComponent. < SpriteRenderer > ().enabled = true;
