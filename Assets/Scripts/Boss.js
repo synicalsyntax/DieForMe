@@ -65,7 +65,5 @@ function Spell(){
         var v = new Vector2((player.transform.position.x - transform.position.x),(player.transform.position.y-transform.position.y)).normalized;
         Spell.velocity.x= v.x* spellSpeed;
         Spell.velocity.y= v.y* spellSpeed;
-
-        Destroy(Spell.gameObject, 1);
     }
 }
