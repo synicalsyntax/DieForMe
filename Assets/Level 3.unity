@@ -18561,6 +18561,10 @@ Prefab:
       propertyPath: canMove
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11475150, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
+      propertyPath: SceneMoveTo
+      value: Credits
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
   m_IsPrefabParent: 0
