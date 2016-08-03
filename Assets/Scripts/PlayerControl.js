@@ -214,7 +214,9 @@ function deathReset() {
         }
     yield WaitForSeconds(3);
     for (var reappear : GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
-          reappear.GetComponent.<SpriteRenderer>().enabled = true;
-          reappear.GetComponent.<Collider2D>().enabled = true;
+          if (reappear.gameObject.name == "Platform Disappearing") {
+              reappear.GetComponent.<SpriteRenderer>().enabled = true;
+              reappear.GetComponent.<Collider2D>().enabled = true;
+          }
     }
 }
