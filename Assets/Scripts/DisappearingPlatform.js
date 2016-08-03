@@ -8,10 +8,10 @@ function Start(){
 function OnCollisionStay2D(theCollision : Collision2D) {
          var contactPoint : Vector3 = theCollision.contacts[0].point;
          var center : Vector3 = GetComponent.<Collider2D>().bounds.center;
-         var right : boolean = contactPoint.x > center.x;
          var top : boolean = contactPoint.y > center.y;
 
-         if(theCollision.gameObject.name.StartsWith("Player") && right && top) { 
+         if(theCollision.gameObject.name.StartsWith("Player") && top) {
+             print('yay');
              yield WaitForSeconds(3);
              GetComponent.<SpriteRenderer>().enabled = false;
              GetComponent.<Collider2D>().enabled = false;
