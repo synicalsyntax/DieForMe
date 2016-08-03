@@ -178,8 +178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpellCoolDown: 0
   speed: 3
-  startingY: -5
-  endingY: -2
+  startingY: -2
+  endingY: 7
   duration: 2
   Horcrux: {fileID: 5085996, guid: 52ab2a521b21345c2b1d6662be81f38c, type: 2}
   AurorSpell: {fileID: 5085056, guid: 56164926a56463142be6337b28172bb3, type: 2}
