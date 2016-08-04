@@ -26,7 +26,6 @@ public var AurorHit : AudioClip;
 public var SpellXCast : AudioClip;
 public var SpellZCast : AudioClip;
 
-
 function Start() {
     transform.position = checkpoint; //original starting position, in x, y, z values
     direction = -1;
