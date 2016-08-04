@@ -442,6 +442,47 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 44f5cd41445fa77488b4f2fa90ccc386, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &174863437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 174863439}
+  - 114: {fileID: 174863438}
+  m_Layer: 0
+  m_Name: KillCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &174863438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174863437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d28f8c3017071df4082677f5853c7c31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Kills: 0
+--- !u!4 &174863439
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174863437}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 70.174706, y: 3.804568, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
 --- !u!1 &228473497
 GameObject:
   m_ObjectHideFlags: 0
@@ -2035,7 +2076,7 @@ MonoBehaviour:
   startLine: 0
   endLine: 0
   theTextBox: {fileID: 0}
-  destroyWhenActivated: 0
+  destroyWhenActivated: 1
 --- !u!61 &1615710938
 BoxCollider2D:
   m_ObjectHideFlags: 0
