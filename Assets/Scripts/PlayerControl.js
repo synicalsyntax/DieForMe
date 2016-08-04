@@ -114,7 +114,7 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         GetComponent.<AudioSource>().clip = AurorHit;
         deathReset();
     }
-    if (theCollision.gameObject.name.StartsWith("Horcrux 0") || theCollision.gameObject.name.StartsWith("Horcrux 2")) {
+    if (theCollision.gameObject.name.StartsWith("Horcrux 0") || theCollision.gameObject.name.StartsWith("Horcrux 2") || theCollision.gameObject.name.StartsWith("Horcrux 4") || theCollision.gameObject.name.StartsWith("Horcrux 6")) {
         Destroy(theCollision.gameObject);
         yield WaitForSeconds(0.5);
         SceneManager.LoadScene(SceneMoveTo);
@@ -127,6 +127,12 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
             poof.GetComponent.<SpriteRenderer>().enabled = false;
             poof.GetComponent.<Collider2D>().enabled = false;
         }
+}
+    if (theCollision.gameObject.name.StartsWith("Horcrux 3") || theCollision.gameObject.name.StartsWith("Horcrux 5") ) {
+        Destroy(theCollision.gameObject);
+     //   yield WaitForSeconds(0.5);
+   //     SceneManager.LoadScene(SceneMoveTo);
+    //    otherScript.addToCount(currentKills);
     }
 }
 
