@@ -18,12 +18,14 @@ var spellDirection: int = 1;
 public var canMove: boolean;
 public var SceneMoveTo: String;
 var checkpoint: Vector2 = Vector2(-1, 2);
+public var currentKills : int;
 
 function Start() {
     transform.position = checkpoint; //original starting position, in x, y, z values
     direction = -1;
     spellDirection = 1;
     FlipLeft();
+    currentKills = 0;
 }
 
 function FixedUpdate() {
@@ -78,6 +80,7 @@ function XSpell() {
 }
 
 function OnCollisionEnter2D(theCollision: Collision2D) {
+    var otherScript: KillingCount = FindObjectOfType(KillingCount);
     if (theCollision.gameObject.name.StartsWith("Platform")) { //checks if colliding with object called Platform
         isgrounded = true;
     }
@@ -111,6 +114,8 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Horcrux 1")) {
+        
+        otherScript.addToCount(currentKills);
         Destroy(theCollision.gameObject);
         yield WaitForSeconds(0.05);
         for (var poof: GameObject in GameObject.FindGameObjectsWithTag('Poof')) {
@@ -119,6 +124,8 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         }
     }
     if (theCollision.gameObject.name.StartsWith("Horcrux")) {
+         
+        otherScript.addToCount(currentKills);
         Destroy(theCollision.gameObject);
         yield WaitForSeconds(0.5);
         SceneManager.LoadScene(SceneMoveTo);
@@ -195,6 +202,7 @@ function FlipRight() {
 }
 
 function deathReset() {
+    currentKills = 0;
     transform.parent = null;
     Destroy(GameObject.Find('Horcrux'));
     Destroy(GameObject.Find('Horcrux 1'));
@@ -218,4 +226,7 @@ function deathReset() {
             reappear.GetComponent.<Collider2D>().enabled = true;
         }
     }
+}
+function addToCurrentCount(){
+    currentKills +=1;
 }

@@ -48,7 +48,9 @@ function OnTriggerEnter2D(collider2D : Collider2D){
     if (collider2D.name.StartsWith("SpellX") ||collider2D.name.StartsWith("SpellZ")  ){
 	    hits = hits + 1;
 	    if (hits > 2) {
-			GetComponent.<SpriteRenderer>().enabled = false;
+	        var otherScript : PlayerControl= FindObjectOfType(PlayerControl);
+	        otherScript.addToCurrentCount();
+	        GetComponent.<SpriteRenderer>().enabled = false;
 			GetComponent.<Collider2D>().enabled = false;
 			dead = true;
 			Instantiate(Horcrux, transform.position, Quaternion.identity);

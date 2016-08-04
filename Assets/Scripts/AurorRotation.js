@@ -37,6 +37,8 @@ function Update() {
 
     function OnTriggerEnter2D(collider2D : Collider2D){
         if (collider2D.name.StartsWith("SpellX")){
+            var otherScript : PlayerControl= FindObjectOfType(PlayerControl);
+            otherScript.addToCurrentCount();
             GetComponent.<SpriteRenderer>().enabled = false;
             GetComponent.<Collider2D>().enabled = false;
         }

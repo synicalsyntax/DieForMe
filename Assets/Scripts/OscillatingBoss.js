@@ -43,6 +43,8 @@ function PingPong(t: float, minLength: float, maxLength: float) {
         if (collider2D.gameObject.name.StartsWith('SpellX') || collider2D.name.StartsWith('SpellZ')){
             hits = hits + 1;
             if (hits > 2) {
+                var otherScript : PlayerControl= FindObjectOfType(PlayerControl);
+                otherScript.addToCurrentCount();
                 GetComponent.<SpriteRenderer>().enabled = false;
                 GetComponent.<Collider2D>().enabled = false;
                 dead = true;
