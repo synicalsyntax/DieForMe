@@ -446,7 +446,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 448680, guid: d64b30e60bde5482bb81742370f61ec0, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 448680, guid: d64b30e60bde5482bb81742370f61ec0, type: 2}
       propertyPath: m_LocalScale.x
@@ -2238,7 +2238,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 491990, guid: b9b5b0fce0569b946b9b8ebaebde9b98, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 149720, guid: b9b5b0fce0569b946b9b8ebaebde9b98, type: 2}
       propertyPath: m_Name
@@ -12473,7 +12473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2c4e9fb329a204280e5bddd4665a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Horcrux: {fileID: 0}
+  Horcrux: {fileID: 5013162, guid: 8246d54fb1c3b4b4791d36dcbdc208b1, type: 2}
 --- !u!212 &1049203101
 SpriteRenderer:
   m_ObjectHideFlags: 0
