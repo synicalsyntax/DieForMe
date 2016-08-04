@@ -19,8 +19,6 @@ public var canMove: boolean;
 public var SceneMoveTo: String;
 var checkpoint: Vector2 = Vector2(-1, 2);
 public var currentKills : int;
-
-
 public var LavaHit : AudioClip;
 public var PlantHit : AudioClip;
 public var DementorHit : AudioClip;
@@ -57,9 +55,6 @@ function FixedUpdate() {
 }
 
 function Update() {
-    //if(!canMove){
-    //return;
-    //}
     if (Input.GetKeyDown(KeyCode.Z) && Time.time > SpellCooldown) {
         SpellCooldown = Time.time + duration;
         ZSpell();
@@ -81,7 +76,6 @@ function ZSpell() {
     var Spell = Instantiate(SpellZ, transform.position, Quaternion.identity);
     Spell.GetComponent.<Renderer>().enabled = true;
     Spell.velocity.x = direction * spellSpeed;
-    yield WaitForSeconds(1);
 }
 
 function XSpell() {
@@ -91,7 +85,6 @@ function XSpell() {
     var Spell = Instantiate(SpellX, transform.position, Quaternion.identity);
     Spell.GetComponent.<Renderer>().enabled = true;
     Spell.velocity.x = direction * spellSpeed;
-    yield WaitForSeconds(1);
 }
 
 function OnCollisionEnter2D(theCollision: Collision2D) {
@@ -105,39 +98,21 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
     }
     if (theCollision.gameObject.name.StartsWith("Lava")) { //if touching enemy object name Enemy
         GetComponent.<AudioSource>().clip = LavaHit;
-        GetComponent.<AudioSource>().Play();
-        
-        yield WaitForSeconds(1);
-        transform.position = checkpoint; //reset position
         deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Dementor")) {
         GetComponent.<AudioSource>().clip = DementorHit;
-        GetComponent.<AudioSource>().Play();
-        
-        yield WaitForSeconds(.5);
-        transform.position = checkpoint; //reset position  
         deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Plant")) {
         GetComponent.<AudioSource>().clip = PlantHit;
-        GetComponent.<AudioSource>().Play();
-        
-        yield WaitForSeconds(.2);
-        transform.position = checkpoint; //reset position  
         deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Big Bad")) {
-        yield WaitForSeconds(1);
-        transform.position = checkpoint; //reset position  
         deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Auror")) {
         GetComponent.<AudioSource>().clip = AurorHit;
-        GetComponent.<AudioSource>().Play();
-
-        yield WaitForSeconds(.2);
-        transform.position = checkpoint; //reset position  
         deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Horcrux 0") || theCollision.gameObject.name.StartsWith("Horcrux 2")) {
@@ -175,10 +150,6 @@ function OnCollisionExit2D(theCollision: Collision2D) {
 function OnTriggerEnter2D(collider2D: Collider2D) {
     if (collider2D.name.StartsWith("SpellAuror")) {
         GetComponent.<AudioSource>().clip = AurorHit;
-        GetComponent.<AudioSource>().Play();
-        
-        yield WaitForSeconds(1);
-        transform.position = checkpoint; //reset position  
         deathReset();
     }
     if (collider2D.name.StartsWith("Checkpoint")) {
@@ -229,16 +200,21 @@ function FlipRight() {
 }
 
 function deathReset() {
+    GetComponent.<SpriteRenderer>().enabled = false;
+    canMove = false;
+    SpellCooldown = Time.time + 1;
+    GetComponent.<AudioSource>().Play();
     currentKills = 0;
     transform.parent = null;
     Destroy(GameObject.Find('Horcrux'));
     Destroy(GameObject.Find('Horcrux 1'));
     Destroy(GameObject.Find('Horcrux 2'));
-
     GameObject.Find("Big Bad Boss").GetComponent(OscillatingBoss).hits = 0;
     GameObject.Find("Big Bad Mafia Boss").GetComponent(Boss).hits = 0;
-
-    yield WaitForSeconds(0.1);
+    transform.position = checkpoint;
+    yield WaitForSeconds(1);
+    GetComponent.<SpriteRenderer>().enabled = true;
+    canMove = true;
     for (var reappear: GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
         reappear.GetComponent.<SpriteRenderer>().enabled = true;
         reappear.GetComponent.<Collider2D>().enabled = true;
@@ -255,6 +231,7 @@ function deathReset() {
         }
     }
 }
+
 function addToCurrentCount(){
     currentKills +=1;
 }
