@@ -15,7 +15,7 @@ GameObject:
   - 61: {fileID: 6182882}
   - 114: {fileID: 11403474}
   m_Layer: 0
-  m_Name: AurorSpell
+  m_Name: SpellAuror
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
