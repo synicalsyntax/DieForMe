@@ -150,7 +150,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collide: {fileID: 21300006, guid: 0b4116349de824488853d13bbc7e7830, type: 3}
-  HitBoss: {fileID: 0}
 --- !u!212 &21240954
 SpriteRenderer:
   m_ObjectHideFlags: 1
