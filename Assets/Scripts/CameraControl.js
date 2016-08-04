@@ -7,6 +7,9 @@ Camera Following Script
 
 var target : Transform; //In the Unity editor, attach Script to camera and set Target to Player for camera to track Player
 
+public var offsetx : float;
+public var offsety : float;
+
 function Update(){
-    transform.position = new Vector3(GameObject.Find("Player").transform.position.x, GameObject.Find("Player").transform.position.y, -10); //sets Camera position to x and y position of Player (z position value is constant at -10)
+    transform.position = new Vector3(target.transform.position.x + offsetx, target.transform.position.y + offsety, -10); //sets Camera position to x and y position of Player (z position value is constant at -10)
 }
