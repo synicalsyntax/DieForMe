@@ -22802,6 +22802,7 @@ Prefab:
     - target: {fileID: 11422144, guid: 6b9335dd2b08b45a19682a4cf96bc6d8, type: 2}
       propertyPath: LavaHit
       value: 
+      objectReference: {fileID: 8300000, guid: 962477848ac64ce4cbc931f088fd3869, type: 3}
     - target: {fileID: 11422144, guid: 6b9335dd2b08b45a19682a4cf96bc6d8, type: 2}
       propertyPath: PlantHit
       value: 
