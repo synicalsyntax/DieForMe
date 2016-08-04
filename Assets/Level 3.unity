@@ -472,6 +472,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -360
       objectReference: {fileID: 0}
+    - target: {fileID: 11475546, guid: d64b30e60bde5482bb81742370f61ec0, type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1139348929}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d64b30e60bde5482bb81742370f61ec0, type: 2}
   m_IsPrefabParent: 0
@@ -1826,6 +1830,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 11478000, guid: 437c7fe69821b4a1ca9cb7bb0c4195c8, type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1139348929}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 437c7fe69821b4a1ca9cb7bb0c4195c8, type: 2}
   m_IsPrefabParent: 0
@@ -12844,6 +12852,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1139348929 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 426198, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
+  m_PrefabInternal: {fileID: 1648298475}
 --- !u!1001 &1142613539
 Prefab:
   m_ObjectHideFlags: 0
@@ -16902,7 +16914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93dcb45a818024f9f81ac14e747bdbd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1139348929}
   offsetx: 0
   offsety: 0
 --- !u!82 &1516961091

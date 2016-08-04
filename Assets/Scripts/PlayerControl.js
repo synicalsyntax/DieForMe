@@ -123,8 +123,7 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
             poof.GetComponent.<Collider2D>().enabled = false;
         }
     }
-    if (theCollision.gameObject.name.StartsWith("Horcrux")) {
-         
+    if (theCollision.gameObject.name.StartsWith("Horcrux")) { 
         otherScript.addToCount(currentKills);
         Destroy(theCollision.gameObject);
         yield WaitForSeconds(0.5);
