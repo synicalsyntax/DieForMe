@@ -1,12 +1,5 @@
-﻿#pragma strict
+﻿import UnityEngine.SceneManagement;
 
-function Start () {
-    
-}
-
-function Update () {
-
-}
 function StartTheGame(){
-    Application.LoadLevel("Level 0");
+    SceneManager.LoadScene("Level 0");
 }
