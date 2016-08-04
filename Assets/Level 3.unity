@@ -17560,7 +17560,7 @@ MonoBehaviour:
   startLine: 0
   endLine: 5
   theTextBox: {fileID: 0}
-  destroyWhenActivated: 0
+  destroyWhenActivated: 1
 --- !u!4 &1447487152
 Transform:
   m_ObjectHideFlags: 0
