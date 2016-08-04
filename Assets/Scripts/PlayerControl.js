@@ -199,7 +199,7 @@ function deathReset() {
     Destroy(GameObject.Find('Horcrux'));
     Destroy(GameObject.Find('Horcrux 1'));
 
-    GameObject.Find("Big Bad Boss").GetComponent(OscillatingBoss).hits = 0;
+    GameObject.Find("Auror").GetComponent(OscillatingBoss).hits = 0;
     GameObject.Find("Big Bad Mafia Boss").GetComponent(Boss).hits = 0;
 
     yield WaitForSeconds(0.1);
