@@ -7445,6 +7445,14 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 5e18bf8ce72cb495b9c1e8cbda930121,
         type: 3}
+    - target: {fileID: 6122704, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
+      propertyPath: m_Offset.x
+      value: 0.000028483075
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122704, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
+      propertyPath: m_Size.x
+      value: 2.5412822
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
   m_IsPrefabParent: 0
@@ -12724,7 +12732,7 @@ Transform:
   - {fileID: 2136943630}
   - {fileID: 1689284762}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
 --- !u!1001 &696103517
 Prefab:
   m_ObjectHideFlags: 0
@@ -17523,7 +17531,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
 --- !u!212 &993104303
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26886,6 +26894,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  offsetx: 0
+  offsety: 0
 --- !u!1001 &1653595365
 Prefab:
   m_ObjectHideFlags: 0
@@ -30362,7 +30372,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 490148, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 490148, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
       propertyPath: m_LocalScale.x
