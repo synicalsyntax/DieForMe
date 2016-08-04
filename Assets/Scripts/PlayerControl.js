@@ -20,6 +20,15 @@ public var SceneMoveTo: String;
 var checkpoint: Vector2 = Vector2(-1, 2);
 public var currentKills : int;
 
+
+public var LavaHit : AudioClip;
+public var PlantHit : AudioClip;
+public var DementorHit : AudioClip;
+public var AurorHit : AudioClip;
+public var SpellXCast : AudioClip;
+public var SpellZCast : AudioClip;
+
+
 function Start() {
     transform.position = checkpoint; //original starting position, in x, y, z values
     direction = -1;
@@ -66,6 +75,9 @@ function Jump() {
 }
 
 function ZSpell() {
+    GetComponent.<AudioSource>().clip = SpellZCast;
+    GetComponent.<AudioSource>().Play();
+
     var Spell = Instantiate(SpellZ, transform.position, Quaternion.identity);
     Spell.GetComponent.<Renderer>().enabled = true;
     Spell.velocity.x = direction * spellSpeed;
@@ -73,6 +85,9 @@ function ZSpell() {
 }
 
 function XSpell() {
+    GetComponent.<AudioSource>().clip = SpellXCast;
+    GetComponent.<AudioSource>().Play();
+
     var Spell = Instantiate(SpellX, transform.position, Quaternion.identity);
     Spell.GetComponent.<Renderer>().enabled = true;
     Spell.velocity.x = direction * spellSpeed;
@@ -89,16 +104,25 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         isgrounded = false;
     }
     if (theCollision.gameObject.name.StartsWith("Lava")) { //if touching enemy object name Enemy
-        yield WaitForSeconds(0.05);
+        GetComponent.<AudioSource>().clip = LavaHit;
+        GetComponent.<AudioSource>().Play();
+        
+        yield WaitForSeconds(0.1);
         transform.position = checkpoint; //reset position
         deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Dementor")) {
+        GetComponent.<AudioSource>().clip = DementorHit;
+        GetComponent.<AudioSource>().Play();
+        
         yield WaitForSeconds(0.05);
         transform.position = checkpoint; //reset position  
         deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Plant")) {
+        GetComponent.<AudioSource>().clip = PlantHit;
+        GetComponent.<AudioSource>().Play();
+        
         yield WaitForSeconds(0.05);
         transform.position = checkpoint; //reset position  
         deathReset();
@@ -109,6 +133,9 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Auror")) {
+        GetComponent.<AudioSource>().clip = AurorHit;
+        GetComponent.<AudioSource>().Play();
+
         yield WaitForSeconds(0.05);
         transform.position = checkpoint; //reset position  
         deathReset();
@@ -152,6 +179,9 @@ function OnCollisionExit2D(theCollision: Collision2D) {
 
 function OnTriggerEnter2D(collider2D: Collider2D) {
     if (collider2D.name.StartsWith("SpellAuror")) {
+        GetComponent.<AudioSource>().clip = AurorHit;
+        GetComponent.<AudioSource>().Play();
+        
         yield WaitForSeconds(0.05);
         transform.position = checkpoint; //reset position  
         deathReset();

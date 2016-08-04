@@ -13,6 +13,8 @@ public var spellSpeed : float;
 static var dead = false;
 public var hits : int = 0;
 
+
+
 function Start(){
     GetComponent.<Renderer>().enabled = true;
     GetComponent.<Collider2D>().enabled = true;
@@ -48,6 +50,7 @@ function OnTriggerEnter2D(collider2D : Collider2D){
     if (collider2D.name.StartsWith("SpellX") ||collider2D.name.StartsWith("SpellZ")  ){
 	    hits = hits + 1;
 	    if (hits > 2) {
+
 	        var otherScript : PlayerControl= FindObjectOfType(PlayerControl);
 	        otherScript.addToCurrentCount();
 	        GetComponent.<SpriteRenderer>().enabled = false;
