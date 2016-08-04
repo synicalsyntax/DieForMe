@@ -6377,6 +6377,10 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!4 &598913483 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 478062, guid: 9e7fc348e43614d3bb2ccecb23ae0f2d, type: 2}
+  m_PrefabInternal: {fileID: 1441136475}
 --- !u!1 &607647724
 GameObject:
   m_ObjectHideFlags: 0
@@ -16001,7 +16005,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 478062, guid: 9e7fc348e43614d3bb2ccecb23ae0f2d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 55.03
+      value: 50.01
       objectReference: {fileID: 0}
     - target: {fileID: 478062, guid: 9e7fc348e43614d3bb2ccecb23ae0f2d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -16034,6 +16038,66 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e7fc348e43614d3bb2ccecb23ae0f2d, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1444175760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1444175763}
+  - 114: {fileID: 1444175762}
+  - 61: {fileID: 1444175761}
+  m_Layer: 0
+  m_Name: CheckpointReachedTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1444175761
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1444175760}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!114 &1444175762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1444175760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d4f3812dbf94241941a35da199a85d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theText: {fileID: 4900000, guid: c5e5d1e581bb5c645b2ee664c69d6f4e, type: 3}
+  startLine: 0
+  endLine: 0
+  theTextBox: {fileID: 0}
+  destroyWhenActivated: 1
+--- !u!4 &1444175763
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1444175760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.069999695, y: 1.56, z: -0.42863676}
+  m_LocalScale: {x: 0.5, y: 5.0498195, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 598913483}
+  m_RootOrder: 0
 --- !u!1 &1447148012
 GameObject:
   m_ObjectHideFlags: 0
@@ -21508,6 +21572,10 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!4 &1993126515 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 478062, guid: 9e7fc348e43614d3bb2ccecb23ae0f2d, type: 2}
+  m_PrefabInternal: {fileID: 1347226143}
 --- !u!1001 &1995950246
 Prefab:
   m_ObjectHideFlags: 0
@@ -22037,6 +22105,66 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1 &2019106387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2019106388}
+  - 114: {fileID: 2019106390}
+  - 61: {fileID: 2019106389}
+  m_Layer: 0
+  m_Name: CheckpointReachedTrigger (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2019106388
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2019106387}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.12, z: -0.42863676}
+  m_LocalScale: {x: 0.5, y: 5.0498195, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1993126515}
+  m_RootOrder: 0
+--- !u!61 &2019106389
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2019106387}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+--- !u!114 &2019106390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2019106387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d4f3812dbf94241941a35da199a85d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theText: {fileID: 4900000, guid: c5e5d1e581bb5c645b2ee664c69d6f4e, type: 3}
+  startLine: 0
+  endLine: 0
+  theTextBox: {fileID: 0}
+  destroyWhenActivated: 1
 --- !u!1 &2019759448
 GameObject:
   m_ObjectHideFlags: 0
