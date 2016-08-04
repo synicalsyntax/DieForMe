@@ -4841,6 +4841,7 @@ GameObject:
   - 4: {fileID: 265366318}
   - 212: {fileID: 265366317}
   - 61: {fileID: 265366319}
+  - 82: {fileID: 265366321}
   - 114: {fileID: 265366320}
   m_Layer: 0
   m_Name: baby
@@ -4891,7 +4892,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
 --- !u!61 &265366319
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4914,12 +4915,84 @@ MonoBehaviour:
   m_GameObject: {fileID: 265366316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc4358af67ea4714d87822b75717b73b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f2c4e9fb329a204280e5bddd4665a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  startingX: 266
-  endingX: 267
+  Horcrux: {fileID: 5085996, guid: 98f02f6bc64624b51a5286c050f33ac7, type: 2}
+--- !u!82 &265366321
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 265366316}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1001 &266438270
 Prefab:
   m_ObjectHideFlags: 0
@@ -11749,6 +11822,51 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5cb969339aacb4ec88ddfebc661af5fd, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &614734429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 196968, guid: fb99203d0345ae640854be3d69bd21d2, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 614734431}
+  - 114: {fileID: 614734430}
+  m_Layer: 0
+  m_Name: Rotating Boss
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &614734430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11410880, guid: fb99203d0345ae640854be3d69bd21d2,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614734429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5329ac6c456204b80974117671ffd8e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotation: {x: 0, y: 0, z: 0, w: 0}
+  radius: {x: 5, y: 0, z: 0}
+  currentRotation: 0
+--- !u!4 &614734431
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 449358, guid: fb99203d0345ae640854be3d69bd21d2, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614734429}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 2039369614}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1001 &616105315
 Prefab:
   m_ObjectHideFlags: 0
@@ -13337,7 +13455,7 @@ Transform:
   - {fileID: 2136943630}
   - {fileID: 1689284762}
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 33
 --- !u!1001 &696103517
 Prefab:
   m_ObjectHideFlags: 0
@@ -18264,7 +18382,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 31
 --- !u!212 &993104303
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20735,7 +20853,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
 --- !u!1001 &1140519954
 Prefab:
   m_ObjectHideFlags: 0
@@ -27873,7 +27991,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
 --- !u!114 &1648139755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30362,7 +30480,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
 --- !u!212 &1802848554
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34128,7 +34246,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
 --- !u!212 &2032904677
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34324,7 +34442,7 @@ GameObject:
   - 61: {fileID: 2039369611}
   - 114: {fileID: 2039369610}
   m_Layer: 0
-  m_Name: second boss 1_0
+  m_Name: Big Bad Ghost
   m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34343,12 +34461,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpellCoolDown: 0
   speed: 3
-  duration: 3
+  duration: 2
   BossSpell: {fileID: 5085056, guid: 56164926a56463142be6337b28172bb3, type: 2}
-  Horcrux: {fileID: 5085996, guid: 98f02f6bc64624b51a5286c050f33ac7, type: 2}
-  spellSpeed: 0
+  Horcrux: {fileID: 5085996, guid: 2401c312948854e6bade1fe2877ea3c9, type: 2}
+  spellSpeed: 10
   hits: 0
-  HitBoss: {fileID: 0}
+  HitBoss: {fileID: 8300000, guid: 92680b515fee2914f8dc6e2e38eb9754, type: 3}
 --- !u!61 &2039369611
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -34417,12 +34535,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2039369609}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 214.81, y: -22.8, z: 0}
+  m_LocalPosition: {x: 218.5, y: -22.1, z: 0}
   m_LocalScale: {x: 2.2208543, y: 2.3482792, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_Father: {fileID: 614734431}
+  m_RootOrder: 0
 --- !u!1001 &2044748392
 Prefab:
   m_ObjectHideFlags: 0
@@ -35089,7 +35207,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
 --- !u!61 &2073169057
 BoxCollider2D:
   m_ObjectHideFlags: 0
