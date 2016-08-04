@@ -2,13 +2,10 @@
 
 var SpellCoolDown : float;
 public var speed: float =3;
-//public var startingX: float;
-//public var endingX: float;
 var duration : float = 3;
 public var BossSpell : Rigidbody2D;
 public var Horcrux : Rigidbody2D;
-
-//var direction : float;
+public var horcruxposition : Vector2;
 public var spellSpeed : float;
 static var dead = false;
 public var hits : int = 0;
@@ -60,7 +57,7 @@ function OnTriggerEnter2D(collider2D : Collider2D){
 	        GetComponent.<SpriteRenderer>().enabled = false;
 			GetComponent.<Collider2D>().enabled = false;
 			dead = true;
-			Instantiate(Horcrux, transform.position, Quaternion.identity);
+			Instantiate(Horcrux, horcruxposition, Quaternion.identity);
 		}
 	}
 }

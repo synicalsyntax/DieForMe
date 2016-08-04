@@ -12,6 +12,7 @@ public var spellSpeed : int;
 public var hits : int  = 0;
 static var dead = false;
 public var X : float;
+public var horcruxposition : Vector2;
 
 public var HitBoss : AudioClip;
 
@@ -54,7 +55,7 @@ function PingPong(t: float, minLength: float, maxLength: float) {
                 GetComponent.<SpriteRenderer>().enabled = false;
                 GetComponent.<Collider2D>().enabled = false;
                 dead = true;
-                Instantiate(Horcrux, Vector2(109, -5), Quaternion.identity);
+                Instantiate(Horcrux, horcruxposition, Quaternion.identity);
             }
         }
     }

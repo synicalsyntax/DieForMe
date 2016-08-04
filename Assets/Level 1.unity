@@ -10968,6 +10968,14 @@ Prefab:
       propertyPath: HitBoss
       value: 
       objectReference: {fileID: 8300000, guid: 92680b515fee2914f8dc6e2e38eb9754, type: 3}
+    - target: {fileID: 11442734, guid: f8dce074dba944ecba8444a662d08312, type: 2}
+      propertyPath: horcruxposition.x
+      value: 109
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442734, guid: f8dce074dba944ecba8444a662d08312, type: 2}
+      propertyPath: horcruxposition.y
+      value: -5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f8dce074dba944ecba8444a662d08312, type: 2}
   m_IsPrefabParent: 0
@@ -13698,7 +13706,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 402982, guid: 1f9fe48bc46794b4f87ce21e69f3749b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -7
+      value: -7.55
       objectReference: {fileID: 0}
     - target: {fileID: 402982, guid: 1f9fe48bc46794b4f87ce21e69f3749b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -13732,6 +13740,14 @@ Prefab:
       propertyPath: HitBoss
       value: 
       objectReference: {fileID: 8300000, guid: 92680b515fee2914f8dc6e2e38eb9754, type: 3}
+    - target: {fileID: 11422874, guid: 1f9fe48bc46794b4f87ce21e69f3749b, type: 2}
+      propertyPath: horcruxposition.x
+      value: 140
+      objectReference: {fileID: 0}
+    - target: {fileID: 11422874, guid: 1f9fe48bc46794b4f87ce21e69f3749b, type: 2}
+      propertyPath: horcruxposition.y
+      value: -12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f9fe48bc46794b4f87ce21e69f3749b, type: 2}
   m_IsPrefabParent: 0
@@ -18933,7 +18949,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 92680b515fee2914f8dc6e2e38eb9754, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -22777,7 +22793,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 92680b515fee2914f8dc6e2e38eb9754, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

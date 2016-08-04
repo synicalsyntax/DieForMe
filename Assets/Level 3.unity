@@ -20713,6 +20713,11 @@ Prefab:
       propertyPath: SpellZCast
       value: 
       objectReference: {fileID: 8300000, guid: 977a60f7fc9392543bc2adb7bec0b6af, type: 3}
+    - target: {fileID: 21206258, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d0c3ce0abc75e47318731ed737546f0c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
   m_IsPrefabParent: 0
@@ -25971,7 +25976,15 @@ Prefab:
     - target: {fileID: 11442734, guid: f8dce074dba944ecba8444a662d08312, type: 2}
       propertyPath: Horcrux
       value: 
-      objectReference: {fileID: 5013162, guid: 8246d54fb1c3b4b4791d36dcbdc208b1, type: 2}
+      objectReference: {fileID: 5035788, guid: 95c3fe5b876760340ba3e0912fd78fc2, type: 2}
+    - target: {fileID: 11442734, guid: f8dce074dba944ecba8444a662d08312, type: 2}
+      propertyPath: horcruxposition.x
+      value: 58
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442734, guid: f8dce074dba944ecba8444a662d08312, type: 2}
+      propertyPath: horcruxposition.y
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f8dce074dba944ecba8444a662d08312, type: 2}
   m_IsPrefabParent: 0
