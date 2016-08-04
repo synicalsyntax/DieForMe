@@ -2316,8 +2316,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 241435526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.47, y: 0.75, z: 0}
-  m_LocalScale: {x: 0.825, y: 1.3875003, z: 1}
+  m_LocalPosition: {x: 6.47, y: 0.56, z: 0}
+  m_LocalScale: {x: 0.825, y: 0.83250105, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 613141436}
@@ -3650,6 +3650,84 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9b5b0fce0569b946b9b8ebaebde9b98, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &319539690 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 175586, guid: d64b30e60bde5482bb81742370f61ec0, type: 2}
+  m_PrefabInternal: {fileID: 1714622114}
+--- !u!82 &319539697
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 319539690}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 31e8fc30e35789e4b954eb72a4ac7c6b, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &319654278
 GameObject:
   m_ObjectHideFlags: 0
@@ -11764,7 +11842,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1041679433}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60.14, y: 25.99, z: 0}
+  m_LocalPosition: {x: 60.14, y: 25.26, z: 0}
   m_LocalScale: {x: 2.058037, y: 2.058043, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -17114,6 +17192,10 @@ Prefab:
       propertyPath: offsety
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 178490, guid: 437c7fe69821b4a1ca9cb7bb0c4195c8, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 437c7fe69821b4a1ca9cb7bb0c4195c8, type: 2}
   m_IsPrefabParent: 0
@@ -17469,7 +17551,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1632825549}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 65.97, y: 23.67, z: 0}
+  m_LocalPosition: {x: 65.97, y: 22.64, z: 0}
   m_LocalScale: {x: 2.058037, y: 2.058043, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -17555,7 +17637,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1644370835}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 66.13, y: 18.48, z: 0}
+  m_LocalPosition: {x: 66.13, y: 16.6, z: 0}
   m_LocalScale: {x: 2.058037, y: 2.058043, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -18306,6 +18388,10 @@ Prefab:
     - target: {fileID: 11475546, guid: d64b30e60bde5482bb81742370f61ec0, type: 2}
       propertyPath: offsety
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 175586, guid: d64b30e60bde5482bb81742370f61ec0, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d64b30e60bde5482bb81742370f61ec0, type: 2}
@@ -19208,7 +19294,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1768838178}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60.14, y: 16.03, z: 0}
+  m_LocalPosition: {x: 60.14, y: 13.96, z: 0}
   m_LocalScale: {x: 2.058037, y: 2.058043, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -19522,7 +19608,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1809734338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 71.49, y: 21.25, z: 0}
+  m_LocalPosition: {x: 71.49, y: 19.73, z: 0}
   m_LocalScale: {x: 2.058037, y: 2.058043, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
