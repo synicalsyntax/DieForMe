@@ -10448,6 +10448,8 @@ GameObject:
   - 4: {fileID: 865929496}
   - 212: {fileID: 865929495}
   - 95: {fileID: 865929494}
+  - 61: {fileID: 865929498}
+  - 114: {fileID: 865929497}
   m_Layer: 0
   m_Name: 2BossSlug_0
   m_TagString: Untagged
@@ -10515,6 +10517,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
+--- !u!114 &865929497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 865929493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2c4e9fb329a204280e5bddd4665a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Horcrux: {fileID: 5085996, guid: 98f02f6bc64624b51a5286c050f33ac7, type: 2}
+--- !u!61 &865929498
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 865929493}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.59999996, y: 0.48}
 --- !u!1001 &881410745
 Prefab:
   m_ObjectHideFlags: 0
