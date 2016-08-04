@@ -113,7 +113,7 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         transform.position = checkpoint; //reset position  
         deathReset();
     }
-    if (theCollision.gameObject.name.StartsWith("Horcrux 1")) {
+    if (theCollision.gameObject.name.StartsWith("Horcrux")) {
         Destroy(theCollision.gameObject);
         yield WaitForSeconds(0.05);
         for (var poof: GameObject in GameObject.FindGameObjectsWithTag('Poof')) {
@@ -204,6 +204,7 @@ function deathReset() {
     transform.parent = null;
     Destroy(GameObject.Find('Horcrux'));
     Destroy(GameObject.Find('Horcrux 1'));
+    Destroy(GameObject.Find('Horcrux 2'));
 
     GameObject.Find("Big Bad Boss").GetComponent(OscillatingBoss).hits = 0;
     GameObject.Find("Big Bad Mafia Boss").GetComponent(Boss).hits = 0;
