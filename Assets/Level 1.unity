@@ -11034,6 +11034,14 @@ Prefab:
       propertyPath: speed
       value: 3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 11442734, guid: f8dce074dba944ecba8444a662d08312, type: 2}
+      propertyPath: endingY
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11442734, guid: f8dce074dba944ecba8444a662d08312, type: 2}
+      propertyPath: startingY
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f8dce074dba944ecba8444a662d08312, type: 2}
   m_IsPrefabParent: 0
