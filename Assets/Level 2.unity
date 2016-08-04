@@ -11832,7 +11832,7 @@ MonoBehaviour:
   startLine: 0
   endLine: 0
   theTextBox: {fileID: 0}
-  destroyWhenActivated: 0
+  destroyWhenActivated: 1
 --- !u!1001 &625613518
 Prefab:
   m_ObjectHideFlags: 0
@@ -12914,7 +12914,7 @@ MonoBehaviour:
   startLine: 0
   endLine: 0
   theTextBox: {fileID: 0}
-  destroyWhenActivated: 0
+  destroyWhenActivated: 1
 --- !u!1001 &674679458
 Prefab:
   m_ObjectHideFlags: 0
@@ -17049,7 +17049,7 @@ MonoBehaviour:
   startLine: 0
   endLine: 0
   theTextBox: {fileID: 0}
-  destroyWhenActivated: 0
+  destroyWhenActivated: 1
 --- !u!1001 &924966396
 Prefab:
   m_ObjectHideFlags: 0
