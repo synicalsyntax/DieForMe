@@ -5421,6 +5421,30 @@ Prefab:
       propertyPath: m_LinearDrag
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11475150, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
+      propertyPath: PlantHit
+      value: 
+      objectReference: {fileID: 8300000, guid: a3aca22bc8752f9448996a7723f02c23, type: 3}
+    - target: {fileID: 11475150, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
+      propertyPath: AurorHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 5f9ee993b4da4d0419dba4305a81788c, type: 3}
+    - target: {fileID: 11475150, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
+      propertyPath: DementorHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 64d7f7ba7b0a2a64380c80e004868cb4, type: 3}
+    - target: {fileID: 11475150, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
+      propertyPath: SpellZCast
+      value: 
+      objectReference: {fileID: 8300000, guid: 977a60f7fc9392543bc2adb7bec0b6af, type: 3}
+    - target: {fileID: 11475150, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
+      propertyPath: SpellXCast
+      value: 
+      objectReference: {fileID: 8300000, guid: e3b6344d14859b0469cc68df1738d94c, type: 3}
+    - target: {fileID: 11475150, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
+      propertyPath: LavaHit
+      value: 
+      objectReference: {fileID: 8300000, guid: 962477848ac64ce4cbc931f088fd3869, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2fb62218a1f82ac44a6ccd318b063d73, type: 2}
   m_IsPrefabParent: 0
@@ -18028,7 +18052,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 30
 --- !u!212 &993104303
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27575,7 +27599,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
 --- !u!114 &1648139755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30064,7 +30088,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 28
 --- !u!212 &1802848554
 SpriteRenderer:
   m_ObjectHideFlags: 0

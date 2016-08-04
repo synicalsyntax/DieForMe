@@ -107,7 +107,7 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         GetComponent.<AudioSource>().clip = LavaHit;
         GetComponent.<AudioSource>().Play();
         
-        yield WaitForSeconds(0.1);
+        yield WaitForSeconds(1);
         transform.position = checkpoint; //reset position
         deathReset();
     }
@@ -115,7 +115,7 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         GetComponent.<AudioSource>().clip = DementorHit;
         GetComponent.<AudioSource>().Play();
         
-        yield WaitForSeconds(0.05);
+        yield WaitForSeconds(.5);
         transform.position = checkpoint; //reset position  
         deathReset();
     }
@@ -123,12 +123,12 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         GetComponent.<AudioSource>().clip = PlantHit;
         GetComponent.<AudioSource>().Play();
         
-        yield WaitForSeconds(0.05);
+        yield WaitForSeconds(.2);
         transform.position = checkpoint; //reset position  
         deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Big Bad")) {
-        yield WaitForSeconds(0.05);
+        yield WaitForSeconds(1);
         transform.position = checkpoint; //reset position  
         deathReset();
     }
@@ -136,7 +136,7 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         GetComponent.<AudioSource>().clip = AurorHit;
         GetComponent.<AudioSource>().Play();
 
-        yield WaitForSeconds(0.05);
+        yield WaitForSeconds(.2);
         transform.position = checkpoint; //reset position  
         deathReset();
     }
@@ -177,7 +177,7 @@ function OnTriggerEnter2D(collider2D: Collider2D) {
         GetComponent.<AudioSource>().clip = AurorHit;
         GetComponent.<AudioSource>().Play();
         
-        yield WaitForSeconds(0.05);
+        yield WaitForSeconds(1);
         transform.position = checkpoint; //reset position  
         deathReset();
     }
