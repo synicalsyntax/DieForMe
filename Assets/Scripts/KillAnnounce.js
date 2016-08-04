@@ -17,6 +17,8 @@ function OnTriggerEnter2D (other : Collider2D) {
     if(other.name == "Player"){
         theTextBox.setLinesOther("YOU KILLED " + otherScript.returnKills() + " PEOPLE TO GET TO YOUR GOAL.");
         theTextBox.EnableTextBox();
+        theTextBox.currentLine = 0;
+        theTextBox.endAtLine = 0;
         if(destroyWhenActivated){
             Destroy(gameObject);
         }
