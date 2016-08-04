@@ -161,31 +161,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &16601116 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 162874, guid: cee9d45edac4b764ba0b2d5c2f965fc1, type: 2}
-  m_PrefabInternal: {fileID: 932966002}
---- !u!114 &16601117
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 16601116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef8c9a6d093df3046a51d5c37fab14ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpellCoolDown: 0
-  speed: 3
-  startingY: -2
-  endingY: 7
-  duration: 2
-  Horcrux: {fileID: 5085996, guid: 52ab2a521b21345c2b1d6662be81f38c, type: 2}
-  AurorSpell: {fileID: 5085056, guid: 56164926a56463142be6337b28172bb3, type: 2}
-  direction: 0
-  spellSpeed: 7
-  hits: 0
 --- !u!1 &17711691
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,7 +1957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 494472672}
   offsetx: 6
-  offsety: 3
+  offsety: 0
 --- !u!82 &183702374
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17365,7 +17340,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11478000, guid: 437c7fe69821b4a1ca9cb7bb0c4195c8, type: 2}
       propertyPath: offsety
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 437c7fe69821b4a1ca9cb7bb0c4195c8, type: 2}
@@ -18678,7 +18653,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11475546, guid: d64b30e60bde5482bb81742370f61ec0, type: 2}
       propertyPath: offsety
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d64b30e60bde5482bb81742370f61ec0, type: 2}
