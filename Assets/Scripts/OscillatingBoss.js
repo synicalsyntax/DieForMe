@@ -11,6 +11,7 @@ var direction : float;
 public var spellSpeed : int;
 public var hits : int  = 0;
 static var dead = false;
+public var X : float;
 
 function Start(){
     GetComponent.<Renderer>().enabled = true;
@@ -30,7 +31,7 @@ function Update() {
     } else {
         dead = true;
     }
-    transform.position.x = 109;
+    transform.position.x = X;
 }
 
 function PingPong(t: float, minLength: float, maxLength: float) {
