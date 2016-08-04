@@ -17,14 +17,17 @@ function Update() {
 
 
     function OnTriggerEnter2D(collider2D : Collider2D){
+        var otherScript : PlayerControl= FindObjectOfType(PlayerControl);
         if (collider2D.name.StartsWith("SpellZ")){
             Instantiate(Horcrux, transform.position, Quaternion.identity);
             GetComponent.<SpriteRenderer>().enabled = false;
             GetComponent.<Collider2D>().enabled = false;
+            otherScript.addToCurrentCount();
         }
         if (collider2D.name.StartsWith("SpellX")){
             Instantiate(Horcrux, transform.position, Quaternion.identity);
             GetComponent.<SpriteRenderer>().enabled = false;
             GetComponent.<Collider2D>().enabled = false;
+            otherScript.addToCurrentCount();
         }
     }

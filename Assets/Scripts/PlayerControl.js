@@ -120,13 +120,17 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
             poof.GetComponent.<SpriteRenderer>().enabled = false;
             poof.GetComponent.<Collider2D>().enabled = false;
         }
-        otherScript.addToCount(currentKills);
+    SceneManager.LoadScene(SceneMoveTo);
+    otherScript.addToCount(currentKills);
+    
     }
     if (theCollision.gameObject.name.StartsWith("Horcrux 2")) { 
         Destroy(theCollision.gameObject);
         yield WaitForSeconds(0.5);
         SceneManager.LoadScene(SceneMoveTo);
         otherScript.addToCount(currentKills);
+       
+        
     }
 }
 
