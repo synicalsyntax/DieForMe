@@ -32,7 +32,7 @@ function FixedUpdate() {
         moveHorizontal = 0;
     }
     var horizontalForce: Vector2 = new Vector2(moveHorizontal, 0);
-    GetComponent. < Rigidbody2D > ().AddForce(horizontalForce * 20); //20 value can be changed according to player speed
+    GetComponent.<Rigidbody2D>().AddForce(horizontalForce * 20); //20 value can be changed according to player speed
     if (moveHorizontal < 0) {
         FlipLeft();
     } else if (moveHorizontal > 0) {
@@ -59,20 +59,20 @@ function Update() {
 }
 
 function Jump() {
-    GetComponent. < Rigidbody2D > ().AddForce(Vector2(0, 650)); //might depend on mass of object
+    GetComponent.<Rigidbody2D>().velocity = Vector2(0, 10); //might depend on mass of object
     yield WaitForSeconds(0.1);
 }
 
 function ZSpell() {
     var Spell = Instantiate(SpellZ, transform.position, Quaternion.identity);
-    Spell.GetComponent. < Renderer > ().enabled = true;
+    Spell.GetComponent.<Renderer>().enabled = true;
     Spell.velocity.x = direction * spellSpeed;
     yield WaitForSeconds(1);
 }
 
 function XSpell() {
     var Spell = Instantiate(SpellX, transform.position, Quaternion.identity);
-    Spell.GetComponent. < Renderer > ().enabled = true;
+    Spell.GetComponent.<Renderer>().enabled = true;
     Spell.velocity.x = direction * spellSpeed;
     yield WaitForSeconds(1);
 }
@@ -114,8 +114,8 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         Destroy(theCollision.gameObject);
         yield WaitForSeconds(0.05);
         for (var poof: GameObject in GameObject.FindGameObjectsWithTag('Poof')) {
-            poof.GetComponent. < SpriteRenderer > ().enabled = false;
-            poof.GetComponent. < Collider2D > ().enabled = false;
+            poof.GetComponent.<SpriteRenderer>().enabled = false;
+            poof.GetComponent.<Collider2D>().enabled = false;
         }
     }
     if (theCollision.gameObject.name.StartsWith("Horcrux")) {
@@ -204,18 +204,18 @@ function deathReset() {
 
     yield WaitForSeconds(0.1);
     for (var reappear: GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
-        reappear.GetComponent. < SpriteRenderer > ().enabled = true;
-        reappear.GetComponent. < Collider2D > ().enabled = true;
+        reappear.GetComponent.<SpriteRenderer>().enabled = true;
+        reappear.GetComponent.<Collider2D>().enabled = true;
     }
     for (var poof: GameObject in GameObject.FindGameObjectsWithTag('Poof')) {
-        poof.GetComponent. < SpriteRenderer > ().enabled = true;
-        poof.GetComponent. < Collider2D > ().enabled = true;
+        poof.GetComponent.<SpriteRenderer>().enabled = true;
+        poof.GetComponent.<Collider2D>().enabled = true;
     }
     yield WaitForSeconds(3);
     for (var reappear: GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
         if (reappear.gameObject.name == "Platform Disappearing") {
-            reappear.GetComponent. < SpriteRenderer > ().enabled = true;
-            reappear.GetComponent. < Collider2D > ().enabled = true;
+            reappear.GetComponent.<SpriteRenderer>().enabled = true;
+            reappear.GetComponent.<Collider2D>().enabled = true;
         }
     }
 }
