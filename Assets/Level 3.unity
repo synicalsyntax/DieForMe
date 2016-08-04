@@ -17604,7 +17604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theText: {fileID: 4900000, guid: 1db4f004a9ca815418aee483f353fb69, type: 3}
   startLine: 0
-  endLine: 5
+  endLine: 2
   theTextBox: {fileID: 0}
   destroyWhenActivated: 1
 --- !u!4 &1447487152

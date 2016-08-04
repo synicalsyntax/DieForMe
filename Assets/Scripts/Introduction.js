@@ -63,3 +63,7 @@ function ReloadScript(theText : TextAsset){
     textLines = new String[1];
     textLines = theText.text.Split("\n"[0]);
 }
+    function setLinesOther(sentence : String){
+        textLines = new String[1];
+        textLines[0] = sentence;
+    }

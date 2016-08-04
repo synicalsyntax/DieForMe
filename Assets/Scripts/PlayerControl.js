@@ -234,3 +234,6 @@ function deathReset() {
 function addToCurrentCount(){
     currentKills +=1;
 }
+function returnKills(){
+    return currentKills;
+}

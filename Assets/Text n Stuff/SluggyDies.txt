@@ -1,6 +1,3 @@
 Sluggy: "Tim! What have you done?"
 Sluggy: "I believed that making a horcrux would help you, but now that I see all the damage that you've done, I realize my mistakes."
 Sluggy: "You've killed so many people in order for you to gain in power!"
-Sluggy: "I don't even recognize you anymore."
-Sluggy: "I need to stop you."
-Kill Sluggy.
