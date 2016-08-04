@@ -1,2 +1,2 @@
 You're a wizard, Tim! (Go to the next dialogue using return.)
-Move using the arrow keys. Jump using the up arrow or the space bar.
+Move using the arrow keys or WASD. Jump using the up arrow or W key.
