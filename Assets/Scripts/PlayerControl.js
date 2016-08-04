@@ -119,8 +119,8 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         }
     }
     if (theCollision.gameObject.name.StartsWith("Horcrux")) {
-        theCollision.gameObject.gameObject.SetActive(false);
-        yield WaitForSeconds(1);
+        Destroy(theCollision.gameObject);
+        yield WaitForSeconds(0.5);
         SceneManager.LoadScene(SceneMoveTo);
     }
 }
