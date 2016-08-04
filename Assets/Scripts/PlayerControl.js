@@ -140,24 +140,19 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         transform.position = checkpoint; //reset position  
         deathReset();
     }
-    if (theCollision.gameObject.name.StartsWith("Horcrux")) {
+    if (theCollision.gameObject.name.StartsWith("Horcrux 0") || theCollision.gameObject.name.StartsWith("Horcrux 2")) {
+        Destroy(theCollision.gameObject);
+        yield WaitForSeconds(0.5);
+        SceneManager.LoadScene(SceneMoveTo);
+        otherScript.addToCount(currentKills);
+    }
+    if (theCollision.gameObject.name.StartsWith("Horcrux 1")){
         Destroy(theCollision.gameObject);
         yield WaitForSeconds(0.05);
         for (var poof: GameObject in GameObject.FindGameObjectsWithTag('Poof')) {
             poof.GetComponent.<SpriteRenderer>().enabled = false;
             poof.GetComponent.<Collider2D>().enabled = false;
         }
-    SceneManager.LoadScene(SceneMoveTo);
-    otherScript.addToCount(currentKills);
-    
-    }
-    if (theCollision.gameObject.name.StartsWith("Horcrux 2")) { 
-        Destroy(theCollision.gameObject);
-        yield WaitForSeconds(0.5);
-        SceneManager.LoadScene(SceneMoveTo);
-        otherScript.addToCount(currentKills);
-       
-        
     }
 }
 
