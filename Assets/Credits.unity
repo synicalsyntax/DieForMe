@@ -383,7 +383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.2
   crawling: 1
-  limit: 600
+  limit: 750
 --- !u!114 &1941460498
 MonoBehaviour:
   m_ObjectHideFlags: 0
