@@ -13649,6 +13649,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11422874, guid: 1f9fe48bc46794b4f87ce21e69f3749b, type: 2}
+      propertyPath: Horcrux
+      value: 
+      objectReference: {fileID: 5085996, guid: 86739259ee44a46c0896018f3b9e1703, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1f9fe48bc46794b4f87ce21e69f3749b, type: 2}
   m_IsPrefabParent: 0
