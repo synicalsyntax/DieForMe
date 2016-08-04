@@ -14,5 +14,8 @@ function OnCollisionStay2D(theCollision : Collision2D) {
 		yield WaitForSeconds(3);
 		GetComponent.<SpriteRenderer>().enabled = false;
 	    GetComponent.<Collider2D>().enabled = false;
+	    yield WaitForSeconds(3);
+		GetComponent.<SpriteRenderer>().enabled = true;
+	    GetComponent.<Collider2D>().enabled = true;
     }
 }
