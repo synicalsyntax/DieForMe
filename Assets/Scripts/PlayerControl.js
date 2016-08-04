@@ -211,9 +211,6 @@ function deathReset() {
     GameObject.Find("Big Bad Boss").GetComponent(OscillatingBoss).hits = 0;
     GameObject.Find("Big Bad Mafia Boss").GetComponent(Boss).hits = 0;
     transform.position = checkpoint;
-    yield WaitForSeconds(1);
-    GetComponent.<SpriteRenderer>().enabled = true;
-    canMove = true;
     for (var reappear: GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
         reappear.GetComponent.<SpriteRenderer>().enabled = true;
         reappear.GetComponent.<Collider2D>().enabled = true;
@@ -222,6 +219,9 @@ function deathReset() {
         poof.GetComponent.<SpriteRenderer>().enabled = true;
         poof.GetComponent.<Collider2D>().enabled = true;
     }
+    yield WaitForSeconds(0.1);
+    GetComponent.<SpriteRenderer>().enabled = true;
+    canMove = true;
     yield WaitForSeconds(3);
     for (var reappear: GameObject in GameObject.FindGameObjectsWithTag("Respawn")) {
         if (reappear.gameObject.name == "Platform Disappearing") {
