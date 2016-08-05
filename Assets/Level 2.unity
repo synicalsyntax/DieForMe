@@ -25417,7 +25417,7 @@ Prefab:
     - target: {fileID: 11475546, guid: d64b30e60bde5482bb81742370f61ec0, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1410642463}
     - target: {fileID: 11475546, guid: d64b30e60bde5482bb81742370f61ec0, type: 2}
       propertyPath: offsetx
       value: 6
@@ -28009,7 +28009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93dcb45a818024f9f81ac14e747bdbd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1410642463}
   offsetx: 6
   offsety: 0
 --- !u!82 &1648139756
@@ -35833,7 +35833,7 @@ Prefab:
     - target: {fileID: 11478000, guid: 437c7fe69821b4a1ca9cb7bb0c4195c8, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1410642463}
     - target: {fileID: 11478000, guid: 437c7fe69821b4a1ca9cb7bb0c4195c8, type: 2}
       propertyPath: z
       value: 5
