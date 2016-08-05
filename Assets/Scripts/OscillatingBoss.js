@@ -10,7 +10,7 @@ public var AurorSpell : Rigidbody2D;
 var direction : float;
 public var spellSpeed : int;
 public var hits : int  = 0;
-static var dead = false;
+public var dead = false;
 public var X : float;
 public var horcruxposition : Vector2;
 

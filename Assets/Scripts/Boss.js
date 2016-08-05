@@ -7,7 +7,7 @@ public var BossSpell : Rigidbody2D;
 public var Horcrux : Rigidbody2D;
 public var horcruxposition : Vector2;
 public var spellSpeed : float;
-static var dead = false;
+public var dead = false;
 public var hits : int = 0;
 
 public var HitBoss : AudioClip;
@@ -29,7 +29,6 @@ function Update() {
         dead = false;
     } else {
         dead = true;
-
     }
 }
 
