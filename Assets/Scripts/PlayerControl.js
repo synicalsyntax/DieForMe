@@ -108,6 +108,7 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Big Bad")) {
+            GetComponent.<AudioSource>().clip = AurorHit;
         deathReset();
     }
     if (theCollision.gameObject.name.StartsWith("Auror")) {
