@@ -34599,7 +34599,7 @@ MonoBehaviour:
   speed: 3
   duration: 2
   BossSpell: {fileID: 5085056, guid: 56164926a56463142be6337b28172bb3, type: 2}
-  Horcrux: {fileID: 5085996, guid: 98f02f6bc64624b51a5286c050f33ac7, type: 2}
+  Horcrux: {fileID: 5085996, guid: 2401c312948854e6bade1fe2877ea3c9, type: 2}
   horcruxposition: {x: 218, y: -22}
   spellSpeed: 10
   hits: 0
