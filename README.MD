@@ -4,6 +4,8 @@ A 2D platformer created by JACCA Media
 
 [**LATEST RELEASE: v1.0**](https://github.com/synicalsyntax/DieForMe/releases/tag/v1.0) &nbsp;&nbsp;&nbsp;&nbsp; [**Windows**](https://github.com/synicalsyntax/DieForMe/releases/download/v1.0/Die.For.Me.Windows.zip) | [**Mac**](https://github.com/synicalsyntax/DieForMe/releases/download/v1.0/Die.For.Me.Mac.zip) | [**Linux**](https://github.com/synicalsyntax/DieForMe/releases/download/v1.0/Die.For.Me.Linux.zip) &nbsp;&nbsp;&nbsp;&nbsp; **SOURCE** &nbsp;&nbsp; [**.zip**](https://github.com/synicalsyntax/DieForMe/archive/v1.0.zip) | [**.tar.gz**](https://github.com/synicalsyntax/DieForMe/archive/v1.0.tar.gz)
 
+***
+
 ##INTRODUCTION
 
 **Die For Me** focuses on Tim Roddle’s descent into madness and his quest to create Horcruxes to achieve immortality. As he kills more people, he loses his humanity in exchange for power and invincibility. The effort that the players put into each level parallels Tim’s struggles as he grows stronger.
