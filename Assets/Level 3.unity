@@ -10528,7 +10528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2c4e9fb329a204280e5bddd4665a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Horcrux: {fileID: 5085996, guid: 98f02f6bc64624b51a5286c050f33ac7, type: 2}
+  Horcrux: {fileID: 5094290, guid: 0a40e933d9bf5834b9a2058d73e6deb0, type: 2}
 --- !u!61 &865929498
 BoxCollider2D:
   m_ObjectHideFlags: 0
