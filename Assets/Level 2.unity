@@ -20661,7 +20661,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 493654, guid: 919d922efac34e24da99f65890f42059, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -22.759516
+      value: -22.91
       objectReference: {fileID: 0}
     - target: {fileID: 493654, guid: 919d922efac34e24da99f65890f42059, type: 2}
       propertyPath: m_LocalPosition.z
@@ -20685,11 +20685,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 493654, guid: 919d922efac34e24da99f65890f42059, type: 2}
       propertyPath: m_RootOrder
-      value: 29
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 158090, guid: 919d922efac34e24da99f65890f42059, type: 2}
       propertyPath: m_Name
       value: Plant Upright (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 493654, guid: 919d922efac34e24da99f65890f42059, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.7175772
+      objectReference: {fileID: 0}
+    - target: {fileID: 493654, guid: 919d922efac34e24da99f65890f42059, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.8314406
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 919d922efac34e24da99f65890f42059, type: 2}
