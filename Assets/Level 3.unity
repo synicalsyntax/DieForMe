@@ -19934,7 +19934,7 @@ MonoBehaviour:
   direction: 1
   spellDirection: 1
   canMove: 1
-  SceneMoveTo: 
+  SceneMoveTo: Credits
   checkpoint: {x: -1, y: 2}
   currentKills: 0
   LavaHit: {fileID: 8300000, guid: 962477848ac64ce4cbc931f088fd3869, type: 3}
@@ -20005,7 +20005,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
