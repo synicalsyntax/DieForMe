@@ -10528,7 +10528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2c4e9fb329a204280e5bddd4665a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Horcrux: {fileID: 5094290, guid: 0a40e933d9bf5834b9a2058d73e6deb0, type: 2}
+  Horcrux: {fileID: 5035788, guid: 95c3fe5b876760340ba3e0912fd78fc2, type: 2}
 --- !u!61 &865929498
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18859,7 +18859,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1531219495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 60.35, y: -1.5100311, z: 0}
+  m_LocalPosition: {x: 60.35, y: -0.76, z: 0}
   m_LocalScale: {x: 1.1498047, y: 1.4836192, z: 1.4836192}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -22945,7 +22945,7 @@ MonoBehaviour:
   startingY: 4
   endingY: 6
   duration: 2
-  Horcrux: {fileID: 5085996, guid: 2401c312948854e6bade1fe2877ea3c9, type: 2}
+  Horcrux: {fileID: 5085996, guid: 98f02f6bc64624b51a5286c050f33ac7, type: 2}
   AurorSpell: {fileID: 5085056, guid: 56164926a56463142be6337b28172bb3, type: 2}
   direction: 0
   spellSpeed: 10
@@ -26503,7 +26503,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2050084566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 68, y: -1.5100311, z: 0}
+  m_LocalPosition: {x: 68, y: -0.77, z: 0}
   m_LocalScale: {x: 1.1498047, y: 1.4836192, z: 1.4836192}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
