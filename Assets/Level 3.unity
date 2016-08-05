@@ -22714,7 +22714,7 @@ GameObject:
   - 114: {fileID: 1807860799}
   - 82: {fileID: 1807860798}
   m_Layer: 0
-  m_Name: Big Bad Bo$$
+  m_Name: Big Bad Boss
   m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
