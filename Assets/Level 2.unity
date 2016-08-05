@@ -34439,7 +34439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3.5
   startingX: 106
-  endingX: 115
+  endingX: 120
 --- !u!1001 &2034218790
 Prefab:
   m_ObjectHideFlags: 0
