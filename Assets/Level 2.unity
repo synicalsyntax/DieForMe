@@ -4826,7 +4826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2c4e9fb329a204280e5bddd4665a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Horcrux: {fileID: 5094290, guid: 0a40e933d9bf5834b9a2058d73e6deb0, type: 2}
+  Horcrux: {fileID: 5085996, guid: 98f02f6bc64624b51a5286c050f33ac7, type: 2}
 --- !u!82 &265366321
 AudioSource:
   m_ObjectHideFlags: 0
@@ -34555,6 +34555,7 @@ MonoBehaviour:
   Horcrux: {fileID: 5085996, guid: 2401c312948854e6bade1fe2877ea3c9, type: 2}
   horcruxposition: {x: 218, y: -22}
   spellSpeed: 10
+  dead: 0
   hits: 0
   HitBoss: {fileID: 8300000, guid: 92680b515fee2914f8dc6e2e38eb9754, type: 3}
 --- !u!61 &2039369611

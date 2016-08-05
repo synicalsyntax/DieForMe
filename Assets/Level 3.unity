@@ -10528,7 +10528,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f2c4e9fb329a204280e5bddd4665a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Horcrux: {fileID: 5035788, guid: 95c3fe5b876760340ba3e0912fd78fc2, type: 2}
+  Horcrux: {fileID: 5094290, guid: 0a40e933d9bf5834b9a2058d73e6deb0, type: 2}
 --- !u!61 &865929498
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22945,11 +22945,12 @@ MonoBehaviour:
   startingY: 4
   endingY: 6
   duration: 2
-  Horcrux: {fileID: 5085996, guid: 98f02f6bc64624b51a5286c050f33ac7, type: 2}
+  Horcrux: {fileID: 5035788, guid: 95c3fe5b876760340ba3e0912fd78fc2, type: 2}
   AurorSpell: {fileID: 5085056, guid: 56164926a56463142be6337b28172bb3, type: 2}
   direction: 0
   spellSpeed: 10
   hits: 0
+  dead: 0
   X: 57.5
   horcruxposition: {x: 58, y: 5}
   HitBoss: {fileID: 8300000, guid: 92680b515fee2914f8dc6e2e38eb9754, type: 3}
