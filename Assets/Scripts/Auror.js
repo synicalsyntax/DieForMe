@@ -10,7 +10,7 @@ var direction : float;
 public var spellSpeed : int;
 static var dead = false;
 
-function Start(){
+function Start() {
     GetComponent.<Renderer>().enabled = true;
     GetComponent.<Collider2D>().enabled = true;
     direction = -1;
@@ -35,16 +35,14 @@ function PingPong(t: float, minLength: float, maxLength: float) {
     return pos;
 }
 
-function OnTriggerEnter2D(collider2D : Collider2D){
+function OnTriggerEnter2D(collider2D : Collider2D) {
 	if (collider2D.name.StartsWith("SpellX")){
-	    var otherScript : PlayerControl= FindObjectOfType(PlayerControl);
-	    otherScript.addToCurrentCount();
 	    GetComponent.<SpriteRenderer>().enabled = false;
 		GetComponent.<Collider2D>().enabled = false;
 	}
 }
 
-function Spell(){
+function Spell() {
 	if (dead == false) {
 		var Spell = Instantiate(AurorSpell, transform.position, Quaternion.identity);
         Spell.velocity.x = direction * spellSpeed;

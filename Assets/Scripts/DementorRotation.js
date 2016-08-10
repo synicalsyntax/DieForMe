@@ -1,19 +1,13 @@
 ﻿#pragma strict
 
-//public var speed: float =3;
-//public var startingX: float;
-//public var endingX: float;
-
 function Start(){
     GetComponent.<Renderer>().enabled = true;
     GetComponent.<Collider2D>().enabled = true;
 }
 
-    function OnTriggerEnter2D(collider2D : Collider2D){
-        if (collider2D.name.StartsWith("SpellZ")){
-            var otherScript : PlayerControl= FindObjectOfType(PlayerControl);
-            otherScript.addToCurrentCount();
-            GetComponent.<SpriteRenderer>().enabled = false;
-            GetComponent.<Collider2D>().enabled = false;
-        }
-    }
+function OnTriggerEnter2D(collider2D : Collider2D) {
+	if (collider2D.name.StartsWith("SpellZ")) {
+		GetComponent.<SpriteRenderer>().enabled = false;
+		GetComponent.<Collider2D>().enabled = false;
+	}
+}

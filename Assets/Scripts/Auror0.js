@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
- var SpellCoolDown : float;
+var SpellCoolDown : float;
 public var speed: float =3;
 var duration : float = 1;
 public var AurorSpell : Rigidbody2D;
@@ -27,16 +27,14 @@ function PingPong(t: float, minLength: float, maxLength: float) {
     return pos;
 }
 
-function OnTriggerEnter2D(collider2D : Collider2D){
-	if (collider2D.name.StartsWith("SpellX")){
-	    var otherScript : PlayerControl= FindObjectOfType(PlayerControl);
-	    otherScript.addToCurrentCount();
+function OnTriggerEnter2D(collider2D : Collider2D) {
+	if (collider2D.name.StartsWith("SpellX")) {
 	    GetComponent.<SpriteRenderer>().enabled = false;
 		GetComponent.<Collider2D>().enabled = false;
 	}
 }
 
-function Spell(){
+function Spell() {
 	if (dead == false) {
 		var Spell = Instantiate(AurorSpell, transform.position, Quaternion.identity);
         Spell.velocity.x = direction * spellSpeed;

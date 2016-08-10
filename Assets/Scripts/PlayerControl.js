@@ -1,13 +1,8 @@
-﻿import UnityEngine.SceneManagement;
-/*
-Basic Player Platformer Script: 
-  + Horizontal + Vertical Movement 
-  + Collisions with Platforms + Enemy Object(s)
-  + Falling Off Platform Relocation
-*/
-#pragma strict
+﻿#pragma strict
 
-var isgrounded: boolean = true; //variable for when player is grounded
+import UnityEngine.SceneManagement;
+
+var isgrounded: boolean = true;
 public var SpellZ: Rigidbody2D; 
 public var SpellX: Rigidbody2D;
 var SpellCooldown: float;
@@ -27,7 +22,7 @@ public var SpellXCast : AudioClip;
 public var SpellZCast : AudioClip;
 
 function Start() {
-    transform.position = checkpoint; //original starting position, in x, y, z values
+    transform.position = checkpoint;
     direction = -1;
     spellDirection = 1;
     FlipLeft();
@@ -40,7 +35,7 @@ function FixedUpdate() {
         moveHorizontal = 0;
     }
     var horizontalForce: Vector2 = new Vector2(moveHorizontal, 0);
-    GetComponent.<Rigidbody2D>().AddForce(horizontalForce * 20); //20 value can be changed according to player speed
+    GetComponent.<Rigidbody2D>().AddForce(horizontalForce * 20);
     if (moveHorizontal < 0) {
         FlipLeft();
     } else if (moveHorizontal > 0) {
@@ -64,7 +59,7 @@ function Update() {
 }
 
 function Jump() {
-    GetComponent.<Rigidbody2D>().velocity = Vector2(0, 10); //might depend on mass of object
+    GetComponent.<Rigidbody2D>().velocity = Vector2(0, 10);
     yield WaitForSeconds(0.1);
 }
 
@@ -87,15 +82,14 @@ function XSpell() {
 }
 
 function OnCollisionEnter2D(theCollision: Collision2D) {
-    var otherScript: KillingCount = FindObjectOfType(KillingCount);
-    if (theCollision.gameObject.name.StartsWith("Platform")) { //checks if colliding with object called Platform
+    if (theCollision.gameObject.name.StartsWith("Platform")) {
         isgrounded = true;
     }
-    if (theCollision.gameObject.name.StartsWith("Platform Disappearing")) { //checks if colliding with object called Platform
+    if (theCollision.gameObject.name.StartsWith("Platform Disappearing")) {
         yield WaitForSeconds(3);
         isgrounded = false;
     }
-    if (theCollision.gameObject.name.StartsWith("Lava")) { //if touching enemy object name Enemy
+    if (theCollision.gameObject.name.StartsWith("Lava")) {
         GetComponent.<AudioSource>().clip = LavaHit;
         deathReset();
     }
@@ -119,7 +113,6 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
         Destroy(theCollision.gameObject);
         yield WaitForSeconds(0.5);
         SceneManager.LoadScene(SceneMoveTo);
-        otherScript.addToCount(currentKills);
     }
     if (theCollision.gameObject.name.StartsWith("Horcrux 1")){
         Destroy(theCollision.gameObject);
@@ -131,23 +124,20 @@ function OnCollisionEnter2D(theCollision: Collision2D) {
 }
     if (theCollision.gameObject.name.StartsWith("Horcrux 3") || theCollision.gameObject.name.StartsWith("Horcrux 5") ) {
         Destroy(theCollision.gameObject);
-     //   yield WaitForSeconds(0.5);
-   //     SceneManager.LoadScene(SceneMoveTo);
-    //    otherScript.addToCount(currentKills);
     }
 }
 
 function OnCollisionStay2D(theCollision: Collision2D) {
-    if (theCollision.gameObject.name.StartsWith("Platform Moving")) { //while colliding with object name that starts with Platform Moving
-        transform.parent = theCollision.gameObject.transform; //make Player child of Moving Platformer so its position will be offset accordingly
+    if (theCollision.gameObject.name.StartsWith("Platform Moving")) {
+        transform.parent = theCollision.gameObject.transform;
     }
-    if (theCollision.gameObject.name.StartsWith("Platform")) { //checks if colliding with object called Platform
+    if (theCollision.gameObject.name.StartsWith("Platform")) {
         isgrounded = true;
     }
 }
 
 function OnCollisionExit2D(theCollision: Collision2D) {
-    if (theCollision.gameObject.name.StartsWith("Platform")) { //checks if colliding with object called Platform
+    if (theCollision.gameObject.name.StartsWith("Platform")) {
         isgrounded = false;
         transform.parent = null;
     }
@@ -236,11 +226,4 @@ function deathReset() {
             reappear.GetComponent.<Collider2D>().enabled = true;
         }
     }
-}
-
-function addToCurrentCount(){
-    currentKills +=1;
-}
-function returnKills(){
-    return currentKills;
 }

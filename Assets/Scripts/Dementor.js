@@ -4,10 +4,11 @@ public var speed: float =3;
 public var startingX: float;
 public var endingX: float;
 
-function Start(){
+function Start() {
     GetComponent.<Renderer>().enabled = true;
     GetComponent.<Collider2D>().enabled = true;
 }
+
 function Update() {
     transform.position = new Vector3(PingPong(Time.time * speed, startingX, endingX), transform.position.y, transform.position.z);
 }
@@ -17,10 +18,8 @@ function PingPong(t: float, minLength: float, maxLength: float) {
     return pos;
 }
 
-function OnTriggerEnter2D(collider2D : Collider2D){
-    if (collider2D.name.StartsWith("SpellZ")){
-        var otherScript : PlayerControl= FindObjectOfType(PlayerControl);
-        otherScript.addToCurrentCount();
+function OnTriggerEnter2D(collider2D : Collider2D) {
+    if (collider2D.name.StartsWith("SpellZ")) {
         GetComponent.<SpriteRenderer>().enabled = false;
         GetComponent.<Collider2D>().enabled = false;
     }

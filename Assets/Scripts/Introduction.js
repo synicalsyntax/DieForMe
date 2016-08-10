@@ -1,7 +1,7 @@
 ﻿#pragma strict
+
 import UnityEngine.UI;
 import UnityEngine.Networking;
-
 
 public var textBox : GameObject;
 public var theText : Text;
@@ -12,8 +12,6 @@ public var endAtLine : float;
 public var player : PlayerControl;
 public var isActive : boolean = false;
 public var stopPlayerMovement : boolean = false;
-
-
 
 function Start () {
     player = FindObjectOfType(PlayerControl);
@@ -34,36 +32,36 @@ function Start () {
 }
 
 function Update () {
-    if(!isActive){
+    if(!isActive) {
         return;
     }
-
-    if(currentLine>endAtLine){
+    if(currentLine>endAtLine) {
         DisableTextBox();
     }
     theText.text = textLines[currentLine];
-    if(Input.GetKeyDown(KeyCode.Return)){
+    if(Input.GetKeyDown(KeyCode.Return)) {
         currentLine +=1;
     }
-   
 }
-function EnableTextBox(){
+
+function EnableTextBox() {
     textBox.SetActive(true);
     isActive = true;
-    
-        player.canMove = false;
-    
+	player.canMove = false;
 }
-function DisableTextBox(){
+
+function DisableTextBox() {
     textBox.SetActive(false);
     isActive = false;
     player.canMove = true;
 }
-function ReloadScript(theText : TextAsset){
+
+function ReloadScript(theText : TextAsset) {
     textLines = new String[1];
     textLines = theText.text.Split("\n"[0]);
 }
-    function setLinesOther(sentence : String){
-        textLines = new String[1];
-        textLines[0] = sentence;
-    }
+
+function setLinesOther(sentence : String) {
+	textLines = new String[1];
+	textLines[0] = sentence;
+}
