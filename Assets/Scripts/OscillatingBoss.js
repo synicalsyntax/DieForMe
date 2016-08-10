@@ -13,11 +13,9 @@ public var hits : int  = 0;
 public var dead = false;
 public var X : float;
 public var horcruxposition : Vector2;
-
 public var HitBoss : AudioClip;
 
-
-function Start(){
+function Start() {
     GetComponent.<Renderer>().enabled = true;
     GetComponent.<Collider2D>().enabled = true;
     direction = -1;
@@ -29,7 +27,6 @@ function Update() {
         SpellCoolDown = Time.time + duration; 
         Spell();
     }
-
     if(GetComponent.<SpriteRenderer>().enabled == true) {
         dead = false;
     } else {
@@ -43,32 +40,24 @@ function PingPong(t: float, minLength: float, maxLength: float) {
     return pos;
 }
 
-    function OnTriggerEnter2D(collider2D : Collider2D){
-        if (collider2D.gameObject.name.StartsWith('SpellX') || collider2D.name.StartsWith('SpellZ')){
-            GetComponent.<AudioSource>().clip = HitBoss;
-            GetComponent.<AudioSource>().Play();
-            
-            hits = hits + 1;
-            if (hits > 2) {
-                var otherScript : PlayerControl= FindObjectOfType(PlayerControl);
-                otherScript.addToCurrentCount();
-                GetComponent.<SpriteRenderer>().enabled = false;
-                GetComponent.<Collider2D>().enabled = false;
-                dead = true;
-                Instantiate(Horcrux, horcruxposition, Quaternion.identity);
-            }
-        }
-    }
+function OnTriggerEnter2D(collider2D : Collider2D){
+	if (collider2D.gameObject.name.StartsWith('SpellX') || collider2D.name.StartsWith('SpellZ')){
+		GetComponent.<AudioSource>().clip = HitBoss;
+		GetComponent.<AudioSource>().Play();
+		hits = hits + 1;
+		if (hits > 2) {
+			GetComponent.<SpriteRenderer>().enabled = false;
+			GetComponent.<Collider2D>().enabled = false;
+			dead = true;
+			Instantiate(Horcrux, horcruxposition, Quaternion.identity);
+		}
+	}
+}
 
-        
-
-        function Spell(){
-            if (dead == false) {
-                var Spell = Instantiate(AurorSpell, transform.position, Quaternion.identity);
-                Spell.velocity.x = direction * spellSpeed;
-
-
-                Destroy(Spell.gameObject, 2);
-            }
-        }
-
+function Spell(){
+	if (dead == false) {
+		var Spell = Instantiate(AurorSpell, transform.position, Quaternion.identity);
+		Spell.velocity.x = direction * spellSpeed;
+		Destroy(Spell.gameObject, 2);
+	}
+}

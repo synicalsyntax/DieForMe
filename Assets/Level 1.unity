@@ -2035,7 +2035,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
 --- !u!114 &183702373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2048,7 +2048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 494472672}
-  offsetx: 6
+  offsetx: 3
   offsety: 0
 --- !u!82 &183702374
 AudioSource:
@@ -17120,7 +17120,7 @@ RectTransform:
   m_Children:
   - {fileID: 565720891}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 28
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -17532,7 +17532,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11478000, guid: 437c7fe69821b4a1ca9cb7bb0c4195c8, type: 2}
       propertyPath: offsetx
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11478000, guid: 437c7fe69821b4a1ca9cb7bb0c4195c8, type: 2}
       propertyPath: offsety
@@ -18729,7 +18729,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11475546, guid: d64b30e60bde5482bb81742370f61ec0, type: 2}
       propertyPath: offsetx
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11475546, guid: d64b30e60bde5482bb81742370f61ec0, type: 2}
       propertyPath: offsety

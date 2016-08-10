@@ -13,10 +13,10 @@ function PingPong(t: float, minLength: float, maxLength: float) {
     return pos;
 }
 
-function SetStartingX(x :float){
+function SetStartingX(x :float) {
 	startingX = x;
 }
 
-function SetEndingX(x : float){
+function SetEndingX(x : float) {
 	endingX = x;
 }

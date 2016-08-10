@@ -4,7 +4,7 @@
 
 A 2D platformer created by JACCA Media
 
-[**LATEST RELEASE: v1.0**](https://github.com/synicalsyntax/DieForMe/releases/tag/v1.0) &nbsp;&nbsp;&nbsp;&nbsp; [**Windows**](https://github.com/synicalsyntax/DieForMe/releases/download/v1.0/Die.For.Me.Windows.zip) | [**Mac**](https://github.com/synicalsyntax/DieForMe/releases/download/v1.0/Die.For.Me.Mac.zip) | [**Linux**](https://github.com/synicalsyntax/DieForMe/releases/download/v1.0/Die.For.Me.Linux.zip) &nbsp;&nbsp;&nbsp;&nbsp; **SOURCE** &nbsp;&nbsp; [**.zip**](https://github.com/synicalsyntax/DieForMe/archive/v1.0.zip) | [**.tar.gz**](https://github.com/synicalsyntax/DieForMe/archive/v1.0.tar.gz)
+[**LATEST RELEASE: v1.1**](https://github.com/synicalsyntax/DieForMe/releases/tag/v1.1) &nbsp;&nbsp;&nbsp;&nbsp; [**Windows**](https://github.com/synicalsyntax/DieForMe/releases/download/v1.0/Die.For.Me.Windows.zip) | [**Mac**](https://github.com/synicalsyntax/DieForMe/releases/download/v1.0/Die.For.Me.Mac.zip) | [**Linux**](https://github.com/synicalsyntax/DieForMe/releases/download/v1.0/Die.For.Me.Linux.zip) &nbsp;&nbsp;&nbsp;&nbsp; **SOURCE** &nbsp;&nbsp; [**.zip**](https://github.com/synicalsyntax/DieForMe/archive/v1.0.zip) | [**.tar.gz**](https://github.com/synicalsyntax/DieForMe/archive/v1.0.tar.gz)
 
 ***
 
@@ -17,7 +17,7 @@ A 2D platformer created by JACCA Media
 
 **Die For Me** was developed by the members of JACCA Media (Jessica Shu, Ally Wang, Cecilia Zhang, Cynthia Lin, Ashley Zhu) for the [UCSC COSMOS](http://cosmos.ucsc.edu) 2016 program using the [Unity game engine](http://unity3d.com).
 
-The developers sought to improve our programming, artistic, and storytelling skills through the development of this game through the development of this game. The game is their product of these efforts to create a playable prototype. 
+The developers sought to improve our programming, artistic, and storytelling skills through the development of this game through the development of this game. The game is their product of these efforts to create a playable prototype.
 
 ***
 
