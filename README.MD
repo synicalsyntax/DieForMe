@@ -4,7 +4,7 @@
 
 A 2D platformer created by JACCA Media
 
-[![GitHub release](https://img.shields.io/github/release/synicalsyntax/DieForMe.svg)](http://github.com/synicalsyntax/DieForMe/releases/latest/) ![Github All Releases](https://img.shields.io/github/downloads/synicalsyntax/DieForMe/total.svg) [![license](https://img.shields.io/badge/license-CC%20BY--NC--SA-blue.svg)](https://raw.githubusercontent.com/synicalsyntax/DieForMe/master/LICENSE.TXT)
+[![GitHub release](https://img.shields.io/github/release/synicalsyntax/DieForMe.svg)](http://github.com/synicalsyntax/DieForMe/releases/latest/) ![Github All Releases](https://img.shields.io/github/downloads/synicalsyntax/DieForMe/total.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9d09010bea2f40888539218f5e3cf8cc)](https://www.codacy.com/app/icylightning282/DieForMe?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=synicalsyntax/DieForMe&amp;utm_campaign=Badge_Grade) [![license](https://img.shields.io/badge/license-CC%20BY--NC--SA-blue.svg)](https://raw.githubusercontent.com/synicalsyntax/DieForMe/master/LICENSE.TXT)
 ***
 
 ##INTRODUCTION
