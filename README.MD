@@ -11,7 +11,7 @@ A 2D platformer created by JACCA Media
 
 **Die For Me** focuses on Tim Roddle’s descent into madness and his quest to create Horcruxes to achieve immortality. As he kills more people, he loses his humanity in exchange for power and invincibility. The effort that the players put into each level parallels Tim’s struggles as he grows stronger.
 
-##DEVELOPMENT
+## DEVELOPMENT
 
 **Die For Me** was developed by the members of JACCA Media ([Jessica Shu](https://github.com/jessicashu7), [Ally Wang](https://github.com/ally112250), [Cecilia Zhang](https://github.com/cicizhang01), [Cynthia Lin](https://github.com/synicalsyntax), [Ashley Zhu](https://github.com/innopoop)) for the [UCSC COSMOS](http://cosmos.ucsc.edu) 2016 program using the [Unity game engine](http://unity3d.com).
 
